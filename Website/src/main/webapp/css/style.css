@@ -1,6 +1,6 @@
 /*
  * @site       : www.edukera.fr
- * @author     : Jérémie Maquet - www.jmaquet.fr 
+ * @author     : Jérémie Maquet - www.jmaquet.fr
  */
 
 /* ----------------------------- */
@@ -35,7 +35,7 @@ th,
 label,
 textarea,
 caption,
-details, 
+details,
 figure {
 	font-size: 1em; /* equiv 14px */
 	line-height: 1.5;
@@ -62,7 +62,7 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
-code, 
+code,
 pre,
 samp,
 kbd {
@@ -91,7 +91,7 @@ kbd {
 code {
 	padding: 2px 4px;
 	background: rgba(0,0,0,.04);
-	color: #b11; 
+	color: #b11;
 }
 mark {
 	padding:2px 4px;
@@ -282,25 +282,25 @@ noscript div{
 
 /* FONT :: DROID SANS */
 @font-face {
-    font-family: 'droidsans'; 
+    font-family: 'droidsans';
     src: url('../fonts/droidsans/droidsans-webfont.eot');
     src: url('../fonts/droidsans/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/droidsans/droidsans-webfont.woff') format('woff'),
          url('../fonts/droidsans/droidsans-webfont.ttf') format('truetype'),
          url('../fonts/droidsans/droidsans-webfont.svg#webfontregular') format('svg');
-	font-weight: normal; 
+	font-weight: normal;
 	font-style: normal;
 }
 
 /* FONT :: DROID SANS BOLD */
 @font-face {
-    font-family: 'droidsans-bold'; 
+    font-family: 'droidsans-bold';
     src: url('../fonts/droidsans/droidsans-bold-webfont.eot');
     src: url('../fonts/droidsans/droidsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/droidsans/droidsans-bold-webfont.woff') format('woff'),
          url('../fonts/droidsans/droidsans-bold-webfont.ttf') format('truetype'),
          url('../fonts/droidsans/droidsans-bold-webfont.svg#webfontregular') format('svg');
-	font-weight: normal; 
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -348,20 +348,20 @@ noscript div{
     font-weight: normal;
 	font-style: normal;
 }
- 
+
 /* ----------------------------- */
 /* ==Icons */
 /* ----------------------------- */
 
 /* FONT :: ICONS EDUKERA */
 @font-face {
-    font-family: 'icons-edukera'; 
+    font-family: 'icons-edukera';
     src: url('../fonts/iconsedukera/icons-edukera-webfont.eot');
     src: url('../fonts/iconsedukera/icons-edukera-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/iconsedukera/icons-edukera-webfont.woff') format('woff'),
          url('../fonts/iconsedukera/icons-edukera-webfont.ttf') format('truetype'),
          url('../fonts/iconsedukera/icons-edukera-webfont.svg#webfontregular') format('svg');
-	font-weight: normal; 
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -404,8 +404,8 @@ noscript div{
 .menu .item{
 	display: inline-block;
 	margin-right: 50px;
-	-moz-transition: color 0.15s linear; 
-	-webkit-transition: color 0.15s linear; 
+	-moz-transition: color 0.15s linear;
+	-webkit-transition: color 0.15s linear;
 			transition: color 0.15s linear
 }
 .menu .item.blue{
@@ -511,13 +511,13 @@ noscript div{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 		    border-radius: 10px;
-			
+
 }
 /*connect :: header */
-#connect-header{	
+#connect-header{
 	font-family: 'droidsans', sans-serif;
 	font-weight: normal;
-	font-style: normal; 
+	font-style: normal;
 	font-size: 16px;
 	margin-bottom: 15px;
 	display: block;
@@ -533,14 +533,14 @@ noscript div{
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 		    border-radius: 7px;
-	font-family: 'droidsans-bold'; 
+	font-family: 'droidsans-bold';
 	background-color: rgba(68,95,118,1);
 	font-weight: normal;
-	font-style: normal; 
-	-moz-transition: background 0.15s linear; 
-	-webkit-transition: background 0.15s linear; 
+	font-style: normal;
+	-moz-transition: background 0.15s linear;
+	-webkit-transition: background 0.15s linear;
 			transition: background 0.15s linear
-}	
+}
 /*connect :: buttons icons */
 #connect .icon{
 	width: 30px;
@@ -611,15 +611,15 @@ noscript div{
 	display: inline-block;
 	padding: 8px 8px;
 	vertical-align: top;
-	-webkit-transition: all 0.15s linear; 
-	-moz-transition: all 0.15s linear; 
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
 			transition: all 0.15s linear
 }
 /*learnmore :: title */
 .learnmore .title{
 	font-family: 'droidsans', sans-serif;
 	font-weight: normal;
-	font-style: normal; 
+	font-style: normal;
 }
 /*learnmore :: wrapper left */
 .learnmore .left{
@@ -673,8 +673,8 @@ noscript div{
 	position: fixed;
 	bottom: 100px;
 	right: 0;
-	z-index: 100; 
-	margin-right: 15px;	
+	z-index: 100;
+	margin-right: 15px;
 	background: transparent;
 }
 #slider-nav .wrapper{
@@ -691,8 +691,8 @@ noscript div{
 	cursor: pointer;
 	text-shadow: 1px 1px 8px rgba(0,0,0,0.35);
 	background-color: transparent;
-	-moz-transition: color 0.15s linear; 
-	-webkit-transition: color 0.15s linear; 
+	-moz-transition: color 0.15s linear;
+	-webkit-transition: color 0.15s linear;
 			transition: color 0.15s linear
 }
 #slider-nav .webfont-icon:hover,
@@ -736,7 +736,7 @@ noscript div{
 	/*left:5.8%;*/
 	left:-20%;
 	line-height: 1.2em;
-	position: absolute;	
+	position: absolute;
 	text-shadow: 1px 1px 10px #333;
 	/*top: 35px;*/
 	top: -15px;
@@ -788,9 +788,8 @@ noscript div{
 
 /* slider :: tour de Pise */
 #slider article.custom-pise{
-	background-image:url('../img/slider/slidePise-bg.jpg');	
+	background-image:url('../img/slider/slidePise-bg.jpg');
 	background-position:center bottom;
-	bottom: 45px;
 }
 #slider article.custom-pise h1{
 	/*right: 10%;*/
@@ -829,8 +828,8 @@ noscript div{
 /* slider :: coquillage */
 #slider article.custom-shell{
 	background-image:url('../img/slider/slideShell-bg.jpg');
-	bottom: 35px;
 }
+
 #slider article.custom-shell h1{
 	right: 30%;
 	opacity:0;
@@ -883,20 +882,20 @@ noscript div{
 @media (max-height :1140px) {
 	/* slider tour de pise */
 	#slider article.custom-pise h1{
-		top: -40%;	
+		top: -40%;
 	}
 }
 @media (max-height :910px) {
 	/* slider tour de pise */
 	#slider article.custom-pise h1{
-		top: -22%;	
+		top: -22%;
 	}
 	#slider article.custom-pise .custom img:nth-child(1){
-		width: 195px;	
+		width: 195px;
 	}
 	#slider article.custom-pise .custom img:nth-child(2){
 		width: 235px;
-		margin-left: 125px;	
+		margin-left: 125px;
 	}
 	#slider article.custom-pise .custom img:nth-child(3){
 		width: 200px;
@@ -918,12 +917,12 @@ noscript div{
 	/* slider générique */
 	#slider .generic h1	{
 		font-size: 56px;
-		top: 35px;	
+		top: 35px;
 		line-height: 1.3em;
 	}
 	#slider.lang-fr .generic h1	{
 		font-size: 46px;
-		top: 35px;	
+		top: 35px;
 		line-height: 1.3em;
 	}
 	#slider .generic .learnmore{
@@ -985,11 +984,11 @@ noscript div{
 		font-size: 57px;
 	}
 	#slider article.custom-pise .custom img:nth-child(1){
-		width: 165px;	
+		width: 165px;
 	}
 	#slider article.custom-pise .custom img:nth-child(2){
 		width: 200px;
-		margin-left: 100px;	
+		margin-left: 100px;
 	}
 	#slider article.custom-pise .custom img:nth-child(3) {
 		width: 195px;
@@ -1001,21 +1000,21 @@ noscript div{
 @media (max-height :670px) {
 	/* slider tour de pise */
 	#slider article.custom-pise h1{
-		top: 5%;	
+		top: 5%;
 	}
 	#slider article.custom-pise .custom img:nth-child(1){
-		width: 155px;	
+		width: 155px;
 	}
 	#slider article.custom-pise .custom img:nth-child(2){
 		width: 190px;
-		margin-left: 90px;	
+		margin-left: 90px;
 	}
 	#slider article.custom-pise .custom img:nth-child(3) {
 		width: 185px;
 		margin-left: 0px;
 		top: 220px;
 	}
-	
+
 }
 
 @media (max-height : 630px) {
@@ -1035,11 +1034,11 @@ noscript div{
 	/* box de connexion */
 	#connect{
 		top: 0px;
-		margin-top: 220px;	
+		margin-top: 220px;
 	}
 	/* bouton learnmore */
 	.learnmore{
-		top: 355px;	
+		top: 355px;
 	}
 	/* titre langue française */
 	#slider.lang-fr .custom-shell h1,
@@ -1053,7 +1052,7 @@ noscript div{
 	}
 	#slider .generic h1{
 		font-size: 46px;
-		top: 40px;	
+		top: 40px;
 	}
 	#slider .generic .learnmore{
 		top: 340px;
@@ -1073,7 +1072,7 @@ noscript div{
 		margin-top: 0px !important;
 	}
 	#slider article.custom-shell .custom img:nth-child(2){
-		top: 54px !important;	
+		top: 54px !important;
 		width: 175px !important;
 		margin-left: 40px !important;
 		margin-top: 0px !important;
@@ -1121,14 +1120,14 @@ noscript div{
 /* ----------------------------- */
 
 @media (max-width : 1224px ) {
-	
+
 	#slider.lang-fr .custom-pise h1{
 		font-size: 60px;
-	}	
+	}
 	/* slider générique */
 	#slider.lang-fr .generic h1{
 		font-size: 45px;
-		top: 35px;	
+		top: 35px;
 		line-height: 1.3em;
 	}
 	/* box de connexion */
@@ -1199,7 +1198,7 @@ noscript div{
 	body {
 		/*overflow: visible;
 		overflow-x: hidden;*/
-	}	
+	}
 }
 
 
