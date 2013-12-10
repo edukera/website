@@ -103,7 +103,7 @@ function f_sizeCalcul(index){
 	viewY = ($(window).innerHeight())-140;
 	viewX = $(window).innerWidth();
 	if((viewY+140)<=630){
-		deplacement = etat*(-490);
+		deplacement = etat*(-435);
 	}else{
 		deplacement = etat*(-viewY);
 	}
@@ -122,7 +122,7 @@ function f_size(index){
 	
 	if((viewY+140)<=630){
 		$("#slider").css("height","540px");
-		$("#slider article").css("height","490px");
+		$("#slider article").css("height","435px");
 		$("#slider article > div").css("top","35px");
 		$("#slider article.custom-pise > div").css("top","55px");
 	}
