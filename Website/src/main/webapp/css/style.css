@@ -592,6 +592,7 @@ noscript div{
 /* ----------------------------- */
 
 /*learnmore :: structure */
+
 .learnmore{
 	position: absolute;
 	height: 40px;
@@ -789,6 +790,7 @@ noscript div{
 #slider article.custom-pise{
 	background-image:url('../img/slider/slidePise-bg.jpg');	
 	background-position:center bottom;
+	bottom: 45px;
 }
 #slider article.custom-pise h1{
 	/*right: 10%;*/
@@ -827,6 +829,7 @@ noscript div{
 /* slider :: coquillage */
 #slider article.custom-shell{
 	background-image:url('../img/slider/slideShell-bg.jpg');
+	bottom: 35px;
 }
 #slider article.custom-shell h1{
 	right: 30%;
@@ -1026,8 +1029,8 @@ noscript div{
 	}
 	/* scrollbar */
 	body {
-		overflow: visible;
-		overflow-x: hidden;
+		/*overflow: visible;
+		overflow-x: hidden;*/
 	}
 	/* box de connexion */
 	#connect{
@@ -1053,15 +1056,15 @@ noscript div{
 		top: 40px;	
 	}
 	#slider .generic .learnmore{
-		top: 360px;
+		top: 340px;
 	}
 	/* slider coquillage */
 	#slider article.custom-shell h1{
-		top: 10px  !important;
+		top: 30px  !important;
 		font-size: 50px  !important;
 	}
 	#slider article.custom-shell .learnmore{
-		top: 380px !important;
+		top: 370px !important;
 	}
 	#slider article.custom-shell .custom img:nth-child(1){
 		top: 35px !important;
@@ -1090,9 +1093,9 @@ noscript div{
 	}
 	/* slider tour de pise */
 	#slider article.custom-pise h1{
-		top: 10px;
+		top: 20px;
 		font-size: 50px;
-		margin-top: -20px;
+		/*margin-top: -20px;*/
 	}
 	#slider article.custom-pise .custom img:nth-child(1){
 		bottom: 65px;
@@ -1110,8 +1113,7 @@ noscript div{
 	}
 	#slider article.custom-pise .learnmore {
 		top: 360px;
-	}	
-	
+	}
 }
 
 /* ----------------------------- */
@@ -1195,8 +1197,8 @@ noscript div{
 @media (max-width : 1024px) {
 	/* body scrollbar */
 	body {
-		overflow: visible;
-		overflow-x: hidden;
+		/*overflow: visible;
+		overflow-x: hidden;*/
 	}	
 }
 
