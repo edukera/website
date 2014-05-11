@@ -93,6 +93,111 @@ body {
 .trans-all100   { -moz-transition: all  1.00s linear;  -webkit-transition: all  1.00s linear;  transition: all  1.00s linear;}
 .trans-all500   { -moz-transition: all  5.00s linear;  -webkit-transition: all  5.00s linear;  transition: all  5.00s linear;}
 .trans-all1000  { -moz-transition: all 10.00s linear;  -webkit-transition: all 10.00s linear;  transition: all 10.00s linear;}
+/* ----------------------------- */
+/* ==Fonts */
+/* ----------------------------- */
+
+
+/* FONT :: ICONS EDUKERA */
+@font-face {
+    font-family: 'icons-edukera';
+    src: url('./style/fonts/iconsedukera/icons-edukera-webfont.eot');
+    src: url('./style/fonts/iconsedukera/icons-edukera-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/iconsedukera/icons-edukera-webfont.woff') format('woff'),
+         url('./style/fonts/iconsedukera/icons-edukera-webfont.ttf') format('truetype'),
+         url('./style/fonts/iconsedukera/icons-edukera-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style:  normal;
+}
+
+/* FONT :: DROID SANS */
+@font-face {
+    font-family: 'droidsans';
+    src: url('./style/fonts/droidsans/droidsans-webfont.eot');
+    src: url('./style/fonts/droidsans/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/droidsans/droidsans-webfont.woff') format('woff'),
+         url('./style/fonts/droidsans/droidsans-webfont.ttf') format('truetype'),
+         url('./style/fonts/droidsans/droidsans-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style:  normal;
+}
+
+/* FONT :: DROID SANS BOLD */
+@font-face {
+    font-family: 'droidsans-bold';
+    src: url('./style/fonts/droidsans/droidsans-bold-webfont.eot');
+    src: url('./style/fonts/droidsans/droidsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/droidsans/droidsans-bold-webfont.woff') format('woff'),
+         url('./style/fonts/droidsans/droidsans-bold-webfont.ttf') format('truetype'),
+         url('./style/fonts/droidsans/droidsans-bold-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style:  normal;
+}
+
+/* FONT :: GEOMETRIC SLAB SERFB MEDIUM ITALIC */
+@font-face {
+    font-family: 'geoslb712_md_btmedium_italic';
+    src: url('./style/fonts/geometricslabserif/geometricslabserif-medium-italic-webfont-webfont.eot');
+    src: url('./style/fonts/geometricslabserif/geometricslabserif-medium-italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/geometricslabserif/geometricslabserif-medium-italic-webfont-webfont.woff') format('woff'),
+         url('./style/fonts/geometricslabserif/geometricslabserif-medium-italic-webfont-webfont.ttf') format('truetype'),
+         url('./style/fonts/geometricslabserif/geometricslabserif-medium-italic-webfont-webfont.svg#geoslb712_md_btmedium_italic') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+/* FONT :: GEOMETRIC SLAB SERFB MEDIUM */
+@font-face {
+    font-family: 'geoslb712_md_btmedium';
+    src: url('./style/fonts/geometricslabserif/geometricslabserif-medium-webfont-webfont.eot');
+    src: url('./style/fonts/geometricslabserif/geometricslabserif-medium-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/geometricslabserif/geometricslabserif-medium-webfont-webfont.woff') format('woff'),
+         url('./style/fonts/geometricslabserif/geometricslabserif-medium-webfont-webfont.ttf') format('truetype'),
+         url('./style/fonts/geometricslabserif/geometricslabserif-medium-webfont-webfont.svg#geoslb712_md_btmedium') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'geoslab703_md_btbold';
+    src: url('./style/fonts/geometricslabserif/geometric_slabserif_703_bold_bt.eot');
+    src: url('./style/fonts/geometricslabserif/geometric_slabserif_703_bold_bt.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/geometricslabserif/geometric_slabserif_703_bold_bt.woff') format('woff'),
+         url('./style/fonts/geometricslabserif/geometric_slabserif_703_bold_bt.ttf') format('truetype'),
+         url('./style/fonts/geometricslabserif/geometric_slabserif_703_bold_bt.svg#geoslab703_md_btbold') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+/* FONT :: COVERED BY YOUR GRACE */
+@font-face {
+    font-family: 'covered_by_your_graceregular';
+    src: url('./style/fonts/coveredbyyourgrace/coveredbyyourgrace-webfont.eot');
+    src: url('./style/fonts/coveredbyyourgrace/coveredbyyourgrace-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/coveredbyyourgrace/coveredbyyourgrace-webfont.woff') format('woff'),
+         url('./style/fonts/coveredbyyourgrace/coveredbyyourgrace-webfont.ttf') format('truetype'),
+         url('./style/fonts/coveredbyyourgrace/coveredbyyourgrace-webfont.svg#covered_by_your_graceregular') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+/* FONT :: COVERED BY YOUR GRACE */
+@font-face {
+    font-family: 'logo';
+    src: url('./style/fonts/logo/23991A_0_0.eot');
+    src: url('./style/fonts/logo/23991A_0_0.eot?#iefix') format('embedded-opentype'),
+         url('./style/fonts/logo/23991A_0_0.woff') format('woff'),
+         url('./style/fonts/logo/23991A_0_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+[data-icon]:before { font-family: 'icons-edukera'; content: attr(data-icon); speak: none;}
+
+/* ----------------------------- */
+/* ==Website */
+/* ----------------------------- */
+
 
 .main {
 
@@ -137,4 +242,78 @@ body {
     -moz-box-shadow: 0px -1px 0px 0px rgba(101,101,101,1);
     -webkit-box-shadow: 0px -1px 0px 0px rgba(101,101,101,1);
     box-shadow: 0px -1px 0px 0px rgba(101,101,101,1);
+}
+
+.logo {
+    position: fixed;
+    top: 30%;
+    left: 20%;
+}
+
+.logo-wrapper {
+    display: block;
+    position: relative;
+}
+
+.logo-qedu {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+    font-size: 100px;
+    font-family: 'logo';
+}
+
+.logo-math {
+    position: relative;
+    display: inline-block;
+    color: rgba(0, 172, 231, 1);
+    text-shadow: 0 0 2px rgba(0, 172, 231, 0.8);
+    font-size: 100px;
+    font-family: 'logo';
+}
+
+.logo-logo-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(0, 172, 231, 1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+    box-shadow: 0 0 5px rgba(0, 172, 321, 0.8);
+}
+
+.logo-logo-content {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    font-size: 90px;
+    top: -7px;
+    left: -2px;
+}
+
+.logo-proposition {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.tagphrase {
+
+}
+
+.tagphrase-first {
+    color: white;
+    font-family: 'droidsans';
+    font-size: 25px;
+}
+
+.tagphrase-second {
+    color: white;
+    font-family: 'droidsans';
+    font-size: 25px;
 }

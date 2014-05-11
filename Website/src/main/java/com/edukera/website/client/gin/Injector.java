@@ -1,6 +1,8 @@
 package com.edukera.website.client.gin;
 
 
+import com.edukera.website.client.content.presenter.Logo;
+import com.edukera.website.client.content.presenter.TagPhrase;
 import com.edukera.website.client.generic.presenter.Tools;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
@@ -17,8 +19,12 @@ public interface Injector extends Ginjector {
 	EventBus getEventBus();	
 	Tools getTools();
 	
+	/* Main */
 	Main getMain();
 	Header getHeader();
 	Footer getFooter();
 
+	/* Content */
+	Logo getLogo();
+	TagPhrase getTagPhrase();
 }
