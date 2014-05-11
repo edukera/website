@@ -35,8 +35,18 @@ time, mark, audio, video {
 	user-select: none;
 }
 
+
 *:focus {
     outline: none;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+input {
+    background-color:transparent;
+    border: 0px solid;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -325,18 +335,20 @@ body {
 }
 
 .input-input {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'droidsans-bold';
+    font-size: 18px;
+    width: 500px;
+}
+
+.focus.input-input {
     color: white;
 }
 
 .input-button {
-    background: #2e2e2e;
-    background: -moz-linear-gradient(top, #2e2e2e 0%, #2e2e2e 54%, #1a1a1a 99%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e2e2e), color-stop(54%,#2e2e2e), color-stop(99%,#1a1a1a));
-    background: -webkit-linear-gradient(top, #2e2e2e 0%,#2e2e2e 54%,#1a1a1a 99%);
-    background: -o-linear-gradient(top, #2e2e2e 0%,#2e2e2e 54%,#1a1a1a 99%);
-    background: -ms-linear-gradient(top, #2e2e2e 0%,#2e2e2e 54%,#1a1a1a 99%);
-    background: linear-gradient(to bottom, #2e2e2e 0%,#2e2e2e 54%,#1a1a1a 99%);
-    font-family: 'droidsans';
+    background-color: #1a1a1a;
+    font-family: 'droidsans-bold';
     font-size: 16px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -344,4 +356,11 @@ body {
     cursor: pointer;
     color: white;
     text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    width: 125px;
+}
+
+.input-button:hover {
+    background-color: #2e2e2e;
 }
