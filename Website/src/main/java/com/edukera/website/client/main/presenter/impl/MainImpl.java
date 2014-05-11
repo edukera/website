@@ -1,6 +1,7 @@
 package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
+import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.generic.presenter.impl.BasePresenter;
 import com.edukera.website.client.main.presenter.Footer;
@@ -14,6 +15,7 @@ public class MainImpl extends BasePresenter<Main.Display> implements Main {
 	private final Header mHeader;
 	private final Footer mFooter;
 	private final Logo mLogo;
+	private final Input mInput;
 	
 	@Inject
 	public MainImpl(EventBus eventBus, Main.Display display) {
@@ -21,10 +23,12 @@ public class MainImpl extends BasePresenter<Main.Display> implements Main {
 		mHeader = EdukeraWebsite.ginjector.getHeader();
 		mFooter = EdukeraWebsite.ginjector.getFooter();
 		mLogo = EdukeraWebsite.ginjector.getLogo();
+		mInput = EdukeraWebsite.ginjector.getInput();
 		
 		display.add(mHeader.getDisplay().asWidget());
 		display.add(mFooter.getDisplay().asWidget());
 		display.add(mLogo.getDisplay().asWidget());
+		display.add(mInput.getDisplay().asWidget());
 	}
 	
 	@Override
@@ -33,6 +37,7 @@ public class MainImpl extends BasePresenter<Main.Display> implements Main {
 		mHeader.bind();
 		mFooter.bind();
 		mLogo.bind();
+		mInput.bind();
 	}
 	
 	

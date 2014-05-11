@@ -1,9 +1,12 @@
 package com.edukera.website.client.gin;
 
+import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.TagPhrase;
+import com.edukera.website.client.content.presenter.impl.InputImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
 import com.edukera.website.client.content.presenter.impl.TagPhraseImpl;
+import com.edukera.website.client.content.view.InputView;
 import com.edukera.website.client.content.view.LogoView;
 import com.edukera.website.client.content.view.TagPhraseView;
 import com.edukera.website.client.generic.presenter.Tools;
@@ -52,6 +55,9 @@ public class Module extends AbstractGinModule {
 
 		bind(TagPhrase.class).to(TagPhraseImpl.class);
 		bind(TagPhrase.Display.class).to(TagPhraseView.class);
+
+		bind(Input.class).to(InputImpl.class);
+		bind(Input.Display.class).to(InputView.class);
 
 	}
 }
