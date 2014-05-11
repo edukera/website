@@ -324,25 +324,28 @@ body {
 }
 
 .tagphrase {
-
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 5%;
 }
 
 .tagphrase-first {
     color: white;
     font-family: 'droidsans';
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .tagphrase-second {
     color: white;
     font-family: 'droidsans';
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .input {
-    position: fixed;
-    top: 40%;
-    left: 70%;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 700px;
+    width: 200px;
 }
 
 .input-input {

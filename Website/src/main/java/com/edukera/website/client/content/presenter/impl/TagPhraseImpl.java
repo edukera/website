@@ -10,8 +10,8 @@ public class TagPhraseImpl extends BasePresenter<TagPhrase.Display> implements T
 	@Inject
 	public TagPhraseImpl(EventBus eventBus, TagPhrase.Display display) {
 		super(eventBus, display);
-		display.setFirstText("entraînement au raisonnement");
-		display.setSecondText("mathématique par la pratique");
+		display.setFirstText("Entraînement au raisonnement");
+		display.setSecondText("mathématique par la pratique.");
 	}
 	
 	@Override
