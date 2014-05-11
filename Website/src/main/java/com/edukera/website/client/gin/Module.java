@@ -11,12 +11,15 @@ import com.edukera.website.client.content.view.LogoView;
 import com.edukera.website.client.content.view.TagPhraseView;
 import com.edukera.website.client.generic.presenter.Tools;
 import com.edukera.website.client.generic.presenter.impl.ToolsImpl;
+import com.edukera.website.client.main.presenter.Container;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
+import com.edukera.website.client.main.presenter.impl.ContainerImpl;
 import com.edukera.website.client.main.presenter.impl.FooterImpl;
 import com.edukera.website.client.main.presenter.impl.HeaderImpl;
 import com.edukera.website.client.main.presenter.impl.MainImpl;
+import com.edukera.website.client.main.view.ContainerView;
 import com.edukera.website.client.main.view.FooterView;
 import com.edukera.website.client.main.view.HeaderView;
 import com.edukera.website.client.main.view.MainView;
@@ -48,6 +51,10 @@ public class Module extends AbstractGinModule {
 		bind(Footer.class).to(FooterImpl.class);
 		bind(Footer.Display.class).to(FooterView.class);
 
+		bind(Container.class).to(ContainerImpl.class);
+		bind(Container.Display.class).to(ContainerView.class);
+		
+		
 		/* Content */
 		
 		bind(Logo.class).to(LogoImpl.class);

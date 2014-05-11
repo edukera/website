@@ -4,11 +4,16 @@ package com.edukera.website.client.resources;
 import com.google.gwt.resources.client.CssResource;
 public interface StyleCssResource extends CssResource {
   
+  String container();
+  
   String focus();
   
   String footer();
   
   String header();
+  
+  @ClassName("header-container")
+  String headerContainer();
   
   String input();
   

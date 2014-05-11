@@ -8,5 +8,6 @@ public abstract class ADivView extends AView<DivPanel> {
 	public ADivView() {
 		mRoot = new DivPanel();
 		initWidget(mRoot);
+		this.getElement().setAttribute("classe", this.getClass().getName());
 	}
 }

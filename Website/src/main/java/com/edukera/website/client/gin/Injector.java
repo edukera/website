@@ -5,6 +5,7 @@ import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.TagPhrase;
 import com.edukera.website.client.generic.presenter.Tools;
+import com.edukera.website.client.main.presenter.Container;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
@@ -24,6 +25,7 @@ public interface Injector extends Ginjector {
 	Main getMain();
 	Header getHeader();
 	Footer getFooter();
+	Container getContainer();
 
 	/* Content */
 	Logo getLogo();

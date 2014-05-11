@@ -4,7 +4,6 @@ import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.generic.view.ADivView;
 import com.edukera.website.client.generic.widget.DivPanel;
 import com.edukera.website.client.generic.widget.SpanPanel;
-import com.google.gwt.user.client.ui.Widget;
 
 public class LogoView extends ADivView implements Logo.Display {
 
@@ -13,7 +12,6 @@ public class LogoView extends ADivView implements Logo.Display {
 	private final SpanPanel mMath;
 	private final SpanPanel mLogoWrapper;
 	private final SpanPanel mLogoContent;
-	private final DivPanel mProposition;
 	
 	public LogoView() {
 		mRoot.addStyleName(STYLE.logo());
@@ -38,11 +36,6 @@ public class LogoView extends ADivView implements Logo.Display {
 		mLogoWrapper.add(mLogoContent);
 		mLogoContent.addStyleName(STYLE.logoLogoContent());
 		mLogoContent.getElement().setAttribute("data-icon", "j");
-		
-		mProposition = new DivPanel();
-		mRoot.add(mProposition);
-		mProposition.addStyleName(STYLE.logoProposition());
-		
 	}
 	
 	public void setQeduText(String iText) {
@@ -51,10 +44,6 @@ public class LogoView extends ADivView implements Logo.Display {
 	
 	public void setMathText(String iText) {
 		mMath.setText(iText);
-	}
-	
-	public void addProposition(Widget iWidget) {
-		mProposition.add(iWidget);
 	}
 	
 }
