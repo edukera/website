@@ -17,10 +17,10 @@ public class ContainerImpl extends BasePresenter<Container.Display> implements C
 	public ContainerImpl(EventBus eventBus, Container.Display display) {
 		super(eventBus, display);
 		mTagPhrase = EdukeraWebsite.ginjector.getTagPhrase();
-		display.add(mTagPhrase.getDisplay().asWidget());
+		display.addWrapper(mTagPhrase.getDisplay().asWidget());
 		
 		mInput = EdukeraWebsite.ginjector.getInput();
-		display.add(mInput.getDisplay().asWidget());
+		display.addWrapper(mInput.getDisplay().asWidget());
 	}
 	
 	@Override
