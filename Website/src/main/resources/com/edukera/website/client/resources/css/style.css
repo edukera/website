@@ -335,29 +335,11 @@ body {
     font-family: 'droidsans-bold';
     font-size: 18px;
     width: 500px;
+    margin-bottom: 20px;
 }
 
 .focus.input-input {
     color: white;
-}
-
-.input-button {
-    background-color: rgba(0, 172, 231, 0.8);
-    font-family: 'droidsans-bold';
-    font-size: 16px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: 15px;
-    width: 125px;
-}
-
-.input-button:hover {
-    background-color: rgba(0, 172, 231, 1);
 }
 
 .connection {
@@ -368,7 +350,10 @@ body {
     right: 40px;
 }
 
+.input-button,
 .connection-button {
+    position: relative;
+    display: inline-block;
     background-color: rgba(0, 172, 231, 0.8);
     cursor: pointer;
     -webkit-border-radius: 3px;
@@ -376,10 +361,15 @@ body {
     border-radius: 3px;
 }
 
+.input-button:hover,
 .connection-button:hover {
     background-color: rgba(0, 172, 231, 1);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
+.input-button-content,
 .connection-button-content {
     display: block;
     position: relative;

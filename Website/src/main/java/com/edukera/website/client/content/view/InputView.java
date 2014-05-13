@@ -11,6 +11,7 @@ public class InputView extends ADivView implements Input.Display {
 
 	private final TextBox mInput;
 	private final DivPanel mButton;
+	private final DivPanel mButtonContent;
 	
 	public InputView() {
 		mRoot.addStyleName(STYLE.input());
@@ -23,6 +24,10 @@ public class InputView extends ADivView implements Input.Display {
 		mRoot.add(mButton);
 		mButton.addStyleName(STYLE.inputButton());
 		mButton.addStyleName(STYLE.transAll());
+		
+		mButtonContent = new DivPanel();
+		mButton.add(mButtonContent);
+		mButtonContent.addStyleName(STYLE.inputButtonContent());
 	}
 	
 	public HasFocusHandlers getHasFocusHandlers() {
@@ -38,7 +43,7 @@ public class InputView extends ADivView implements Input.Display {
 	}
 
 	public void setButtonText(String iText) {
-		mButton.setText(iText);
+		mButtonContent.setText(iText);
 	}
 
 	@Override

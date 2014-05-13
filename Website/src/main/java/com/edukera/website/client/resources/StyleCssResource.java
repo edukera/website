@@ -34,6 +34,9 @@ public interface StyleCssResource extends CssResource {
   @ClassName("input-button")
   String inputButton();
   
+  @ClassName("input-button-content")
+  String inputButtonContent();
+  
   @ClassName("input-input")
   String inputInput();
   
