@@ -17,7 +17,7 @@ public class ContainerView extends ADivView implements Container.Display {
 		mImg = new ImgPanel();
 		mRoot.add(mImg);
 		mImg.addStyleName(STYLE.containerImg());
-		mImg.getElement().setAttribute("src", "../style/img/sky_big_low.jpg");
+		mImg.getElement().setAttribute("src", "../style/img/sky.jpg");
 		
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);
