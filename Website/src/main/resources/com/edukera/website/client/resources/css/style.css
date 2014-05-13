@@ -232,7 +232,14 @@ body {
 .container {
     width: 100%;
     height: 500px;
-    background:url(../style/img/blackboard.jpg) repeat;
+/*    background:url(../style/img/sky_big_low.jpg) no-repeat center;*/
+    overflow: hidden;
+}
+
+.container-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 }
 
 .container-wrapper {
@@ -310,13 +317,13 @@ body {
 .tagphrase-second {
     color: white;
     font-family: 'logo';
-    font-size: 35px;
-    text-shadow: 0 1px 1px #1d1d1d;
+    font-size: 55px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
 }
 
 .input {
     position: absolute;
-    margin-top: 70px;
+    margin-top: 386px;
     margin-left: 700px;
     width: 200px;
 }

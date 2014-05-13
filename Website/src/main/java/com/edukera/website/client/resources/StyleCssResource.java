@@ -14,6 +14,9 @@ public interface StyleCssResource extends CssResource {
   
   String container();
   
+  @ClassName("container-img")
+  String containerImg();
+  
   @ClassName("container-wrapper")
   String containerWrapper();
   
