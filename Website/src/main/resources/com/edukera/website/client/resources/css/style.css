@@ -215,6 +215,8 @@ body {
 
 .header,
 .footer {
+    display: block;
+    position: relative;
     min-width: 1024px;
     width: 100%;
     height: 70px;
@@ -251,7 +253,7 @@ body {
     position: relative;
     margin-left: 20px;
     padding-top: 10px;
-    top: 10px;
+    top: 5px;
 }
 
 .logo-wrapper {
@@ -308,8 +310,8 @@ body {
 
 .tagphrase {
     position: absolute;
-    margin-top: 70px;
-    margin-left: 5%;
+    margin-top: 140px;
+    margin-left: 125px;
 }
 
 .tagphrase-first,
@@ -340,7 +342,7 @@ body {
 }
 
 .input-button {
-    background-color: #1a1a1a;
+    background-color: rgba(0, 172, 231, 0.8);
     font-family: 'droidsans-bold';
     font-size: 16px;
     -webkit-border-radius: 5px;
@@ -355,7 +357,7 @@ body {
 }
 
 .input-button:hover {
-    background-color: #101010;
+    background-color: rgba(0, 172, 231, 1);
 }
 
 .connection {
