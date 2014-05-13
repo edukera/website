@@ -351,3 +351,33 @@ body {
 .input-button:hover {
     background-color: #101010;
 }
+
+.connection {
+    display: inline-block;
+    position: relative;
+    float: right;
+    top: -36px;
+    right: 40px;
+}
+
+.connection-button {
+    background-color: rgba(0, 172, 231, 0.8);
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.connection-button:hover {
+    background-color: rgba(0, 172, 231, 1);
+}
+
+.connection-button-content {
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    font-family: 'droidsans-bold';
+
+}

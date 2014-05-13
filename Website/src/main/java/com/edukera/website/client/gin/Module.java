@@ -1,11 +1,14 @@
 package com.edukera.website.client.gin;
 
+import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.TagPhrase;
+import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
 import com.edukera.website.client.content.presenter.impl.InputImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
 import com.edukera.website.client.content.presenter.impl.TagPhraseImpl;
+import com.edukera.website.client.content.view.ConnectionView;
 import com.edukera.website.client.content.view.InputView;
 import com.edukera.website.client.content.view.LogoView;
 import com.edukera.website.client.content.view.TagPhraseView;
@@ -54,7 +57,6 @@ public class Module extends AbstractGinModule {
 		bind(Container.class).to(ContainerImpl.class);
 		bind(Container.Display.class).to(ContainerView.class);
 		
-		
 		/* Content */
 		
 		bind(Logo.class).to(LogoImpl.class);
@@ -65,6 +67,9 @@ public class Module extends AbstractGinModule {
 
 		bind(Input.class).to(InputImpl.class);
 		bind(Input.Display.class).to(InputView.class);
+
+		bind(Connection.class).to(ConnectionImpl.class);
+		bind(Connection.Display.class).to(ConnectionView.class);
 
 	}
 }
