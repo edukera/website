@@ -245,6 +245,7 @@ body {
     position: relative;
     margin-left: 20px;
     padding-top: 10px;
+    top: 10px;
 }
 
 .logo-wrapper {
@@ -257,7 +258,7 @@ body {
     display: inline-block;
     color: rgba(255, 255, 255, 1);
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'logo';
 }
 
@@ -266,15 +267,15 @@ body {
     display: inline-block;
     color: rgba(0, 172, 231, 1);
     text-shadow: 0 0 2px rgba(0, 172, 231, 0.8);
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'logo';
 }
 
 .logo-logo-wrapper {
     position: relative;
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     background-color: rgba(0, 172, 231, 1);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -289,8 +290,8 @@ body {
     display: inline-block;
     color: rgba(255, 255, 255, 1);
     font-size: 45px;
-    top: -3px;
-    left: -1px;
+    top: -6px;
+    left: -3px;
 }
 
 .logo-proposition {
