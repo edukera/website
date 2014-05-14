@@ -11,4 +11,6 @@ public interface ValueProposition extends Presenter<ValueProposition.Display> {
 		void setFirstLineText(String iText);
 		void setSecondLineText(String iText);
 	}
+	
+	void draw();
 }

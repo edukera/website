@@ -26,6 +26,8 @@ public class ContainerImpl extends BasePresenter<Container.Display> implements C
 		
 		mInput = EdukeraWebsite.ginjector.getInput();
 		display.addWrapper(mInput.getDisplay().asWidget());
+		
+		mValueProposition.draw();
 	}
 	
 	@Override
