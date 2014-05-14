@@ -17,18 +17,18 @@ import com.edukera.website.client.content.view.SoonView;
 import com.edukera.website.client.content.view.ValuePropositionView;
 import com.edukera.website.client.generic.presenter.Tools;
 import com.edukera.website.client.generic.presenter.impl.ToolsImpl;
-import com.edukera.website.client.main.presenter.Container;
-import com.edukera.website.client.main.presenter.Container2;
+import com.edukera.website.client.main.presenter.ContainerSky;
+import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
-import com.edukera.website.client.main.presenter.impl.Container2Impl;
-import com.edukera.website.client.main.presenter.impl.ContainerImpl;
+import com.edukera.website.client.main.presenter.impl.ContainerFeatureImpl;
+import com.edukera.website.client.main.presenter.impl.ContainerSkyImpl;
 import com.edukera.website.client.main.presenter.impl.FooterImpl;
 import com.edukera.website.client.main.presenter.impl.HeaderImpl;
 import com.edukera.website.client.main.presenter.impl.MainImpl;
-import com.edukera.website.client.main.view.Container2View;
-import com.edukera.website.client.main.view.ContainerView;
+import com.edukera.website.client.main.view.ContainerFeatureView;
+import com.edukera.website.client.main.view.ContainerSkyView;
 import com.edukera.website.client.main.view.FooterView;
 import com.edukera.website.client.main.view.HeaderView;
 import com.edukera.website.client.main.view.MainView;
@@ -60,11 +60,11 @@ public class Module extends AbstractGinModule {
 		bind(Footer.class).to(FooterImpl.class);
 		bind(Footer.Display.class).to(FooterView.class);
 
-		bind(Container.class).to(ContainerImpl.class);
-		bind(Container.Display.class).to(ContainerView.class);
+		bind(ContainerSky.class).to(ContainerSkyImpl.class);
+		bind(ContainerSky.Display.class).to(ContainerSkyView.class);
 		
-		bind(Container2.class).to(Container2Impl.class);
-		bind(Container2.Display.class).to(Container2View.class);
+		bind(ContainerFeature.class).to(ContainerFeatureImpl.class);
+		bind(ContainerFeature.Display.class).to(ContainerFeatureView.class);
 		
 		/* Content */
 		

@@ -1,14 +1,14 @@
 package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
-import com.edukera.website.client.main.presenter.Container2;
+import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-public class Container2Impl extends ADrawImpl<Container2.Display> implements Container2 {
+public class ContainerFeatureImpl extends ADrawImpl<ContainerFeature.Display> implements ContainerFeature {
 
 	@Inject
-	public Container2Impl(EventBus eventBus, Container2.Display display) {
+	public ContainerFeatureImpl(EventBus eventBus, ContainerFeature.Display display) {
 		super(eventBus, display);
 	}
 	

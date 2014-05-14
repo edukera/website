@@ -5,18 +5,18 @@ import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
-import com.edukera.website.client.main.presenter.Container;
+import com.edukera.website.client.main.presenter.ContainerSky;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-public class ContainerImpl extends ADrawImpl<Container.Display> implements Container {
+public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements ContainerSky {
 
 	private final ValueProposition mValueProposition;
 	private final Soon mSoon;
 	private final Input mInput;
 	
 	@Inject
-	public ContainerImpl(EventBus eventBus, Container.Display display) {
+	public ContainerSkyImpl(EventBus eventBus, ContainerSky.Display display) {
 		super(eventBus, display);
 		mValueProposition = EdukeraWebsite.ginjector.getValueProposition();
 		display.addWrapper(mValueProposition.getDisplay().asWidget());
