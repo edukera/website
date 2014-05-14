@@ -379,3 +379,35 @@ body {
     font-family: 'droidsans-bold';
 
 }
+
+.value-proposition {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 125px;
+}
+
+.value-proposition-title {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'logo';
+    font-size: 55px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+}
+
+.value-proposition-container {
+    display: block;
+    position: relative;
+
+}
+
+.value-proposition-firstline,
+.value-proposition-secondline {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'logo';
+    font-size: 24px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+
+}

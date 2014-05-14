@@ -87,5 +87,20 @@ public interface StyleCssResource extends CssResource {
   
   @ClassName("trans-all60")
   String transAll60();
+  
+  @ClassName("value-proposition")
+  String valueProposition();
+  
+  @ClassName("value-proposition-container")
+  String valuePropositionContainer();
+  
+  @ClassName("value-proposition-firstline")
+  String valuePropositionFirstline();
+  
+  @ClassName("value-proposition-secondline")
+  String valuePropositionSecondline();
+  
+  @ClassName("value-proposition-title")
+  String valuePropositionTitle();
 }
 
