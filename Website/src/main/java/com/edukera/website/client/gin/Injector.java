@@ -9,6 +9,7 @@ import com.edukera.website.client.content.presenter.TagPhrase;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.generic.presenter.Tools;
 import com.edukera.website.client.main.presenter.Container;
+import com.edukera.website.client.main.presenter.Container2;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
@@ -29,6 +30,7 @@ public interface Injector extends Ginjector {
 	Header getHeader();
 	Footer getFooter();
 	Container getContainer();
+	Container2 getContainer2();
 
 	/* Content */
 	Logo getLogo();

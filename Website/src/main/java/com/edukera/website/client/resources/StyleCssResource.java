@@ -20,6 +20,11 @@ public interface StyleCssResource extends CssResource {
   @ClassName("container-wrapper")
   String containerWrapper();
   
+  String container2();
+  
+  @ClassName("container2-wrapper")
+  String container2Wrapper();
+  
   String focus();
   
   String footer();
