@@ -1,12 +1,11 @@
 package com.edukera.website.client.main.presenter;
 
-import com.edukera.website.client.generic.presenter.Presenter;
-import com.edukera.website.client.generic.view.ADisplay;
+import com.edukera.website.client.generic.presenter.ADraw;
 
 
-public interface Footer extends Presenter<Footer.Display> {
+public interface Footer extends ADraw<Footer.Display> {
 
-	interface Display extends ADisplay {
+	interface Display extends ADraw.Display {
 
 	}
 }

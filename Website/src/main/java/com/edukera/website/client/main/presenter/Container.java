@@ -1,13 +1,12 @@
 package com.edukera.website.client.main.presenter;
 
-import com.edukera.website.client.generic.presenter.Presenter;
-import com.edukera.website.client.generic.view.ADisplay;
+import com.edukera.website.client.generic.presenter.ADraw;
 import com.google.gwt.user.client.ui.Widget;
 
 
-public interface Container extends Presenter<Container.Display> {
+public interface Container extends ADraw<Container.Display> {
 
-	interface Display extends ADisplay {
+	interface Display extends ADraw.Display {
 		void addWrapper(Widget iWidget);
 	}
 }

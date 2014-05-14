@@ -24,6 +24,8 @@ public class EdukeraWebsite implements EntryPoint {
 		Main lMain = ginjector.getMain();
 		lMain.bind();
 		RootPanel.get().add(lMain.getDisplay().asWidget());
+		
+		lMain.draw();
 	}
 	
 	

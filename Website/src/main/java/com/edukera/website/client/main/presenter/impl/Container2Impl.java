@@ -1,11 +1,11 @@
 package com.edukera.website.client.main.presenter.impl;
 
-import com.edukera.website.client.generic.presenter.impl.BasePresenter;
+import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.Container2;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-public class Container2Impl extends BasePresenter<Container2.Display> implements Container2 {
+public class Container2Impl extends ADrawImpl<Container2.Display> implements Container2 {
 
 	@Inject
 	public Container2Impl(EventBus eventBus, Container2.Display display) {
@@ -15,6 +15,11 @@ public class Container2Impl extends BasePresenter<Container2.Display> implements
 	@Override
 	public void bind() {
 		super.bind();
+	}
+
+	@Override
+	public void draw() {
+		
 	}
 	
 	

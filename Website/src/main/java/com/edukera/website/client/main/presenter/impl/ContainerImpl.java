@@ -4,12 +4,12 @@ import com.edukera.website.client.EdukeraWebsite;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
-import com.edukera.website.client.generic.presenter.impl.BasePresenter;
+import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.Container;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-public class ContainerImpl extends BasePresenter<Container.Display> implements Container {
+public class ContainerImpl extends ADrawImpl<Container.Display> implements Container {
 
 	private final ValueProposition mValueProposition;
 	private final Soon mSoon;
@@ -27,7 +27,6 @@ public class ContainerImpl extends BasePresenter<Container.Display> implements C
 		mInput = EdukeraWebsite.ginjector.getInput();
 		display.addWrapper(mInput.getDisplay().asWidget());
 		
-		mValueProposition.draw();
 	}
 	
 	@Override
@@ -37,6 +36,12 @@ public class ContainerImpl extends BasePresenter<Container.Display> implements C
 		mSoon.bind();
 		mInput.bind();
 	}
-	
+
+	@Override
+	public void draw() {
+		mValueProposition.draw();
+		mSoon.draw();
+		mInput.draw();
+	}
 	
 }

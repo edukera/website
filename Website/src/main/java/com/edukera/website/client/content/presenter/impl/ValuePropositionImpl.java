@@ -12,9 +12,6 @@ public class ValuePropositionImpl extends BasePresenter<ValueProposition.Display
 	@Inject
 	public ValuePropositionImpl(EventBus eventBus, ValueProposition.Display display) {
 		super(eventBus, display);
-		
-		display.setFirstLineText("grâce à la première application simple et ludique");
-		display.setSecondLineText("de conception de démonstration");
 	}
 	
 	@Override
@@ -26,6 +23,11 @@ public class ValuePropositionImpl extends BasePresenter<ValueProposition.Display
 		String lTitle = DataResources.getInstance().getContent(WebsiteKeys.VALUEPROPOSITIONTITLE);
 		display.setTitleText(lTitle);
 		
+		String lFirstLine = DataResources.getInstance().getContent(WebsiteKeys.VALUEPROPOSITIONFIRSTLINE);
+		display.setFirstLineText(lFirstLine);
+
+		String lSecondLine = DataResources.getInstance().getContent(WebsiteKeys.VALUEPROPOSITIONSECONDLINE);
+		display.setSecondLineText(lSecondLine);
 	}
 	
 	

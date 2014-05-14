@@ -12,11 +12,17 @@ public class LogoImpl extends BasePresenter<Logo.Display> implements Logo {
 		super(eventBus, display);
 		display.setQeduText("Qedu");
 		display.setMathText("math");
+
 	}
 	
 	@Override
 	public void bind() {
 		super.bind();
+	}
+
+	@Override
+	public void draw() {
+		
 	}
 	
 	

@@ -1,7 +1,7 @@
 package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
-import com.edukera.website.client.generic.presenter.impl.BasePresenter;
+import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.Container;
 import com.edukera.website.client.main.presenter.Container2;
 import com.edukera.website.client.main.presenter.Header;
@@ -9,7 +9,7 @@ import com.edukera.website.client.main.presenter.Main;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-public class MainImpl extends BasePresenter<Main.Display> implements Main {
+public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
 	private final Header mHeader;
 	private final Container mContainer;
@@ -32,6 +32,12 @@ public class MainImpl extends BasePresenter<Main.Display> implements Main {
 		super.bind();
 		mHeader.bind();
 		mContainer.bind();
+	}
+
+	@Override
+	public void draw() {
+		mHeader.draw();
+		mContainer.draw();
 	}
 	
 	
