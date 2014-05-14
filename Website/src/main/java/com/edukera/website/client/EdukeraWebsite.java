@@ -19,7 +19,7 @@ public class EdukeraWebsite implements EntryPoint {
 	public void onModuleLoad() {
 		loadStyles();
 		
-		DataResources.getInstance().switchLanguage(Language.fr);
+		DataResources.getInstance().switchLanguage(Language.en);
 		
 		Main lMain = ginjector.getMain();
 		lMain.bind();
