@@ -411,3 +411,21 @@ body {
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
 
 }
+
+.soon {
+    position: absolute;
+    margin-top: 387px;
+    margin-left: 280px;
+}
+
+.soon-firstline,
+.soon-secondline {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'logo';
+    font-size: 24px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+
+}
+

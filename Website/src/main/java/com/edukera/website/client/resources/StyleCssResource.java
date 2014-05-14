@@ -62,6 +62,14 @@ public interface StyleCssResource extends CssResource {
   
   String main();
   
+  String soon();
+  
+  @ClassName("soon-firstline")
+  String soonFirstline();
+  
+  @ClassName("soon-secondline")
+  String soonSecondline();
+  
   String tagphrase();
   
   @ClassName("tagphrase-first")

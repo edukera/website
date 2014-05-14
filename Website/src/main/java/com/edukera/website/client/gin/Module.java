@@ -3,16 +3,19 @@ package com.edukera.website.client.gin;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
+import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.TagPhrase;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
 import com.edukera.website.client.content.presenter.impl.InputImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
+import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.TagPhraseImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
 import com.edukera.website.client.content.view.ConnectionView;
 import com.edukera.website.client.content.view.InputView;
 import com.edukera.website.client.content.view.LogoView;
+import com.edukera.website.client.content.view.SoonView;
 import com.edukera.website.client.content.view.TagPhraseView;
 import com.edukera.website.client.content.view.ValuePropositionView;
 import com.edukera.website.client.generic.presenter.Tools;
@@ -76,5 +79,8 @@ public class Module extends AbstractGinModule {
 
 		bind(ValueProposition.class).to(ValuePropositionImpl.class);
 		bind(ValueProposition.Display.class).to(ValuePropositionView.class);
+		
+		bind(Soon.class).to(SoonImpl.class);
+		bind(Soon.Display.class).to(SoonView.class);
 	}
 }
