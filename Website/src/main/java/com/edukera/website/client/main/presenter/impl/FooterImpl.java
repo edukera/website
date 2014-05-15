@@ -4,6 +4,7 @@ import com.edukera.website.client.EdukeraWebsite;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.Footer;
+import com.google.gwt.user.client.Window;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
@@ -27,6 +28,11 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 
 	@Override
 	public void draw() {
+		int lHeight = Window.getClientHeight() - 425;
+		if (lHeight < 200) {
+			lHeight = 200;
+		}
+		display.setHeight(lHeight);
 		mButtonLanguage.draw();
 	}
 	

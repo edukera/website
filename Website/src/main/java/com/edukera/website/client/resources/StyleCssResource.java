@@ -4,6 +4,11 @@ package com.edukera.website.client.resources;
 import com.google.gwt.resources.client.CssResource;
 public interface StyleCssResource extends CssResource {
   
+  String about();
+  
+  @ClassName("about-content")
+  String aboutContent();
+  
   @ClassName("button-language")
   String buttonLanguage();
   
@@ -105,6 +110,11 @@ public interface StyleCssResource extends CssResource {
   String logoWrapper();
   
   String main();
+  
+  String product();
+  
+  @ClassName("product-content")
+  String productContent();
   
   String quote();
   

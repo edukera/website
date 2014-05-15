@@ -3,7 +3,9 @@ package com.edukera.website.client.main.presenter.impl;
 import com.edukera.website.client.EdukeraWebsite;
 import com.edukera.website.client.data.DataResources;
 import com.edukera.website.client.data.Language;
+import com.edukera.website.client.generic.presenter.ADraw;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
+import com.edukera.website.client.generic.tools.Scroller;
 import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
 import com.edukera.website.client.main.presenter.ContainerSky;
@@ -69,6 +71,23 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
 	public void setLanguage(Language iLanguage) {
 		this.mLanguage = iLanguage;
+	}
+
+	@Override
+	public void scrollProduct() {
+		scroll(mContainerFeature);
+	}
+
+	@Override
+	public void scrollAbout() {
+		scroll(mContainerHilbert);
+	}
+	
+	private void scroll(ADraw<?> iComponent) {
+		int lBegin = display.getElement().getScrollTop();
+		int lValue = iComponent.getDisplay().getElement().getAbsoluteTop();
+		Scroller lScroller = new Scroller(display, lBegin, lValue);
+		lScroller.run(300);
 	}
 	
 }

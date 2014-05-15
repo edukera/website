@@ -1,24 +1,30 @@
 package com.edukera.website.client.gin;
 
+import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
+import com.edukera.website.client.content.presenter.Product;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
+import com.edukera.website.client.content.presenter.impl.AboutImpl;
 import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
 import com.edukera.website.client.content.presenter.impl.FeatureImpl;
 import com.edukera.website.client.content.presenter.impl.InputImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
+import com.edukera.website.client.content.presenter.impl.ProductImpl;
 import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
+import com.edukera.website.client.content.view.AboutView;
 import com.edukera.website.client.content.view.ButtonLanguageView;
 import com.edukera.website.client.content.view.ConnectionView;
 import com.edukera.website.client.content.view.FeatureView;
 import com.edukera.website.client.content.view.InputView;
 import com.edukera.website.client.content.view.LogoView;
+import com.edukera.website.client.content.view.ProductView;
 import com.edukera.website.client.content.view.SoonView;
 import com.edukera.website.client.content.view.ValuePropositionView;
 import com.edukera.website.client.generic.presenter.Tools;
@@ -100,5 +106,11 @@ public class Module extends AbstractGinModule {
 		
 		bind(ButtonLanguage.class).to(ButtonLanguageImpl.class);
 		bind(ButtonLanguage.Display.class).to(ButtonLanguageView.class);
+		
+		bind(About.class).to(AboutImpl.class);
+		bind(About.Display.class).to(AboutView.class);
+		
+		bind(Product.class).to(ProductImpl.class);
+		bind(Product.Display.class).to(ProductView.class);
 	}
 }
