@@ -32,6 +32,17 @@ public interface StyleCssResource extends CssResource {
   @ClassName("container-wrapper")
   String containerWrapper();
   
+  String feature();
+  
+  @ClassName("feature-calculus")
+  String featureCalculus();
+  
+  @ClassName("feature-reasoning")
+  String featureReasoning();
+  
+  @ClassName("feature-writing")
+  String featureWriting();
+  
   String focus();
   
   String footer();

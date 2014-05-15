@@ -442,7 +442,7 @@ body {
 .container-feature-wrapper {
     width: 1024px;
     margin: 0 auto;
-    height: 300px;
+    height: 500px;
     background-color: rgba(0, 172, 231, 0.04);
 }
 
@@ -472,4 +472,39 @@ body {
     width: 512px;
     top: 50px;
     left: 50px;
+}
+
+
+.feature {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 1px;
+}
+
+.feature-reasoning {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 250px;
+    left: 400px;
+}
+
+.feature-calculus {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 125px;
+    top: 150px;
+    left: 10px;
+
+}
+
+.feature-writing {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 125px;
+    top: 150px;
+    left: 300px;
 }

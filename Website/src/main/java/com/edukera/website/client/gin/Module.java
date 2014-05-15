@@ -1,16 +1,19 @@
 package com.edukera.website.client.gin;
 
 import com.edukera.website.client.content.presenter.Connection;
+import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
+import com.edukera.website.client.content.presenter.impl.FeatureImpl;
 import com.edukera.website.client.content.presenter.impl.InputImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
 import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
 import com.edukera.website.client.content.view.ConnectionView;
+import com.edukera.website.client.content.view.FeatureView;
 import com.edukera.website.client.content.view.InputView;
 import com.edukera.website.client.content.view.LogoView;
 import com.edukera.website.client.content.view.SoonView;
@@ -88,5 +91,8 @@ public class Module extends AbstractGinModule {
 		
 		bind(Soon.class).to(SoonImpl.class);
 		bind(Soon.Display.class).to(SoonView.class);
+		
+		bind(Feature.class).to(FeatureImpl.class);
+		bind(Feature.Display.class).to(FeatureView.class);
 	}
 }
