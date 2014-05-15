@@ -9,9 +9,11 @@ public class ContainerHilbertView extends ADivView implements ContainerHilbert.D
 
 	private final DivPanel mWrapper;
 	private final DivPanel mQuote;
+	private final SpanPanel mOpen;
 	private final SpanPanel mQuote1;
 	private final SpanPanel mQuote2;
 	private final SpanPanel mQuote3;
+	private final SpanPanel mClose;
 
 	public ContainerHilbertView() {
 		mRoot.addStyleName(STYLE.containerHilbert());
@@ -24,10 +26,15 @@ public class ContainerHilbertView extends ADivView implements ContainerHilbert.D
 		mWrapper.add(mQuote);
 		mQuote.addStyleName(STYLE.quote());
 
+		mOpen = new SpanPanel();
+		mQuote.add(mOpen);
+		mOpen.addStyleName(STYLE.quoteOpen());
+		mOpen.setText("b");
+
 		mQuote1 = new SpanPanel();
 		mQuote.add(mQuote1);
 		mQuote1.addStyleName(STYLE.quote1());
-
+		
 		mQuote2 = new SpanPanel();
 		mQuote.add(mQuote2);
 		mQuote2.addStyleName(STYLE.quote2());
@@ -35,6 +42,11 @@ public class ContainerHilbertView extends ADivView implements ContainerHilbert.D
 		mQuote3 = new SpanPanel();
 		mQuote.add(mQuote3);
 		mQuote3.addStyleName(STYLE.quote3());
+		
+		mClose = new SpanPanel();
+		mQuote.add(mClose);
+		mClose.addStyleName(STYLE.quoteClose());
+		mClose.setText("b");
 	}
 
 
@@ -52,4 +64,5 @@ public class ContainerHilbertView extends ADivView implements ContainerHilbert.D
 	public void setQuote3Text(String iText) {
 		mQuote3.setText(iText);
 	}
+	
 }

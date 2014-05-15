@@ -16,17 +16,17 @@ public class FeatureView extends ADivView implements Feature.Display {
 		mReasonning = new DivPanel();
 		mRoot.add(mReasonning);
 		mReasonning.addStyleName(STYLE.featureReasoning());
-		mReasonning.getElement().setAttribute("data-icon", "à");
+		mReasonning.setText("à");
 		
 		mCalculus = new DivPanel();
 		mRoot.add(mCalculus);
 		mCalculus.addStyleName(STYLE.featureCalculus());
-		mCalculus.getElement().setAttribute("data-icon", "^");
+		mCalculus.setText("^");
 		
 		mWriting = new DivPanel();
 		mRoot.add(mWriting);
 		mWriting.addStyleName(STYLE.featureWriting());
-		mWriting.getElement().setAttribute("data-icon", "I");
+		mWriting.setText("I");
 	}
 
 }

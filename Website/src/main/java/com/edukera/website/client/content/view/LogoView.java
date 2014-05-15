@@ -35,7 +35,7 @@ public class LogoView extends ADivView implements Logo.Display {
 		mLogoContent = new SpanPanel();
 		mLogoWrapper.add(mLogoContent);
 		mLogoContent.addStyleName(STYLE.logoLogoContent());
-		mLogoContent.getElement().setAttribute("data-icon", "j");
+		mLogoContent.setText("j");
 	}
 	
 	public void setQeduText(String iText) {

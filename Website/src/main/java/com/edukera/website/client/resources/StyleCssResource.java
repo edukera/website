@@ -90,6 +90,12 @@ public interface StyleCssResource extends CssResource {
   
   String quote();
   
+  @ClassName("quote-close")
+  String quoteClose();
+  
+  @ClassName("quote-open")
+  String quoteOpen();
+  
   String quote1();
   
   String quote2();
