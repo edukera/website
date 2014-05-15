@@ -1,7 +1,5 @@
 package com.edukera.website.client;
 
-import com.edukera.website.client.data.DataResources;
-import com.edukera.website.client.data.Language;
 import com.edukera.website.client.gin.Injector;
 import com.edukera.website.client.main.presenter.Main;
 import com.edukera.website.client.resources.WebsiteResources;
@@ -19,12 +17,9 @@ public class EdukeraWebsite implements EntryPoint {
 	public void onModuleLoad() {
 		loadStyles();
 		
-		DataResources.getInstance().switchLanguage(Language.fr);
-		
 		Main lMain = ginjector.getMain();
 		lMain.bind();
-		RootPanel.get().add(lMain.getDisplay().asWidget());
-		
+		RootPanel.get().add(lMain.getDisplay().asWidget());		
 		lMain.draw();
 	}
 	

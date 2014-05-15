@@ -1,6 +1,8 @@
 package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
+import com.edukera.website.client.data.DataResources;
+import com.edukera.website.client.data.Language;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
@@ -14,6 +16,7 @@ import com.google.web.bindery.event.shared.EventBus;
 
 public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
+	private Language mLanguage = Language.fr;
 	private final Header mHeader;
 	private final ContainerSky mContainerSky;
 	private final ContainerFeature mContainerFeature;
@@ -50,12 +53,22 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 	public void draw() {
 		int lHeight = Window.getClientHeight();
 		display.setHeight(lHeight);
+		
+		DataResources.getInstance().switchLanguage(mLanguage);
+		
 		mHeader.draw();
 		mContainerSky.draw();
 		mContainerFeature.draw();
 		mContainerHilbert.draw();
-		mFooter.bind();
+		mFooter.draw();
 	}
-	
+
+	public Language getLanguage() {
+		return mLanguage;
+	}
+
+	public void setLanguage(Language iLanguage) {
+		this.mLanguage = iLanguage;
+	}
 	
 }

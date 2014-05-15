@@ -4,6 +4,24 @@ package com.edukera.website.client.resources;
 import com.google.gwt.resources.client.CssResource;
 public interface StyleCssResource extends CssResource {
   
+  @ClassName("button-language")
+  String buttonLanguage();
+  
+  @ClassName("button-language-content")
+  String buttonLanguageContent();
+  
+  @ClassName("button-language-item")
+  String buttonLanguageItem();
+  
+  @ClassName("button-language-item-description")
+  String buttonLanguageItemDescription();
+  
+  @ClassName("button-language-item-lang")
+  String buttonLanguageItemLang();
+  
+  @ClassName("button-language-menu")
+  String buttonLanguageMenu();
+  
   String connection();
   
   @ClassName("connection-button")

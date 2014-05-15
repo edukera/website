@@ -1,6 +1,7 @@
 package com.edukera.website.client.gin;
 
 
+import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Input;
@@ -41,4 +42,5 @@ public interface Injector extends Ginjector {
 	ValueProposition getValueProposition();
 	Soon getSoon();
 	Feature getFeature();
+	ButtonLanguage getButtonLanguage();
 }

@@ -1,17 +1,20 @@
 package com.edukera.website.client.gin;
 
+import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
+import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
 import com.edukera.website.client.content.presenter.impl.FeatureImpl;
 import com.edukera.website.client.content.presenter.impl.InputImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
 import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
+import com.edukera.website.client.content.view.ButtonLanguageView;
 import com.edukera.website.client.content.view.ConnectionView;
 import com.edukera.website.client.content.view.FeatureView;
 import com.edukera.website.client.content.view.InputView;
@@ -57,8 +60,8 @@ public class Module extends AbstractGinModule {
 
 		/* Main */
 
-		bind(Main.class).to(MainImpl.class);
-		bind(Main.Display.class).to(MainView.class);
+		bind(Main.class).to(MainImpl.class).in(Singleton.class);
+		bind(Main.Display.class).to(MainView.class).in(Singleton.class);
 
 		bind(Header.class).to(HeaderImpl.class);
 		bind(Header.Display.class).to(HeaderView.class);
@@ -94,5 +97,8 @@ public class Module extends AbstractGinModule {
 		
 		bind(Feature.class).to(FeatureImpl.class);
 		bind(Feature.Display.class).to(FeatureView.class);
+		
+		bind(ButtonLanguage.class).to(ButtonLanguageImpl.class);
+		bind(ButtonLanguage.Display.class).to(ButtonLanguageView.class);
 	}
 }
