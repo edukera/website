@@ -17,17 +17,20 @@ import com.edukera.website.client.content.view.SoonView;
 import com.edukera.website.client.content.view.ValuePropositionView;
 import com.edukera.website.client.generic.presenter.Tools;
 import com.edukera.website.client.generic.presenter.impl.ToolsImpl;
-import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.ContainerFeature;
+import com.edukera.website.client.main.presenter.ContainerHilbert;
+import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
 import com.edukera.website.client.main.presenter.impl.ContainerFeatureImpl;
+import com.edukera.website.client.main.presenter.impl.ContainerHilbertImpl;
 import com.edukera.website.client.main.presenter.impl.ContainerSkyImpl;
 import com.edukera.website.client.main.presenter.impl.FooterImpl;
 import com.edukera.website.client.main.presenter.impl.HeaderImpl;
 import com.edukera.website.client.main.presenter.impl.MainImpl;
 import com.edukera.website.client.main.view.ContainerFeatureView;
+import com.edukera.website.client.main.view.ContainerHilbertView;
 import com.edukera.website.client.main.view.ContainerSkyView;
 import com.edukera.website.client.main.view.FooterView;
 import com.edukera.website.client.main.view.HeaderView;
@@ -65,6 +68,9 @@ public class Module extends AbstractGinModule {
 		
 		bind(ContainerFeature.class).to(ContainerFeatureImpl.class);
 		bind(ContainerFeature.Display.class).to(ContainerFeatureView.class);
+		
+		bind(ContainerHilbert.class).to(ContainerHilbertImpl.class);
+		bind(ContainerHilbert.Display.class).to(ContainerHilbertView.class);
 		
 		/* Content */
 		

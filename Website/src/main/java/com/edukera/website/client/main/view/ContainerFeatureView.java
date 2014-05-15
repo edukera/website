@@ -10,11 +10,11 @@ public class ContainerFeatureView extends ADivView implements ContainerFeature.D
 	private final DivPanel mWrapper;
 	
 	public ContainerFeatureView() {
-		mRoot.addStyleName(STYLE.container2());
+		mRoot.addStyleName(STYLE.containerFeature());
 		
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);
-		mWrapper.addStyleName(STYLE.container2Wrapper());
+		mWrapper.addStyleName(STYLE.containerFeatureWrapper());
 	}
 	
 	public void addWrapper(Widget iWidget) {

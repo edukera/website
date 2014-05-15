@@ -7,8 +7,9 @@ import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.generic.presenter.Tools;
-import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.ContainerFeature;
+import com.edukera.website.client.main.presenter.ContainerHilbert;
+import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
@@ -30,7 +31,8 @@ public interface Injector extends Ginjector {
 	Footer getFooter();
 	ContainerSky getContainerSky();
 	ContainerFeature getContainerFeature();
-
+	ContainerHilbert getContainerHilbert();
+	
 	/* Content */
 	Logo getLogo();
 	Input getInput();

@@ -14,20 +14,30 @@ public interface StyleCssResource extends CssResource {
   
   String container();
   
+  @ClassName("container-feature")
+  String containerFeature();
+  
+  @ClassName("container-feature-wrapper")
+  String containerFeatureWrapper();
+  
+  @ClassName("container-hibert-wrapper")
+  String containerHibertWrapper();
+  
+  @ClassName("container-hilbert")
+  String containerHilbert();
+  
   @ClassName("container-img")
   String containerImg();
   
   @ClassName("container-wrapper")
   String containerWrapper();
   
-  String container2();
-  
-  @ClassName("container2-wrapper")
-  String container2Wrapper();
-  
   String focus();
   
   String footer();
+  
+  @ClassName("footer-container")
+  String footerContainer();
   
   String header();
   
@@ -67,6 +77,8 @@ public interface StyleCssResource extends CssResource {
   
   String main();
   
+  String quote();
+  
   String soon();
   
   @ClassName("soon-firstline")
@@ -74,14 +86,6 @@ public interface StyleCssResource extends CssResource {
   
   @ClassName("soon-secondline")
   String soonSecondline();
-  
-  String tagphrase();
-  
-  @ClassName("tagphrase-first")
-  String tagphraseFirst();
-  
-  @ClassName("tagphrase-second")
-  String tagphraseSecond();
   
   @ClassName("trans-all")
   String transAll();
