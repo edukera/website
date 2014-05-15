@@ -454,6 +454,7 @@ body {
     background:url(../style/img/blackboard.jpg) no-repeat center;
     background-size: cover;
     max-width: inherit;
+    opacity: 0.8;
 }
 
 .container-hibert-wrapper {
@@ -468,7 +469,6 @@ body {
     font-family: 'logo';
     font-size: 45px;
     color: white;
-    text-shadow: 1px 2px 5px rgba(255,255,255,0.5);
     width: 512px;
     top: 50px;
     left: 50px;
