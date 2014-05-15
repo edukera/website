@@ -50,8 +50,12 @@ public class ButtonLanguageView extends ADivView implements ButtonLanguage.Displ
 	}
 
 	@Override
+	public void clearMenu() {
+		mRoot.remove(mMenu);
+	}
+	
+	@Override
 	public void all() {
-		mRoot.add(mContent);
 		mRoot.add(mMenu);
 	}
 

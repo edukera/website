@@ -7,6 +7,7 @@ import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.Main;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.Timer;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
@@ -49,8 +50,15 @@ public class ButtonLanguageImpl extends ADrawImpl<ButtonLanguage.Display> implem
 		Language lLanguage = lMain.getLanguage();
 		display.setContent(lLanguage.toString());
 		
-//		display.clear();
-//		display.all();
+		display.clearMenu();
+		Timer lTimer = new Timer() {
+			
+			@Override
+			public void run() {
+				display.all();
+			}
+		};
+		lTimer.schedule(300);
 	}
 
 	private void doChangeLanguage(Language iLanguage) {

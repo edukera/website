@@ -9,6 +9,7 @@ public interface ButtonLanguage extends ADraw<ButtonLanguage.Display> {
 	interface Display extends ADraw.Display {
 		void setContent(String iText);
 		HasClickHandlers addLanguage(String iLanguage, String iDescription);
+		void clearMenu();
 		void all();
 	}
 
