@@ -42,8 +42,10 @@ public class InputImpl extends BasePresenter<Input.Display> implements Input {
 
 	
 	public void draw() {
-		String lInput = DataResources.getInstance().getContent(WebsiteKeys.INPUTINPUT);
-		display.setInputText(lInput);
+		if (!mFirst) {
+			String lInput = DataResources.getInstance().getContent(WebsiteKeys.INPUTINPUT);
+			display.setInputText(lInput);
+		}
 
 		String lButton = DataResources.getInstance().getContent(WebsiteKeys.INPUTBUTTON);
 		display.setButtonText(lButton);
