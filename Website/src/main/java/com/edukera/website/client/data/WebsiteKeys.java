@@ -6,7 +6,9 @@ public class WebsiteKeys {
 public static final String CONNECTION = "connection";
 public static final String INPUTBUTTON = "inputButton";
 public static final String INPUTINPUT = "inputInput";
-public static final String QUOTE = "quote";
+public static final String QUOTE_1 = "quote_1";
+public static final String QUOTE_2 = "quote_2";
+public static final String QUOTE_3 = "quote_3";
 public static final String SOONFIRSTLINE = "soonFirstLine";
 public static final String SOONSECONDLINE = "soonSecondLine";
 public static final String VALUEPROPOSITIONFIRSTLINE = "valuePropositionFirstLine";

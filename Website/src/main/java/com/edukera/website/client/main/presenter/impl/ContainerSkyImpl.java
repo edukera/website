@@ -41,6 +41,9 @@ public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements
 	@Override
 	public void draw() {
 		int lHeight = Window.getClientHeight() - 70;
+		if (lHeight < 500) {
+			lHeight = 500;
+		}
 		display.setHeight(lHeight);
 		mValueProposition.draw();
 		mSoon.draw();

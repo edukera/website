@@ -6,6 +6,8 @@ import com.edukera.website.client.generic.presenter.ADraw;
 public interface ContainerHilbert extends ADraw<ContainerHilbert.Display> {
 
 	interface Display extends ADraw.Display {
-		void setQuoteText(String iText);
+		void setQuote1Text(String iText);
+		void setQuote2Text(String iText);
+		void setQuote3Text(String iText);
 	}
 }

@@ -90,6 +90,12 @@ public interface StyleCssResource extends CssResource {
   
   String quote();
   
+  String quote1();
+  
+  String quote2();
+  
+  String quote3();
+  
   String soon();
   
   @ClassName("soon-firstline")

@@ -474,6 +474,26 @@ body {
     left: 50px;
 }
 
+.quote1,
+.quote2,
+.quote3 {
+    display: block;
+    position: relative;
+    font-family: 'logo';
+    font-size: 45px;
+    width: 512px;
+    top: 50px;
+    left: 50px;
+}
+
+.quote1,
+.quote3 {
+    color: white;
+}
+
+.quote2 {
+    color: rgba(252,238,33,1);
+}
 
 .feature {
     display: block;
