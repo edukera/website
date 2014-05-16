@@ -5,6 +5,7 @@ import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.data.DataResources;
 import com.edukera.website.client.data.WebsiteKeys;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
+import com.edukera.website.client.resources.GAnalyticsTools;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.FocusEvent;
@@ -57,10 +58,13 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 
 	private void doClickButton() {
 		String lEmail = display.getInputText();
+		GAnalyticsTools.clickButton();
 		if (lEmail != null &&
 				checkEmail(lEmail)) {
+			GAnalyticsTools.validEmail();
 			EdukeraWebsite.ginjector.getMain().saveEmail(lEmail);
 		} else {
+			GAnalyticsTools.malformedEmail();
 			mState = State.malformed;
 			draw();
 		}

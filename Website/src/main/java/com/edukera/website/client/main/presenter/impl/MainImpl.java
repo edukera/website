@@ -13,6 +13,7 @@ import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
+import com.edukera.website.client.resources.GAnalyticsTools;
 import com.edukera.website.client.service.Persistence;
 import com.edukera.website.client.service.PersistenceAsync;
 import com.google.gwt.core.shared.GWT;
@@ -116,13 +117,17 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 			public void onSuccess(Integer iResult) {
 				if (iResult != null) {
 					if (iResult == 0) {
+						GAnalyticsTools.validEmail();
 						fwdInput(State.saved);
 					} else if (iResult == 1) {
+						GAnalyticsTools.duplicatedEmail();
 						fwdInput(State.duplicate);
 					} else {
+						GAnalyticsTools.errorEmail();
 						fwdInput(State.error);
 					}
 				} else {
+					GAnalyticsTools.errorEmail();
 					fwdInput(State.error);
 				}
 			}
