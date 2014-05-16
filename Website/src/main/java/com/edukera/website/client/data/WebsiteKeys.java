@@ -9,6 +9,7 @@ public static final String CONNECTION = "connection";
 public static final String INPUTBUTTON = "inputButton";
 public static final String INPUTINPUT = "inputInput";
 public static final String INPUT_EMAIL_DUPLICATE = "input_email_duplicate";
+public static final String INPUT_EMAIL_ERROR = "input_email_error";
 public static final String INPUT_EMAIL_MALFORMED = "input_email_malformed";
 public static final String INPUT_EMAIL_SAVED = "input_email_saved";
 public static final String PRODUCT = "product";

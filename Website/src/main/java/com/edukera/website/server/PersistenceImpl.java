@@ -1,6 +1,7 @@
 package com.edukera.website.server;
 
 import com.edukera.website.client.service.Persistence;
+import com.edukera.website.server.entity.Email;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 public class PersistenceImpl extends RemoteServiceServlet implements Persistence {

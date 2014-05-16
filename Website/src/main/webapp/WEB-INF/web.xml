@@ -3,18 +3,17 @@
     PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
     "http://java.sun.com/dtd/web-app_2_3.dtd">
 
-<!-- servlet>
-	<servlet-name>persistence</servlet-name>
-	<servlet-class>
-		com.edukera.website.server.PersistenceImpl
-	</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>persistence</servlet-name>
-	<url-pattern>/persistence</url-pattern>
-</servlet-mapping -->
-
 <web-app>
+	<servlet>
+		<servlet-name>persistence</servlet-name>
+		<servlet-class>com.edukera.website.server.PersistenceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>persistence</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
 	<!-- Default page to serve -->
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

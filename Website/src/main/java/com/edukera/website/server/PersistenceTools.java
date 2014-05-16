@@ -4,16 +4,19 @@ import java.util.GregorianCalendar;
 
 import javax.persistence.EntityManager;
 
+import com.edukera.website.server.entity.Email;
+
 public class PersistenceTools {
 
 	public static void saveEmail(Email iEmail) {
 		if (iEmail != null) {
-			EntityManager lEntityManager = null;
-			try {
-				lEntityManager = EMF.get().createEntityManager();
-				lEntityManager.persist(iEmail);
-			} finally {
-				lEntityManager.close();
+			EntityManager lEntityManager = EMF.get().createEntityManager();
+			if (lEntityManager != null) {
+				try {
+					lEntityManager.persist(iEmail);
+				} finally {
+					lEntityManager.close();
+				}
 			}
 		}
 	}

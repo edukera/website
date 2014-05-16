@@ -75,6 +75,8 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 		String lButton = DataResources.getInstance().getContent(WebsiteKeys.INPUTBUTTON);
 		display.setButtonText(lButton);
 		
+		display.unsetSavedMode();
+		display.unsetErrorMode();
 		switch (mState) {
 		case saved:
 			display.setSavedMode();
@@ -94,9 +96,13 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 			display.setMessageText(lMalformed);
 			break;
 
+		case error:
+			display.setErrorMode();
+			String lError = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_ERROR);
+			display.setMessageText(lError);
+			break;
+			
 		default:
-			display.unsetSavedMode();
-			display.unsetErrorMode();
 			display.setMessageText("");
 		}
 	}

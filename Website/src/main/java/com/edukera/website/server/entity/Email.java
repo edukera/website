@@ -1,4 +1,4 @@
-package com.edukera.website.server;
+package com.edukera.website.server.entity;
 
 import java.util.Date;
 

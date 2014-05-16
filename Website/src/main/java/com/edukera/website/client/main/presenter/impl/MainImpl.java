@@ -1,6 +1,7 @@
 package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
+import com.edukera.website.client.content.presenter.Input.State;
 import com.edukera.website.client.data.DataResources;
 import com.edukera.website.client.data.Language;
 import com.edukera.website.client.generic.presenter.ADraw;
@@ -12,15 +13,19 @@ import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
+import com.edukera.website.client.service.Persistence;
+import com.edukera.website.client.service.PersistenceAsync;
+import com.google.gwt.core.shared.GWT;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
 public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
-//	PersistenceAsync sPersistence = (PersistenceAsync) GWT.create(PersistenceAsync.class);
+	PersistenceAsync sPersistence = (PersistenceAsync) GWT.create(Persistence.class);
 	
 	private Language mLanguage = Language.fr;
 	private final Header mHeader;
@@ -105,21 +110,36 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
 	@Override
 	public void saveEmail(String iEmail) {
-//		sPersistence.saveEmail(iEmail, mLanguage.toString(), new AsyncCallback<Integer>() {
-//			
-//			@Override
-//			public void onSuccess(Integer result) {
-//				EdukeraWebsite.ginjector.getInput().setState(State.saved);
-//				EdukeraWebsite.ginjector.getInput().draw();
-//			}
-//			
-//			@Override
-//			public void onFailure(Throwable caught) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//		});
+		sPersistence.saveEmail(iEmail, mLanguage.toString(), new AsyncCallback<Integer>() {
+			
+			@Override
+			public void onSuccess(Integer iResult) {
+				if (iResult != null) {
+					if (iResult == 0) {
+						fwdInput(State.saved);
+					} if (iResult == 1) {
+						fwdInput(State.duplicate);
+					} else {
+						fwdInput(State.error);
+					}
+				} else {
+					fwdInput(State.error);
+				}
+			}
+
+
+			@Override
+			public void onFailure(Throwable caught) {
+				fwdInput(State.error);
+			}
+		});
 		
+	}
+	
+	
+	private void fwdInput(State iState) {
+		EdukeraWebsite.ginjector.getInput().setState(iState);
+		EdukeraWebsite.ginjector.getInput().draw();
 	}
 
 }

@@ -13,7 +13,8 @@ public interface Input extends ADraw<Input.Display> {
 		fill,
 		saved,
 		malformed,
-		duplicate
+		duplicate,
+		error
 	}
 	
 	interface Display extends ADraw.Display {
