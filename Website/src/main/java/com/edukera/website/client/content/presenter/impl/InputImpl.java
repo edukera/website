@@ -67,7 +67,6 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 	}
 	
 	public void draw() {
-		EdukeraWebsite.ginjector.getTools().sendText("la");
 		if (!mFirst) {
 			String lInput = DataResources.getInstance().getContent(WebsiteKeys.INPUTINPUT);
 			display.setInputText(lInput);
