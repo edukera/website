@@ -1,0 +1,20 @@
+package com.edukera.website.server;
+
+import com.edukera.website.client.service.Persistence;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+public class PersistenceImpl extends RemoteServiceServlet implements Persistence {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	public Integer saveEmail(String iEmail, String iLanguage) {
+		Email lEmail = PersistenceTools.createEmail(iEmail, iLanguage);
+		PersistenceTools.saveEmail(lEmail);
+		return 0;
+	}
+
+}

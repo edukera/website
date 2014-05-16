@@ -388,7 +388,24 @@ body {
     font-size: 18px;
     padding: 8px 15px;
     font-family: 'droidsans-bold';
+}
 
+.input-message {
+    position: relative;
+    display: block;
+    opacity: 0;
+    font-family: 'droidsans-bold';
+    margin-top: 20px;
+}
+
+.saved .input-message {
+    opacity: 1;
+    color: green;
+}
+
+.error .input-message {
+    opacity: 1;
+    color: red;
 }
 
 .value-proposition {

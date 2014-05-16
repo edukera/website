@@ -14,4 +14,5 @@ public interface Main extends ADraw<Main.Display> {
 	void setLanguage(Language iLanguage);
 	void scrollProduct();
 	void scrollAbout();
+	void saveEmail(String iEmail);
 }

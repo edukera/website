@@ -4,6 +4,7 @@ import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.generic.view.ADivView;
 import com.edukera.website.client.generic.widget.DivPanel;
 import com.google.gwt.event.dom.client.HasBlurHandlers;
+import com.google.gwt.event.dom.client.HasClickHandlers;
 import com.google.gwt.event.dom.client.HasFocusHandlers;
 import com.google.gwt.user.client.ui.TextBox;
 
@@ -12,6 +13,8 @@ public class InputView extends ADivView implements Input.Display {
 	private final TextBox mInput;
 	private final DivPanel mButton;
 	private final DivPanel mButtonContent;
+	private final DivPanel mMessage;
+	
 	
 	public InputView() {
 		mRoot.addStyleName(STYLE.input());
@@ -28,6 +31,11 @@ public class InputView extends ADivView implements Input.Display {
 		mButtonContent = new DivPanel();
 		mButton.add(mButtonContent);
 		mButtonContent.addStyleName(STYLE.inputButtonContent());
+		
+		mMessage = new DivPanel();
+		mRoot.add(mMessage);
+		mMessage.addStyleName(STYLE.inputMessage());
+		mMessage.addStyleName(STYLE.transAll());
 	}
 	
 	public HasFocusHandlers getHasFocusHandlers() {
@@ -36,6 +44,10 @@ public class InputView extends ADivView implements Input.Display {
 	
 	public HasBlurHandlers getHasBlurHandlers() {
 		return mInput;
+	}
+	
+	public HasClickHandlers getButtonHasClickHandlers() {
+		return mButton;
 	}
 
 	public void setInputText(String iText) {
@@ -60,5 +72,33 @@ public class InputView extends ADivView implements Input.Display {
 	public void clearInput() {
 		mInput.setText("");
 	}
+	
+	public String getInputText() {
+		return mInput.getText();
+	}
 
+	@Override
+	public void setSavedMode() {
+		mRoot.addStyleName(STYLE.saved());
+	}
+
+	@Override
+	public void unsetSavedMode() {
+		mRoot.removeStyleName(STYLE.saved());
+	}
+	
+	@Override
+	public void setErrorMode() {
+		mRoot.addStyleName(STYLE.error());
+	}
+
+	@Override
+	public void unsetErrorMode() {
+		mRoot.removeStyleName(STYLE.error());
+	}
+
+	@Override
+	public void setMessageText(String iText) {
+		mMessage.setText(iText);
+	}
 }

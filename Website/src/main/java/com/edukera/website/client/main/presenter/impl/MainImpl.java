@@ -20,6 +20,8 @@ import com.google.web.bindery.event.shared.EventBus;
 
 public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
+//	PersistenceAsync sPersistence = (PersistenceAsync) GWT.create(PersistenceAsync.class);
+	
 	private Language mLanguage = Language.fr;
 	private final Header mHeader;
 	private final ContainerSky mContainerSky;
@@ -99,6 +101,25 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		int lValue = iComponent.getDisplay().getElement().getAbsoluteTop();
 		Scroller lScroller = new Scroller(display, lBegin, lValue);
 		lScroller.run(300);
+	}
+
+	@Override
+	public void saveEmail(String iEmail) {
+//		sPersistence.saveEmail(iEmail, mLanguage.toString(), new AsyncCallback<Integer>() {
+//			
+//			@Override
+//			public void onSuccess(Integer result) {
+//				EdukeraWebsite.ginjector.getInput().setState(State.saved);
+//				EdukeraWebsite.ginjector.getInput().draw();
+//			}
+//			
+//			@Override
+//			public void onFailure(Throwable caught) {
+//				// TODO Auto-generated method stub
+//				
+//			}
+//		});
+		
 	}
 
 }

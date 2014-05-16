@@ -69,48 +69,48 @@ public class Module extends AbstractGinModule {
 		bind(Main.class).to(MainImpl.class).in(Singleton.class);
 		bind(Main.Display.class).to(MainView.class).in(Singleton.class);
 
-		bind(Header.class).to(HeaderImpl.class);
-		bind(Header.Display.class).to(HeaderView.class);
+		bind(Header.class).to(HeaderImpl.class).in(Singleton.class);
+		bind(Header.Display.class).to(HeaderView.class).in(Singleton.class);
 
-		bind(Footer.class).to(FooterImpl.class);
-		bind(Footer.Display.class).to(FooterView.class);
+		bind(Footer.class).to(FooterImpl.class).in(Singleton.class);
+		bind(Footer.Display.class).to(FooterView.class).in(Singleton.class);
 
-		bind(ContainerSky.class).to(ContainerSkyImpl.class);
-		bind(ContainerSky.Display.class).to(ContainerSkyView.class);
+		bind(ContainerSky.class).to(ContainerSkyImpl.class).in(Singleton.class);
+		bind(ContainerSky.Display.class).to(ContainerSkyView.class).in(Singleton.class);
 		
-		bind(ContainerFeature.class).to(ContainerFeatureImpl.class);
-		bind(ContainerFeature.Display.class).to(ContainerFeatureView.class);
+		bind(ContainerFeature.class).to(ContainerFeatureImpl.class).in(Singleton.class);
+		bind(ContainerFeature.Display.class).to(ContainerFeatureView.class).in(Singleton.class);
 		
-		bind(ContainerHilbert.class).to(ContainerHilbertImpl.class);
-		bind(ContainerHilbert.Display.class).to(ContainerHilbertView.class);
+		bind(ContainerHilbert.class).to(ContainerHilbertImpl.class).in(Singleton.class);
+		bind(ContainerHilbert.Display.class).to(ContainerHilbertView.class).in(Singleton.class);
 		
 		/* Content */
 		
-		bind(Logo.class).to(LogoImpl.class);
-		bind(Logo.Display.class).to(LogoView.class);
+		bind(Logo.class).to(LogoImpl.class).in(Singleton.class);
+		bind(Logo.Display.class).to(LogoView.class).in(Singleton.class);
 
-		bind(Input.class).to(InputImpl.class);
-		bind(Input.Display.class).to(InputView.class);
+		bind(Input.class).to(InputImpl.class).in(Singleton.class);
+		bind(Input.Display.class).to(InputView.class).in(Singleton.class);
 
-		bind(Connection.class).to(ConnectionImpl.class);
-		bind(Connection.Display.class).to(ConnectionView.class);
+		bind(Connection.class).to(ConnectionImpl.class).in(Singleton.class);
+		bind(Connection.Display.class).to(ConnectionView.class).in(Singleton.class);
 
-		bind(ValueProposition.class).to(ValuePropositionImpl.class);
-		bind(ValueProposition.Display.class).to(ValuePropositionView.class);
+		bind(ValueProposition.class).to(ValuePropositionImpl.class).in(Singleton.class);
+		bind(ValueProposition.Display.class).to(ValuePropositionView.class).in(Singleton.class);
 		
-		bind(Soon.class).to(SoonImpl.class);
-		bind(Soon.Display.class).to(SoonView.class);
+		bind(Soon.class).to(SoonImpl.class).in(Singleton.class);
+		bind(Soon.Display.class).to(SoonView.class).in(Singleton.class);
 		
-		bind(Feature.class).to(FeatureImpl.class);
-		bind(Feature.Display.class).to(FeatureView.class);
+		bind(Feature.class).to(FeatureImpl.class).in(Singleton.class);
+		bind(Feature.Display.class).to(FeatureView.class).in(Singleton.class);
 		
-		bind(ButtonLanguage.class).to(ButtonLanguageImpl.class);
-		bind(ButtonLanguage.Display.class).to(ButtonLanguageView.class);
+		bind(ButtonLanguage.class).to(ButtonLanguageImpl.class).in(Singleton.class);
+		bind(ButtonLanguage.Display.class).to(ButtonLanguageView.class).in(Singleton.class);
 		
-		bind(About.class).to(AboutImpl.class);
-		bind(About.Display.class).to(AboutView.class);
+		bind(About.class).to(AboutImpl.class).in(Singleton.class);
+		bind(About.Display.class).to(AboutView.class).in(Singleton.class);
 		
-		bind(Product.class).to(ProductImpl.class);
-		bind(Product.Display.class).to(ProductView.class);
+		bind(Product.class).to(ProductImpl.class).in(Singleton.class);
+		bind(Product.Display.class).to(ProductView.class).in(Singleton.class);
 	}
 }
