@@ -4,9 +4,9 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import com.edukera.website.server.entity.Email;
-import javax.persistence.Query;
 
 public class PersistenceTools {
 
