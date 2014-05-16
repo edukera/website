@@ -117,7 +117,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 				if (iResult != null) {
 					if (iResult == 0) {
 						fwdInput(State.saved);
-					} if (iResult == 1) {
+					} else if (iResult == 1) {
 						fwdInput(State.duplicate);
 					} else {
 						fwdInput(State.error);

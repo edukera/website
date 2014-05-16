@@ -13,6 +13,10 @@ public class PersistenceImpl extends RemoteServiceServlet implements Persistence
 
 	@Override
 	public Integer saveEmail(String iEmail, String iLanguage) {
+		boolean lExist = PersistenceTools.existEmail(iEmail);
+		if (lExist) {
+			return 1;
+		}
 		Email lEmail = PersistenceTools.createEmail(iEmail, iLanguage);
 		PersistenceTools.saveEmail(lEmail);
 		return 0;
