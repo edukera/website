@@ -49,6 +49,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		display.add(mContainerFeature.getDisplay().asWidget());
 		display.add(mContainerHilbert.getDisplay().asWidget());
 		display.add(mFooter.getDisplay().asWidget());
+		fillLanguage();
 	}
 
 	@Override
@@ -145,6 +146,24 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 	private void fwdInput(State iState) {
 		EdukeraWebsite.ginjector.getInput().setState(iState);
 		EdukeraWebsite.ginjector.getInput().draw();
+	}
+	
+	private native String getInternalLocale() /*-{
+	return navigator.language;
+}-*/;
+
+	private String getLocale() {
+		String lLocale = getInternalLocale();
+		if (lLocale != null) {
+			String lLanguage = lLocale.substring(0, 2);
+			return lLanguage;
+		}
+		return null;
+	}
+
+	private void fillLanguage() {
+		String lLocale = getLocale();
+		mLanguage = Language.getLanguage(lLocale);
 	}
 
 }

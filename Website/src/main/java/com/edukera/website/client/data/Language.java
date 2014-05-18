@@ -42,4 +42,16 @@ public enum Language {
 		}
 		return null;
 	}
+
+	public static Language getLanguage(String iLocale) {
+		Language lLanguage = fr;
+		if (iLocale != null) {
+			if (iLocale.equals("fr")) {
+				
+			} else if (iLocale.equals("en")) {
+				lLanguage = en;
+			}
+		}
+		return lLanguage;
+	}
 }
