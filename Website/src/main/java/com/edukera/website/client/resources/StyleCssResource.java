@@ -27,6 +27,9 @@ public interface StyleCssResource extends CssResource {
   @ClassName("button-language-menu")
   String buttonLanguageMenu();
   
+  @ClassName("comming-soon")
+  String commingSoon();
+  
   String connection();
   
   @ClassName("connection-button")
@@ -98,6 +101,15 @@ public interface StyleCssResource extends CssResource {
   @ClassName("header-container")
   String headerContainer();
   
+  @ClassName("hibert-content")
+  String hibertContent();
+  
+  @ClassName("hibert-photo")
+  String hibertPhoto();
+  
+  @ClassName("hibert-wrapper")
+  String hibertWrapper();
+  
   String input();
   
   @ClassName("input-button")
@@ -111,6 +123,9 @@ public interface StyleCssResource extends CssResource {
   
   @ClassName("input-message")
   String inputMessage();
+  
+  @ClassName("input-message-content")
+  String inputMessageContent();
   
   String logo();
   

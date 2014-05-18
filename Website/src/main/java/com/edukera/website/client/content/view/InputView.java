@@ -6,6 +6,9 @@ import com.edukera.website.client.generic.widget.DivPanel;
 import com.google.gwt.event.dom.client.HasBlurHandlers;
 import com.google.gwt.event.dom.client.HasClickHandlers;
 import com.google.gwt.event.dom.client.HasFocusHandlers;
+import com.google.gwt.event.dom.client.HasKeyDownHandlers;
+import com.google.gwt.event.dom.client.HasKeyPressHandlers;
+import com.google.gwt.event.dom.client.HasKeyUpHandlers;
 import com.google.gwt.user.client.ui.TextBox;
 
 public class InputView extends ADivView implements Input.Display {
@@ -14,6 +17,7 @@ public class InputView extends ADivView implements Input.Display {
 	private final DivPanel mButton;
 	private final DivPanel mButtonContent;
 	private final DivPanel mMessage;
+	private final DivPanel mMessageContent;
 	
 	
 	public InputView() {
@@ -36,6 +40,10 @@ public class InputView extends ADivView implements Input.Display {
 		mRoot.add(mMessage);
 		mMessage.addStyleName(STYLE.inputMessage());
 		mMessage.addStyleName(STYLE.transAll());
+		
+		mMessageContent = new DivPanel();
+		mMessage.add(mMessageContent);
+		mMessageContent.addStyleName(STYLE.inputMessageContent());
 	}
 	
 	public HasFocusHandlers getHasFocusHandlers() {
@@ -99,6 +107,23 @@ public class InputView extends ADivView implements Input.Display {
 
 	@Override
 	public void setMessageText(String iText) {
-		mMessage.setText(iText);
+		mMessageContent.setText(iText);
 	}
+	
+	public HasKeyUpHandlers getHasKeyUpHandlers() {
+		return mInput;
+	}
+	
+	public HasKeyDownHandlers getHasKeyDownHandler() {
+		return mInput;
+	}
+
+	public HasKeyPressHandlers getHasKeyPressHandlers() {
+		return mInput;
+	}
+	
+	public void setFocus(boolean iFocus) {
+		mInput.setFocus(iFocus);
+	}
+	
 }

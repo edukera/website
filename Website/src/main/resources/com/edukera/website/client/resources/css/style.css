@@ -416,21 +416,32 @@ body {
 
 .input-message {
     position: relative;
-    display: block;
+    display: inline-block;
     opacity: 0;
+    top: -120px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.input-message-content {
+    position: relative;
+    display: inline-block;
+    color: white;
     font-family: 'droidsans-bold';
-    margin-top: 20px;
+    font-size: 18px;
     cursor: default;
+    padding: 3px 10px;
 }
 
 .saved .input-message {
     opacity: 1;
-    color: green;
+    background-color: green;
 }
 
 .error .input-message {
     opacity: 1;
-    color: red;
+    background-color: red;
 }
 
 .value-proposition {
@@ -752,4 +763,20 @@ body {
 
 .product-content:hover {
     color: rgba(0, 172, 231, 1);
+}
+
+.comming-soon {
+
+}
+
+.hibert-wrapper {
+
+}
+
+.hibert-photo {
+
+}
+
+.hibert-content {
+
 }
