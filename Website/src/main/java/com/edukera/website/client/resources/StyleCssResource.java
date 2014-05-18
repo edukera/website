@@ -101,8 +101,8 @@ public interface StyleCssResource extends CssResource {
   @ClassName("header-container")
   String headerContainer();
   
-  @ClassName("hibert-content")
-  String hibertContent();
+  @ClassName("hibert-name")
+  String hibertName();
   
   @ClassName("hibert-photo")
   String hibertPhoto();

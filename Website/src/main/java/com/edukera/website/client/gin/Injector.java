@@ -5,6 +5,7 @@ import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
+import com.edukera.website.client.content.presenter.Hilbert;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Product;
@@ -47,4 +48,5 @@ public interface Injector extends Ginjector {
 	ButtonLanguage getButtonLanguage();
 	About getAbout();
 	Product getProduct();
+	Hilbert getHilbert();
 }
