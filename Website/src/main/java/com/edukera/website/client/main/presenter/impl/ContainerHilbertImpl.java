@@ -18,7 +18,7 @@ public class ContainerHilbertImpl extends ADrawImpl<ContainerHilbert.Display> im
 		super(eventBus, display);
 		
 		mHilbert = EdukeraWebsite.ginjector.getHilbert();
-		display.add(mHilbert.getDisplay().asWidget());
+		display.addWrapper(mHilbert.getDisplay().asWidget());
 	}
 
 	@Override

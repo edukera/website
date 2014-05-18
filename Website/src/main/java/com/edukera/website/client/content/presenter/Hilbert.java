@@ -6,7 +6,7 @@ import com.edukera.website.client.generic.presenter.ADraw;
 public interface Hilbert extends ADraw<Hilbert.Display> {
 
 	interface Display extends ADraw.Display {
-		void setPhotoUrl(String iText);
+		void setUrl(String iText);
 		void setName(String iText);
 	}
 }

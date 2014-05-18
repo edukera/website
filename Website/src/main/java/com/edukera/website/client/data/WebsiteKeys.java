@@ -6,6 +6,7 @@ public class WebsiteKeys {
 public static final String ABOUT = "about";
 public static final String CALCULUS_DESC = "calculus_desc";
 public static final String CONNECTION = "connection";
+public static final String HILBERT_URL = "hilbert_url";
 public static final String INPUTBUTTON = "inputButton";
 public static final String INPUTINPUT = "inputInput";
 public static final String INPUT_EMAIL_DUPLICATE = "input_email_duplicate";

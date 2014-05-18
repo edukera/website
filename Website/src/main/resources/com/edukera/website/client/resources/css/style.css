@@ -515,7 +515,6 @@ body {
     background:url(../style/img/blackboard.jpg) no-repeat center;
     background-size: cover;
     max-width: inherit;
-    opacity: 0.8;
 }
 
 .container-hibert-wrapper {
@@ -529,6 +528,7 @@ body {
     width: 545px;
     top: 50px;
     left: 50px;
+    opacity: 0.8;
 }
 
 .quote1,
@@ -770,13 +770,43 @@ body {
 }
 
 .hibert-wrapper {
-
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 200px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    top: 50px;
+    left: 700px;
+    background-color: rgba(0, 172, 231, 0.2);
+    cursor: pointer;
 }
 
-.hibert-photo {
+.hibert-wrapper:hover {
+    background-color: rgba(0, 172, 231, 0.5);
+}
 
+
+.hibert-photo {
+    display: inline-block;
+    position: relative;
+    -moz-border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    height: 42px;
 }
 
 .hibert-name {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    font-family: 'droidsans-bold', sans-serif ;
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    top: -15px;
+}
 
+.hibert-wrapper:hover .hibert-name {
+    color: rgba(255,255,255,1);
 }

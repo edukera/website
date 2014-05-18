@@ -4,6 +4,7 @@ import com.edukera.website.client.generic.view.ADivView;
 import com.edukera.website.client.generic.widget.DivPanel;
 import com.edukera.website.client.generic.widget.SpanPanel;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
+import com.google.gwt.user.client.ui.Widget;
 
 public class ContainerHilbertView extends ADivView implements ContainerHilbert.Display {
 
@@ -63,6 +64,12 @@ public class ContainerHilbertView extends ADivView implements ContainerHilbert.D
 	@Override
 	public void setQuote3Text(String iText) {
 		mQuote3.setText(iText);
+	}
+
+
+	@Override
+	public void addWrapper(Widget iWidget) {
+		mWrapper.add(iWidget);
 	}
 	
 }
