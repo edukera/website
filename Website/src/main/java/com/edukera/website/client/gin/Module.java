@@ -2,6 +2,7 @@ package com.edukera.website.client.gin;
 
 import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
+import com.edukera.website.client.content.presenter.ComingSoon;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Hilbert;
@@ -12,6 +13,7 @@ import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.content.presenter.impl.AboutImpl;
 import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
+import com.edukera.website.client.content.presenter.impl.ComingSoonImpl;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
 import com.edukera.website.client.content.presenter.impl.FeatureImpl;
 import com.edukera.website.client.content.presenter.impl.HilbertImpl;
@@ -22,6 +24,7 @@ import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
 import com.edukera.website.client.content.view.AboutView;
 import com.edukera.website.client.content.view.ButtonLanguageView;
+import com.edukera.website.client.content.view.ComingSoonView;
 import com.edukera.website.client.content.view.ConnectionView;
 import com.edukera.website.client.content.view.FeatureView;
 import com.edukera.website.client.content.view.HilbertView;
@@ -118,5 +121,8 @@ public class Module extends AbstractGinModule {
 		
 		bind(Hilbert.class).to(HilbertImpl.class).in(Singleton.class);
 		bind(Hilbert.Display.class).to(HilbertView.class).in(Singleton.class);
+		
+		bind(ComingSoon.class).to(ComingSoonImpl.class).in(Singleton.class);
+		bind(ComingSoon.Display.class).to(ComingSoonView.class).in(Singleton.class);
 	}
 }

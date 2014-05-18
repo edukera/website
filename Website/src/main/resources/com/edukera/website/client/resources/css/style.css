@@ -567,6 +567,7 @@ body {
 .feature {
     display: block;
     position: relative;
+    top: -33px;
 }
 
 .feature-reasoning {
@@ -765,8 +766,19 @@ body {
     color: rgba(0, 172, 231, 1);
 }
 
-.comming-soon {
+.coming-soon {
+    display: block;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
 
+.coming-soon-content {
+    display: inline-block;
+    position: relative;
+    font-family: 'droidsans-bold', sans-serif ;
+    color: rgba(255,255,255,1);
+    font-size: 30px;
 }
 
 .hibert-wrapper {

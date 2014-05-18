@@ -49,7 +49,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		display.add(mContainerFeature.getDisplay().asWidget());
 		display.add(mContainerHilbert.getDisplay().asWidget());
 		display.add(mFooter.getDisplay().asWidget());
-//		fillLanguage();
+		fillLanguage();
 	}
 
 	@Override
