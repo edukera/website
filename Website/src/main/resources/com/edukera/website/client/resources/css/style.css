@@ -292,6 +292,7 @@ body {
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
     font-size: 40px;
     font-family: 'logo';
+    cursor: default;
 }
 
 .logo-math {
@@ -301,6 +302,7 @@ body {
     text-shadow: 0 0 2px rgba(0, 172, 231, 0.8);
     font-size: 40px;
     font-family: 'logo';
+    cursor: default;
 }
 
 .logo-logo-wrapper {
@@ -325,12 +327,14 @@ body {
     font-size: 45px;
     top: -6px;
     left: -3px;
+    cursor: default;
 }
 
 .logo-proposition {
     position: relative;
     display: block;
     text-align: center;
+    cursor: default;
 }
 
 .input {
@@ -361,8 +365,7 @@ body {
     right: 40px;
 }
 
-.input-button,
-.connection-button {
+.input-button {
     position: relative;
     display: inline-block;
     background-color: rgba(0, 172, 231, 0.8);
@@ -372,15 +375,36 @@ body {
     border-radius: 3px;
 }
 
-.input-button:hover,
-.connection-button:hover {
+.connection-button {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 172, 231, 0.8);
+    cursor: default;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.input-button:hover {
     background-color: rgba(0, 172, 231, 1);
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
 
-.input-button-content,
+.connection-button:hover {
+
+}
+
+.input-button-content {
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    font-family: 'droidsans-bold';
+}
+
 .connection-button-content {
     display: block;
     position: relative;
@@ -396,6 +420,7 @@ body {
     opacity: 0;
     font-family: 'droidsans-bold';
     margin-top: 20px;
+    cursor: default;
 }
 
 .saved .input-message {
@@ -421,6 +446,7 @@ body {
     font-family: 'logo';
     font-size: 55px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    cursor: default;
 }
 
 .value-proposition-container {
@@ -437,7 +463,7 @@ body {
     font-family: 'logo';
     font-size: 24px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
-
+    cursor: default;
 }
 
 .soon {
@@ -455,6 +481,7 @@ body {
     font-size: 24px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
     text-align: right;
+    cursor: default;
 }
 
 
@@ -498,6 +525,7 @@ body {
 .quote3 {
     font-family: 'logo';
     font-size: 45px;
+    cursor: default;
 }
 
 .quote1,
@@ -515,6 +543,7 @@ body {
 .quote-close {
     font-family: "icons-edukera";
     font-size: 45px;
+    cursor: default;
 }
 
 .quote-close {
@@ -544,6 +573,7 @@ body {
     color: white;
     font-size: 250px;
     text-align: center;
+    cursor: default;
 }
 
 .feature-reasoning-desc {
@@ -554,6 +584,7 @@ body {
     font-size: 18px;
     color: white;
     top: -45px;
+    cursor: default;
 }
 
 .feature-calculus {
@@ -571,6 +602,7 @@ body {
     color: white;
     font-size: 125px;
     text-align: center;
+    cursor: default;
 }
 
 .feature-calculus-desc {
@@ -580,6 +612,7 @@ body {
     font-family: "droidsans";
     font-size: 18px;
     color: white;
+    cursor: default;
 }
 
 .feature-writing {
@@ -598,6 +631,7 @@ body {
     font-size: 125px;
     text-align: center;
     top: 5px;
+    cursor: default;
 }
 
 .feature-writing-desc {
@@ -608,6 +642,7 @@ body {
     font-size: 18px;
     color: white;
     top: -5px;
+    cursor: default;
 }
 
 .button-language {
