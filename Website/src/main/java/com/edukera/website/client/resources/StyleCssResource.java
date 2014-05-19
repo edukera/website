@@ -130,6 +130,12 @@ public interface StyleCssResource extends CssResource {
   
   String logo();
   
+  @ClassName("logo-calculus")
+  String logoCalculus();
+  
+  @ClassName("logo-demo")
+  String logoDemo();
+  
   @ClassName("logo-logo-content")
   String logoLogoContent();
   
@@ -144,6 +150,9 @@ public interface StyleCssResource extends CssResource {
   
   @ClassName("logo-qedu")
   String logoQedu();
+  
+  @ClassName("logo-reasoning")
+  String logoReasoning();
   
   @ClassName("logo-wrapper")
   String logoWrapper();

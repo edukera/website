@@ -815,3 +815,18 @@ body {
 .column-item {
 
 }
+
+.logo-reasoning {
+    display: block;
+    position: relative;
+}
+
+.logo-calculus {
+    display: block;
+    position: relative;
+}
+
+.logo-demo {
+    display: block;
+    position: relative;
+}
