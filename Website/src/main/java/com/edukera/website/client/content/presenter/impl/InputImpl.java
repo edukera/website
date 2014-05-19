@@ -110,6 +110,7 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 
 		display.unsetSavedMode();
 		display.unsetErrorMode();
+		display.unsetInfoMode();
 		switch (mState) {
 		case saved:
 			display.setSavedMode();
@@ -118,7 +119,7 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 			break;
 
 		case duplicate:
-			display.setErrorMode();
+			display.setInfoMode();
 			String lDuplicate = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_DUPLICATE);
 			display.setMessageText(lDuplicate);
 			break;

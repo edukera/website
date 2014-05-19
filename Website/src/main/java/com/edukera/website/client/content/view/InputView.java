@@ -3,7 +3,6 @@ package com.edukera.website.client.content.view;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.generic.view.ADivView;
 import com.edukera.website.client.generic.widget.DivPanel;
-import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.event.dom.client.HasBlurHandlers;
 import com.google.gwt.event.dom.client.HasClickHandlers;
 import com.google.gwt.event.dom.client.HasFocusHandlers;
@@ -129,11 +128,13 @@ public class InputView extends ADivView implements Input.Display {
 		mInput.setFocus(iFocus);
 	}
 	
-	public void showInput() {
-		mInput.getElement().getStyle().clearDisplay();
+	@Override
+	public void setInfoMode() {
+		mRoot.addStyleName(STYLE.info());
 	}
 
-	public void hideInput() {
-		mInput.getElement().getStyle().setDisplay(Display.NONE);
+	@Override
+	public void unsetInfoMode() {
+		mRoot.removeStyleName(STYLE.info());
 	}
 }

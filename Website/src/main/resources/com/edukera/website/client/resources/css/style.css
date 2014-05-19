@@ -480,6 +480,11 @@ body {
     background-color: red;
 }
 
+.info .input-message {
+    opacity: 1;
+    background-color: transparent;
+}
+
 .value-proposition {
     position: relative;
     top: 140px;

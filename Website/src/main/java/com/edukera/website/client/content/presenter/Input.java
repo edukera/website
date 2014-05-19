@@ -30,10 +30,10 @@ public interface Input extends ADraw<Input.Display> {
 		void setMessageText(String iText);
 		void setSavedMode();
 		void unsetSavedMode();
+		void setInfoMode();
+		void unsetInfoMode();
 		void setErrorMode();
 		void unsetErrorMode();
-		void showInput();
-		void hideInput();
 	}
 
 	void setState(State iState);
