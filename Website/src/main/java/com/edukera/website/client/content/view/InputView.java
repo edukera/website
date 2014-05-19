@@ -3,6 +3,7 @@ package com.edukera.website.client.content.view;
 import com.edukera.website.client.content.presenter.Input;
 import com.edukera.website.client.generic.view.ADivView;
 import com.edukera.website.client.generic.widget.DivPanel;
+import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.event.dom.client.HasBlurHandlers;
 import com.google.gwt.event.dom.client.HasClickHandlers;
 import com.google.gwt.event.dom.client.HasFocusHandlers;
@@ -23,6 +24,15 @@ public class InputView extends ADivView implements Input.Display {
 	public InputView() {
 		mRoot.addStyleName(STYLE.input());
 		
+		mMessage = new DivPanel();
+		mRoot.add(mMessage);
+		mMessage.addStyleName(STYLE.inputMessage());
+		mMessage.addStyleName(STYLE.transAll());
+		
+		mMessageContent = new DivPanel();
+		mMessage.add(mMessageContent);
+		mMessageContent.addStyleName(STYLE.inputMessageContent());
+
 		mInput = new TextBox();
 		mRoot.add(mInput);
 		mInput.addStyleName(STYLE.inputInput());
@@ -36,14 +46,6 @@ public class InputView extends ADivView implements Input.Display {
 		mButton.add(mButtonContent);
 		mButtonContent.addStyleName(STYLE.inputButtonContent());
 		
-		mMessage = new DivPanel();
-		mRoot.add(mMessage);
-		mMessage.addStyleName(STYLE.inputMessage());
-		mMessage.addStyleName(STYLE.transAll());
-		
-		mMessageContent = new DivPanel();
-		mMessage.add(mMessageContent);
-		mMessageContent.addStyleName(STYLE.inputMessageContent());
 	}
 	
 	public HasFocusHandlers getHasFocusHandlers() {
@@ -126,4 +128,11 @@ public class InputView extends ADivView implements Input.Display {
 		mInput.setFocus(iFocus);
 	}
 	
+	public void showInput() {
+		mInput.getElement().getStyle().clearDisplay();
+	}
+
+	public void hideInput() {
+		mInput.getElement().getStyle().setDisplay(Display.NONE);
+	}
 }

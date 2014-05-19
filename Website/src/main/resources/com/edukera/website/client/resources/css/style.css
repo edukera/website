@@ -339,9 +339,9 @@ body {
 
 .input {
     position: relative;
-    top: 226px;
+    top: 200px;
     left: 700px;
-    width: 200px;
+    width: 305px;
 }
 
 .input-input {
@@ -405,6 +405,16 @@ body {
     font-family: 'droidsans-bold';
 }
 
+.saved .input-button {
+    opacity: 0;
+    cursor: default;
+}
+
+.saved .input-input {
+    opacity: 0;
+    cursor: default;
+}
+
 .connection-button-content {
     display: block;
     position: relative;
@@ -418,10 +428,10 @@ body {
     position: relative;
     display: inline-block;
     opacity: 0;
-    top: -120px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    height: 25px;
 }
 
 .input-message-content {
@@ -437,6 +447,7 @@ body {
 .saved .input-message {
     opacity: 1;
     background-color: green;
+    top: 25px;
 }
 
 .error .input-message {

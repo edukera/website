@@ -115,6 +115,7 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 		display.unsetErrorMode();
 		switch (mState) {
 		case saved:
+			display.hideInput();
 			display.setSavedMode();
 			String lSaved = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_SAVED);
 			display.setMessageText(lSaved);

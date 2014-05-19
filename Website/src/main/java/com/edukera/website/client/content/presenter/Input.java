@@ -32,6 +32,8 @@ public interface Input extends ADraw<Input.Display> {
 		void unsetSavedMode();
 		void setErrorMode();
 		void unsetErrorMode();
+		void showInput();
+		void hideInput();
 	}
 
 	void setState(State iState);

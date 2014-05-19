@@ -26,7 +26,7 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 		mColumns = EdukeraWebsite.ginjector.getColumns();
 		display.addContainer(mColumns.getDisplay().asWidget());
 		
-		initColumns();
+//		initColumns();
 	}
 
 	@Override
@@ -49,13 +49,12 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 	
 	private void initColumns() {
 		Column lCol0 = addColumn(mColumns, "id");
-		ColumnItem lCI00 = addColumnItem(lCol0, "id", "");
-		ColumnItem lCI01 = addColumnItem(lCol0, "id", "");
-		ColumnItem lCI02 = addColumnItem(lCol0, "id", "");
+		addColumnItem(lCol0, "id", "");
+		addColumnItem(lCol0, "id", "");
+		addColumnItem(lCol0, "id", "");
 
 		Column lCol1 = addColumn(mColumns, "id");
-		ColumnItem lCI10 = addColumnItem(lCol1, "id", "");
-
+		addColumnItem(lCol1, "id", "");
 	}
 
 	private Column addColumn(Columns iColumns, String iId) {
