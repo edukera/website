@@ -41,6 +41,15 @@ import com.edukera.website.client.content.view.SoonView;
 import com.edukera.website.client.content.view.ValuePropositionView;
 import com.edukera.website.client.generic.presenter.Tools;
 import com.edukera.website.client.generic.presenter.impl.ToolsImpl;
+import com.edukera.website.client.logo.presenter.LogoCalculus;
+import com.edukera.website.client.logo.presenter.LogoDemo;
+import com.edukera.website.client.logo.presenter.LogoReasoning;
+import com.edukera.website.client.logo.presenter.impl.LogoCalculusImpl;
+import com.edukera.website.client.logo.presenter.impl.LogoDemoImpl;
+import com.edukera.website.client.logo.presenter.impl.LogoReasoningImpl;
+import com.edukera.website.client.logo.view.LogoCalculusView;
+import com.edukera.website.client.logo.view.LogoDemoView;
+import com.edukera.website.client.logo.view.LogoReasoningView;
 import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
 import com.edukera.website.client.main.presenter.ContainerSky;
@@ -136,6 +145,18 @@ public class Module extends AbstractGinModule {
 
 		bind(ColumnItem.class).to(ColumnItemImpl.class);
 		bind(ColumnItem.Display.class).to(ColumnItemView.class);
+		
+		
+		/* Logo */
+		
+		bind(LogoCalculus.class).to(LogoCalculusImpl.class).in(Singleton.class);
+		bind(LogoCalculus.Display.class).to(LogoCalculusView.class).in(Singleton.class);
+		
+		bind(LogoReasoning.class).to(LogoReasoningImpl.class).in(Singleton.class);
+		bind(LogoReasoning.Display.class).to(LogoReasoningView.class).in(Singleton.class);
+		
+		bind(LogoDemo.class).to(LogoDemoImpl.class).in(Singleton.class);
+		bind(LogoDemo.Display.class).to(LogoDemoView.class).in(Singleton.class);
 
 	}
 }

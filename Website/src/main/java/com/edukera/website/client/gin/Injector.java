@@ -15,6 +15,9 @@ import com.edukera.website.client.content.presenter.Product;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.generic.presenter.Tools;
+import com.edukera.website.client.logo.presenter.LogoCalculus;
+import com.edukera.website.client.logo.presenter.LogoDemo;
+import com.edukera.website.client.logo.presenter.LogoReasoning;
 import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
 import com.edukera.website.client.main.presenter.ContainerSky;
@@ -55,4 +58,9 @@ public interface Injector extends Ginjector {
 	Columns getColumns();
 	Column getColumn();
 	ColumnItem getColumnItem();
+	
+	/* Logo */
+	LogoCalculus getLogoCalculus();
+	LogoDemo getLogoDemo();
+	LogoReasoning getLogoReasoning();
 }
