@@ -3,6 +3,9 @@ package com.edukera.website.client.gin;
 
 import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
+import com.edukera.website.client.content.presenter.Column;
+import com.edukera.website.client.content.presenter.ColumnItem;
+import com.edukera.website.client.content.presenter.Columns;
 import com.edukera.website.client.content.presenter.ComingSoon;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
@@ -51,4 +54,7 @@ public interface Injector extends Ginjector {
 	Product getProduct();
 	Hilbert getHilbert();
 	ComingSoon getComingSoon();
+	Columns getColumns();
+	Column getColumn();
+	ColumnItem getColumnItem();
 }

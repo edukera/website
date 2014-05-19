@@ -27,6 +27,19 @@ public interface StyleCssResource extends CssResource {
   @ClassName("button-language-menu")
   String buttonLanguageMenu();
   
+  String column();
+  
+  @ClassName("column-item")
+  String columnItem();
+  
+  @ClassName("column-title")
+  String columnTitle();
+  
+  @ClassName("column-wrapper")
+  String columnWrapper();
+  
+  String columns();
+  
   @ClassName("coming-soon")
   String comingSoon();
   

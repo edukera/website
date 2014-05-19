@@ -2,6 +2,9 @@ package com.edukera.website.client.gin;
 
 import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
+import com.edukera.website.client.content.presenter.Column;
+import com.edukera.website.client.content.presenter.ColumnItem;
+import com.edukera.website.client.content.presenter.Columns;
 import com.edukera.website.client.content.presenter.ComingSoon;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Feature;
@@ -13,6 +16,9 @@ import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.content.presenter.impl.AboutImpl;
 import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
+import com.edukera.website.client.content.presenter.impl.ColumnImpl;
+import com.edukera.website.client.content.presenter.impl.ColumnItemImpl;
+import com.edukera.website.client.content.presenter.impl.ColumnsImpl;
 import com.edukera.website.client.content.presenter.impl.ComingSoonImpl;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
 import com.edukera.website.client.content.presenter.impl.FeatureImpl;
@@ -24,6 +30,9 @@ import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
 import com.edukera.website.client.content.view.AboutView;
 import com.edukera.website.client.content.view.ButtonLanguageView;
+import com.edukera.website.client.content.view.ColumnItemView;
+import com.edukera.website.client.content.view.ColumnView;
+import com.edukera.website.client.content.view.ColumnsView;
 import com.edukera.website.client.content.view.ComingSoonView;
 import com.edukera.website.client.content.view.ConnectionView;
 import com.edukera.website.client.content.view.FeatureView;
@@ -124,5 +133,15 @@ public class Module extends AbstractGinModule {
 		
 		bind(ComingSoon.class).to(ComingSoonImpl.class).in(Singleton.class);
 		bind(ComingSoon.Display.class).to(ComingSoonView.class).in(Singleton.class);
+		
+		bind(Columns.class).to(ColumnsImpl.class).in(Singleton.class);
+		bind(Columns.Display.class).to(ColumnsView.class).in(Singleton.class);
+
+		bind(Column.class).to(ColumnImpl.class);
+		bind(Column.Display.class).to(ColumnView.class);
+
+		bind(ColumnItem.class).to(ColumnItemImpl.class);
+		bind(ColumnItem.Display.class).to(ColumnItemView.class);
+
 	}
 }
