@@ -1,7 +1,6 @@
 package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
-import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.Connection;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Product;
@@ -13,7 +12,6 @@ import com.google.web.bindery.event.shared.EventBus;
 public class HeaderImpl extends ADrawImpl<Header.Display> implements Header {
 
 	private final Logo mLogo;
-	private final About mAbout;
 	private final Product mProduct;
 	private final Connection mConnection;
 	
@@ -27,9 +25,6 @@ public class HeaderImpl extends ADrawImpl<Header.Display> implements Header {
 		mProduct = EdukeraWebsite.ginjector.getProduct();
 		display.addContainer(mProduct.getDisplay().asWidget());
 
-		mAbout = EdukeraWebsite.ginjector.getAbout();
-		display.addContainer(mAbout.getDisplay().asWidget());
-
 		mConnection = EdukeraWebsite.ginjector.getConnection();
 		display.addContainer(mConnection.getDisplay().asWidget());
 	}
@@ -38,7 +33,6 @@ public class HeaderImpl extends ADrawImpl<Header.Display> implements Header {
 	public void bind() {
 		super.bind();
 		mLogo.bind();
-		mAbout.bind();
 		mProduct.bind();
 		mConnection.bind();
 	}
@@ -46,7 +40,6 @@ public class HeaderImpl extends ADrawImpl<Header.Display> implements Header {
 	@Override
 	public void draw() {
 		mLogo.draw();
-		mAbout.draw();
 		mProduct.draw();
 		mConnection.draw();
 	}

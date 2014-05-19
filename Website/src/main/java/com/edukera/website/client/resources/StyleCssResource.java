@@ -78,32 +78,17 @@ public interface StyleCssResource extends CssResource {
   
   String feature();
   
-  @ClassName("feature-calculus")
-  String featureCalculus();
+  @ClassName("feature-desc")
+  String featureDesc();
   
-  @ClassName("feature-calculus-desc")
-  String featureCalculusDesc();
+  @ClassName("feature-logo")
+  String featureLogo();
   
-  @ClassName("feature-calculus-logo")
-  String featureCalculusLogo();
+  @ClassName("feature-title")
+  String featureTitle();
   
-  @ClassName("feature-reasoning")
-  String featureReasoning();
-  
-  @ClassName("feature-reasoning-desc")
-  String featureReasoningDesc();
-  
-  @ClassName("feature-reasoning-logo")
-  String featureReasoningLogo();
-  
-  @ClassName("feature-writing")
-  String featureWriting();
-  
-  @ClassName("feature-writing-desc")
-  String featureWritingDesc();
-  
-  @ClassName("feature-writing-logo")
-  String featureWritingLogo();
+  @ClassName("feature-wrapper")
+  String featureWrapper();
   
   String focus();
   

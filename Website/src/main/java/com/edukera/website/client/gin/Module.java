@@ -1,6 +1,5 @@
 package com.edukera.website.client.gin;
 
-import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Column;
 import com.edukera.website.client.content.presenter.ColumnItem;
@@ -14,7 +13,6 @@ import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Product;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
-import com.edukera.website.client.content.presenter.impl.AboutImpl;
 import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnItemImpl;
@@ -28,7 +26,6 @@ import com.edukera.website.client.content.presenter.impl.LogoImpl;
 import com.edukera.website.client.content.presenter.impl.ProductImpl;
 import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
-import com.edukera.website.client.content.view.AboutView;
 import com.edukera.website.client.content.view.ButtonLanguageView;
 import com.edukera.website.client.content.view.ColumnItemView;
 import com.edukera.website.client.content.view.ColumnView;
@@ -116,14 +113,11 @@ public class Module extends AbstractGinModule {
 		bind(Soon.class).to(SoonImpl.class).in(Singleton.class);
 		bind(Soon.Display.class).to(SoonView.class).in(Singleton.class);
 		
-		bind(Feature.class).to(FeatureImpl.class).in(Singleton.class);
-		bind(Feature.Display.class).to(FeatureView.class).in(Singleton.class);
+		bind(Feature.class).to(FeatureImpl.class);
+		bind(Feature.Display.class).to(FeatureView.class);
 		
 		bind(ButtonLanguage.class).to(ButtonLanguageImpl.class).in(Singleton.class);
 		bind(ButtonLanguage.Display.class).to(ButtonLanguageView.class).in(Singleton.class);
-		
-		bind(About.class).to(AboutImpl.class).in(Singleton.class);
-		bind(About.Display.class).to(AboutView.class).in(Singleton.class);
 		
 		bind(Product.class).to(ProductImpl.class).in(Singleton.class);
 		bind(Product.Display.class).to(ProductView.class).in(Singleton.class);

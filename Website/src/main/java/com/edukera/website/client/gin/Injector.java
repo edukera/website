@@ -1,7 +1,6 @@
 package com.edukera.website.client.gin;
 
 
-import com.edukera.website.client.content.presenter.About;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Column;
 import com.edukera.website.client.content.presenter.ColumnItem;
@@ -50,7 +49,6 @@ public interface Injector extends Ginjector {
 	Soon getSoon();
 	Feature getFeature();
 	ButtonLanguage getButtonLanguage();
-	About getAbout();
 	Product getProduct();
 	Hilbert getHilbert();
 	ComingSoon getComingSoon();

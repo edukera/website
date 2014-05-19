@@ -6,71 +6,39 @@ import com.edukera.website.client.generic.widget.DivPanel;
 
 public class FeatureView extends ADivView implements Feature.Display {
 
-	private final DivPanel mReasonning;
-	private final DivPanel mReasonningLogo;
-	private final DivPanel mReasonningDesc;
-	private final DivPanel mCalculus;
-	private final DivPanel mCalculusLogo;
-	private final DivPanel mCalculusDesc;
-	private final DivPanel mWriting;
-	private final DivPanel mWritingLogo;
-	private final DivPanel mWritingDesc;
-	
+	private final DivPanel mLogo;
+	private final DivPanel mWrapper;
+	private final DivPanel mTitle;
+	private final DivPanel mDesc;
+
 	public FeatureView() {
 		mRoot.addStyleName(STYLE.feature());
-		
-		mReasonning = new DivPanel();
-		mRoot.add(mReasonning);
-		mReasonning.addStyleName(STYLE.featureReasoning());
-		
-		mReasonningLogo = new DivPanel();
-		mReasonning.add(mReasonningLogo);
-		mReasonningLogo.addStyleName(STYLE.featureReasoningLogo());
-		mReasonningLogo.setText("à");
-		
-		mReasonningDesc = new DivPanel();
-		mReasonning.add(mReasonningDesc);
-		mReasonningDesc.addStyleName(STYLE.featureReasoningDesc());
 
-		
-		mCalculus = new DivPanel();
-		mRoot.add(mCalculus);
-		mCalculus.addStyleName(STYLE.featureCalculus());
-		
-		mCalculusLogo = new DivPanel();
-		mCalculus.add(mCalculusLogo);
-		mCalculusLogo.addStyleName(STYLE.featureCalculusLogo());
-		mCalculusLogo.setText("^");
-		
-		mCalculusDesc = new DivPanel();
-		mCalculus.add(mCalculusDesc);
-		mCalculusDesc.addStyleName(STYLE.featureCalculusDesc());
-		
-		
-		mWriting = new DivPanel();
-		mRoot.add(mWriting);
-		mWriting.addStyleName(STYLE.featureWriting());
-		
-		mWritingLogo = new DivPanel();
-		mWriting.add(mWritingLogo);
-		mWritingLogo.addStyleName(STYLE.featureWritingLogo());
-		mWritingLogo.setText("I");
-		
-		mWritingDesc = new DivPanel();
-		mWriting.add(mWritingDesc);
-		mWritingDesc.addStyleName(STYLE.featureWritingDesc());
-		
+		mLogo = new DivPanel();
+		mRoot.add(mLogo);
+		mLogo.addStyleName(STYLE.featureLogo());
+
+		mWrapper = new DivPanel();
+		mRoot.add(mWrapper);
+		mWrapper.addStyleName(STYLE.featureWrapper());
+
+		mTitle = new DivPanel();
+		mWrapper.add(mTitle);
+		mTitle.addStyleName(STYLE.featureTitle());
+
+		mDesc = new DivPanel();
+		mWrapper.add(mDesc);
+		mDesc.addStyleName(STYLE.featureDesc());
 	}
 
-	public void setReasoningText(String iText) {
-		mReasonningDesc.setText(iText);
+	@Override
+	public void setTitleText(String iText) {
+		mTitle.setText(iText);
 	}
 
-	public void setCalculusText(String iText) {
-		mCalculusDesc.setText(iText);
+	@Override
+	public void setDescText(String iText) {
+		mDesc.setText(iText);
 	}
 
-	public void setWrittingText(String iText) {
-		mWritingDesc.setText(iText);
-	}
 }

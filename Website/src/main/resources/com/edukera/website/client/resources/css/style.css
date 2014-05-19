@@ -209,6 +209,14 @@ body {
     font-style:  normal;
 }
 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+
 /* ----------------------------- */
 /* ==Website */
 /* ----------------------------- */
@@ -514,7 +522,7 @@ body {
 .container-feature-wrapper {
     width: 1024px;
     margin: 0 auto;
-    height: 500px;
+    height: 800px;
     background-color: rgba(0, 172, 231, 0.04);
 }
 
@@ -578,94 +586,47 @@ body {
 .feature {
     display: block;
     position: relative;
-    top: -33px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
-.feature-reasoning {
-    display: block;
+.feature-logo {
+    display: inline-block;
     position: relative;
-    top: 20px;
-    left: 400px;
-    width: 250px;
-}
-
-.feature-reasoning-logo {
-    display: block;
-    position: relative;
-    font-family: "icons-edukera";
+    height: 200px;
+    width: 200px;
     color: white;
-    font-size: 250px;
-    text-align: center;
     cursor: default;
+    margin-right: 20px;
 }
 
-.feature-reasoning-desc {
+.feature-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.feature-title {
     display: block;
     position: relative;
     text-align: center;
+    font-family: "droidsans-bold";
+    font-size: 20px;
+    color: white;
+    cursor: default;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    display: block;
+    position: relative;
+    cursor: default;
+    text-align: justify;
+    width: 500px;
     font-family: "droidsans";
-    font-size: 18px;
+    font-size: 16px;
     color: white;
-    top: -45px;
-    cursor: default;
-}
-
-.feature-calculus {
-    display: block;
-    position: relative;
-    top: 0px;
-    left: 100px;
-    width: 300px;
-}
-
-.feature-calculus-logo {
-    display: block;
-    position: relative;
-    font-family: "icons-edukera";
-    color: white;
-    font-size: 125px;
-    text-align: center;
-    cursor: default;
-}
-
-.feature-calculus-desc {
-    display: block;
-    position: relative;
-    text-align: center;
-    font-family: "droidsans";
-    font-size: 18px;
-    color: white;
-    cursor: default;
-}
-
-.feature-writing {
-    display: block;
-    position: relative;
-    width: 300px;
-    top: -150px;
-    left: 600px;
-}
-
-.feature-writing-logo {
-    display: block;
-    position: relative;
-    font-family: "icons-edukera";
-    color: white;
-    font-size: 125px;
-    text-align: center;
-    top: 5px;
-    cursor: default;
-}
-
-.feature-writing-desc {
-    display: block;
-    position: relative;
-    text-align: center;
-    font-family: "droidsans";
-    font-size: 18px;
-    color: white;
-    top: -5px;
-    cursor: default;
 }
 
 .button-language {
@@ -780,16 +741,17 @@ body {
 .coming-soon {
     display: block;
     position: relative;
-    left: 100px;
-    top: 50px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .coming-soon-content {
     display: inline-block;
     position: relative;
-    font-family: 'droidsans-bold', sans-serif ;
+    font-family: 'Pacifico', cursive;
     color: rgba(255,255,255,1);
     font-size: 30px;
+    text-align: center;
 }
 
 .hibert-wrapper {
@@ -802,12 +764,12 @@ body {
     border-radius: 10px;
     top: 50px;
     left: 700px;
-    background-color: rgba(0, 172, 231, 0.2);
+    background-color: rgba(20, 34, 51, 0.8);
     cursor: pointer;
 }
 
 .hibert-wrapper:hover {
-    background-color: rgba(0, 172, 231, 0.5);
+
 }
 
 
