@@ -531,7 +531,7 @@ body {
 .container-feature-wrapper {
     width: 1024px;
     margin: 0 auto;
-    height: 600px;
+    height: 620px;
     background-color: rgba(0, 172, 231, 0.04);
     padding-top: 30px;
 }
@@ -761,7 +761,7 @@ body {
     position: relative;
     font-family: 'Pacifico', cursive;
     color: rgba(255,255,255,1);
-    font-size: 30px;
+    font-size: 42px;
     text-align: center;
 }
 
@@ -888,12 +888,12 @@ body {
     display: inline-block;
     position: relative;
     font-family: "icons-edukera";
-    font-size: 70px;
+    font-size: 140px;
     cursor: default;
     z-index: 1;
-    color: #1C1C1C;
-    top: -43px;
-    left: -45px;
+    color: white;
+    top: -29px;
+    left: 38px;
 }
 
 .logo-demo {
@@ -919,16 +919,16 @@ body {
 }
 
 .logo-demo-m1 {
-    left: -25px;
+    left: -23px;
     top: -15px;
 }
 
 .logo-demo-m2 {
     left: 30px;
-    top: -80px;
+    top: -78px;
 }
 
 .logo-demo-m3 {
-    left: -25px;
-    top: -80px;
+    left: -23px;
+    top: -78px;
 }
