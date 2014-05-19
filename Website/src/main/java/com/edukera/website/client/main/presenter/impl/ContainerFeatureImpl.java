@@ -21,15 +21,15 @@ public class ContainerFeatureImpl extends ADrawImpl<ContainerFeature.Display> im
 		super(eventBus, display);
 		
 		mFeatureReasoning = EdukeraWebsite.ginjector.getFeature();
-		mFeatureReasoning.init("", WebsiteKeys.REASONING_TITLE, WebsiteKeys.REASONING_DESC);
+		mFeatureReasoning.init(EdukeraWebsite.ginjector.getLogoReasoning(), WebsiteKeys.REASONING_TITLE, WebsiteKeys.REASONING_DESC);
 		display.addWrapper(mFeatureReasoning.getDisplay().asWidget());
 
 		mFeatureCalculus = EdukeraWebsite.ginjector.getFeature();
-		mFeatureCalculus.init("", WebsiteKeys.CALCULUS_TITLE, WebsiteKeys.CALCULUS_DESC);
+		mFeatureCalculus.init(EdukeraWebsite.ginjector.getLogoCalculus(), WebsiteKeys.CALCULUS_TITLE, WebsiteKeys.CALCULUS_DESC);
 		display.addWrapper(mFeatureCalculus.getDisplay().asWidget());
 
 		mFeatureDemonstration = EdukeraWebsite.ginjector.getFeature();
-		mFeatureDemonstration.init("", WebsiteKeys.DEMONSTRATION_TITLE, WebsiteKeys.DEMONSTRATION_DESC);
+		mFeatureDemonstration.init(EdukeraWebsite.ginjector.getLogoDemo(), WebsiteKeys.DEMONSTRATION_TITLE, WebsiteKeys.DEMONSTRATION_DESC);
 		display.addWrapper(mFeatureDemonstration.getDisplay().asWidget());
 
 		mComingSoon = EdukeraWebsite.ginjector.getComingSoon();

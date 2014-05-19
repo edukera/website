@@ -3,6 +3,7 @@ package com.edukera.website.client.content.view;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.generic.view.ADivView;
 import com.edukera.website.client.generic.widget.DivPanel;
+import com.google.gwt.user.client.ui.Widget;
 
 public class FeatureView extends ADivView implements Feature.Display {
 
@@ -39,6 +40,11 @@ public class FeatureView extends ADivView implements Feature.Display {
 	@Override
 	public void setDescText(String iText) {
 		mDesc.setText(iText);
+	}
+
+	@Override
+	public void setLogo(Widget iWidget) {
+		mLogo.add(iWidget);
 	}
 
 }

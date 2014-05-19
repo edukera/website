@@ -423,8 +423,17 @@ body {
     cursor: default;
 }
 
+.connection-button-logo {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    font-family: "icons-edukera";
+}
+
 .connection-button-content {
-    display: block;
+    display: inline-block;
     position: relative;
     color: white;
     font-size: 18px;
@@ -522,8 +531,9 @@ body {
 .container-feature-wrapper {
     width: 1024px;
     margin: 0 auto;
-    height: 800px;
+    height: 600px;
     background-color: rgba(0, 172, 231, 0.04);
+    padding-top: 30px;
 }
 
 .container-hilbert {
@@ -588,12 +598,13 @@ body {
     position: relative;
     padding-top: 30px;
     padding-left: 30px;
+    height: 130px;
 }
 
 .feature-logo {
     display: inline-block;
     position: relative;
-    height: 200px;
+    height: 100px;
     width: 200px;
     color: white;
     cursor: default;
@@ -623,7 +634,7 @@ body {
     position: relative;
     cursor: default;
     text-align: justify;
-    width: 500px;
+    width: 700px;
     font-family: "droidsans";
     font-size: 16px;
     color: white;
@@ -742,7 +753,7 @@ body {
     display: block;
     position: relative;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 .coming-soon-content {
@@ -819,14 +830,105 @@ body {
 .logo-reasoning {
     display: block;
     position: relative;
+    height: 130px;
+}
+
+.logo-reasoning-m0,
+.logo-reasoning-m1,
+.logo-reasoning-m2 {
+    display: inline-block;
+    position: relative;
+    font-family: "icons-edukera";
+    font-size: 80px;
+    cursor: default;
+}
+
+.logo-reasoning-m0 {
+    left: 30px;
+    top: -23px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+}
+
+.logo-reasoning-m1 {
+    left: 14px;
+    top: 0px;
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+}
+
+.logo-reasoning-m2 {
+    left: 50px;
+    top: -65px;
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
 }
 
 .logo-calculus {
     display: block;
     position: relative;
+    height: 100px;
+}
+
+.logo-calculus-logo {
+    display: inline-block;
+    position: relative;
+    font-family: "icons-edukera";
+    font-size: 130px;
+    cursor: default;
+    color: white;
+    top: -17px;
+    left: 50px;
+}
+
+.logo-calculus-operator {
+    display: inline-block;
+    position: relative;
+    font-family: "icons-edukera";
+    font-size: 70px;
+    cursor: default;
+    z-index: 1;
+    color: #1C1C1C;
+    top: -43px;
+    left: -45px;
 }
 
 .logo-demo {
     display: block;
     position: relative;
+    height: 100px;
+}
+
+.logo-demo-m0,
+.logo-demo-m1,
+.logo-demo-m2,
+.logo-demo-m3 {
+    display: inline-block;
+    position: relative;
+    font-family: "icons-edukera";
+    font-size: 100px;
+    cursor: default;
+}
+
+.logo-demo-m0 {
+    left: 30px;
+    top: -15px;
+}
+
+.logo-demo-m1 {
+    left: -25px;
+    top: -15px;
+}
+
+.logo-demo-m2 {
+    left: 30px;
+    top: -80px;
+}
+
+.logo-demo-m3 {
+    left: -25px;
+    top: -80px;
 }

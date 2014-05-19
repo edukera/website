@@ -2,13 +2,14 @@ package com.edukera.website.client.content.presenter.impl;
 
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.data.DataResources;
+import com.edukera.website.client.generic.presenter.ADraw;
 import com.edukera.website.client.generic.presenter.impl.BasePresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
 public class FeatureImpl extends BasePresenter<Feature.Display> implements Feature {
 
-	private String mId;
+	private ADraw<?> mLogo;
 	private String mTitle;
 	private String mDesc;
 	
@@ -20,15 +21,19 @@ public class FeatureImpl extends BasePresenter<Feature.Display> implements Featu
 	@Override
 	public void bind() {
 		super.bind();
+		mLogo.bind();
 	}
 	
-	public void init(String iId, String iTitle, String iDesc) {
-		mId = iId;
+	public void init(ADraw<?> iLogo, String iTitle, String iDesc) {
+		mLogo = iLogo;
 		mTitle = iTitle;
 		mDesc = iDesc;
+		
+		display.setLogo(iLogo.getDisplay().asWidget());
 	}
 	
 	public void draw() {
+		mLogo.draw();
 		String lTitle = DataResources.getInstance().getContent(mTitle);
 		display.setTitleText(lTitle);
 		

@@ -7,6 +7,7 @@ import com.edukera.website.client.generic.widget.DivPanel;
 public class ConnectionView extends ADivView implements Connection.Display {
 
 	private final DivPanel mButton;
+//	private final DivPanel mButtonLogo;
 	private final DivPanel mButtonContent;
 	
 	public ConnectionView() {
@@ -16,6 +17,11 @@ public class ConnectionView extends ADivView implements Connection.Display {
 		mRoot.add(mButton);
 		mButton.addStyleName(STYLE.connectionButton());
 		mButton.addStyleName(STYLE.transAll());
+		
+//		mButtonLogo = new DivPanel();
+//		mButton.add(mButtonLogo);
+//		mButtonLogo.addStyleName(STYLE.connectionButtonLogo());
+//		mButtonLogo.setText("ê");
 		
 		mButtonContent = new DivPanel();
 		mButton.add(mButtonContent);
