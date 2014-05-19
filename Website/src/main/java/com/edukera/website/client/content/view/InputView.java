@@ -36,6 +36,7 @@ public class InputView extends ADivView implements Input.Display {
 		mInput = new TextBox();
 		mRoot.add(mInput);
 		mInput.addStyleName(STYLE.inputInput());
+		mInput.addStyleName(STYLE.transAll());
 
 		mButton = new DivPanel();
 		mRoot.add(mButton);
