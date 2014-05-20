@@ -108,35 +108,43 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 		String lButton = DataResources.getInstance().getContent(WebsiteKeys.INPUTBUTTON);
 		display.setButtonText(lButton);
 
-		display.unsetSavedMode();
-		display.unsetErrorMode();
-		display.unsetInfoMode();
 		switch (mState) {
 		case saved:
+			display.unsetErrorMode();
+			display.unsetInfoMode();
 			display.setSavedMode();
 			String lSaved = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_SAVED);
 			display.setMessageText(lSaved);
 			break;
 
 		case duplicate:
+			display.unsetSavedMode();
+			display.unsetErrorMode();
 			display.setInfoMode();
 			String lDuplicate = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_DUPLICATE);
 			display.setMessageText(lDuplicate);
 			break;
 
 		case malformed:
+			display.unsetSavedMode();
+			display.unsetInfoMode();
 			display.setErrorMode();
 			String lMalformed = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_MALFORMED);
 			display.setMessageText(lMalformed);
 			break;
 
 		case error:
+			display.unsetSavedMode();
+			display.unsetInfoMode();
 			display.setErrorMode();
 			String lError = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_ERROR);
 			display.setMessageText(lError);
 			break;
 
 		default:
+			display.unsetSavedMode();
+			display.unsetErrorMode();
+			display.unsetInfoMode();
 			display.setMessageText("");
 		}
 	}
@@ -146,6 +154,6 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 	}
 
 	private boolean checkEmail(String iEmail) {
-		return iEmail.matches("^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)+$");
+		return iEmail.matches("^[_a-zA-Z0-9-]+(\\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)+$");
 	}
 }

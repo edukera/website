@@ -774,12 +774,12 @@ body {
     position: relative;
     font-family: 'Pacifico', cursive;
     color: rgba(255,255,255,1);
-    font-size: 42px;
+    font-size: 35px;
     text-align: center;
 }
 
 .hibert-wrapper {
-    display: block;
+    display: inline-block;
     position: relative;
     height: 40px;
     width: 200px;
@@ -803,17 +803,18 @@ body {
     -moz-border-radius: 10px 0 0 10px;
     -webkit-border-radius: 10px 0 0 10px;
     border-radius: 10px 0 0 10px;
-    height: 42px;
+    height: 40px;
 }
 
 .hibert-name {
     display: inline-block;
     position: relative;
-    margin-left: 10px;
+    margin-left: 14px;
     font-family: 'droidsans-bold', sans-serif ;
     color: rgba(255,255,255,0.8);
     font-size: 20px;
-    top: -15px;
+    top: -14px;
+    height: 40px;
 }
 
 .hibert-wrapper:hover .hibert-name {
