@@ -7,6 +7,7 @@ public class ColumnItemView extends AAView implements ColumnItem.Display {
 
 	public ColumnItemView() {
 		mRoot.addStyleName(STYLE.columnItem());
+		mRoot.getElement().setAttribute("target", "_blank");
 	}
 	
 	public void setContentText(String iText) {

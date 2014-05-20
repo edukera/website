@@ -59,10 +59,14 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 		addColumnItem(lCol0, WebsiteKeys.COMPANY, "");
 		addColumnItem(lCol0, WebsiteKeys.ABOUT_US, "");
 		addColumnItem(lCol0, WebsiteKeys.LEGAL_INFORMATION, "");
-
+		addColumnItem(lCol0, WebsiteKeys.CONTACT_US, "");
+		
 		Column lCol1 = addColumn(mColumns, WebsiteKeys.FOLLOW_US);
-		addColumnItem(lCol1, WebsiteKeys.CONTACT_US, "");
-	}
+		addColumnItem(lCol1, WebsiteKeys.FACEBOOK, "");
+		addColumnItem(lCol1, WebsiteKeys.GOOGLE_PLUS, "");
+		addColumnItem(lCol1, WebsiteKeys.TWITTER, "https://twitter.com/qedumath");
+		addColumnItem(lCol1, WebsiteKeys.LINKEDIN, "");
+}
 
 	private Column addColumn(Columns iColumns, String iId) {
 		Column lColumn = EdukeraWebsite.ginjector.getColumn();
