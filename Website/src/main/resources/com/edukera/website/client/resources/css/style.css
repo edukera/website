@@ -570,7 +570,7 @@ body {
     width: 545px;
     top: 50px;
     left: 50px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .quote1,
@@ -811,14 +811,14 @@ body {
     position: relative;
     margin-left: 14px;
     font-family: 'droidsans', sans-serif ;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,1);
     font-size: 20px;
     top: -14px;
     height: 40px;
 }
 
-.hibert-wrapper:hover .hibert-name {
-    color: rgba(255,255,255,1);
+.hibert-wrapper:hover {
+    background-color: rgba(20, 34, 51, 1);
 }
 
 
@@ -834,7 +834,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(16, 16, 16, 0.8);
     top: 30px;
-    left: 500px;
+    left: 442px;
 }
 
 .chevron-content {
@@ -897,6 +897,7 @@ body {
     font-size: 14px;
     top: 50px;
     text-align: right;
+    margin-right: 83px;
 }
 
 .logo-reasoning {
