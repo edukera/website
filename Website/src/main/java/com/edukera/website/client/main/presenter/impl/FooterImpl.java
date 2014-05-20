@@ -46,15 +46,9 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 
 	@Override
 	public void draw() {
-		int lHeight = Window.getClientHeight() - 425;
-		if (lHeight < 200) {
-			lHeight = 200;
-		}
-		
 		String lCopyright = DataResources.getInstance().getContent(WebsiteKeys.COPYRIGHT);
 		display.setCopyrightText(lCopyright);
 		
-		display.setHeight(lHeight);
 		mButtonLanguage.draw();
 		mChevron.draw();
 		mColumns.draw();
