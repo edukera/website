@@ -77,6 +77,8 @@ public interface StyleCssResource extends CssResource {
   @ClassName("container-wrapper")
   String containerWrapper();
   
+  String copyright();
+  
   String error();
   
   String feature();

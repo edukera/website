@@ -8,5 +8,7 @@ public interface Footer extends ADraw<Footer.Display> {
 
 	interface Display extends ADraw.Display {
 		void addContainer(Widget iWidget);
+
+		void setCopyrightText(String iText);
 	}
 }

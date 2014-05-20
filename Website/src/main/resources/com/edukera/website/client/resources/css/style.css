@@ -822,23 +822,53 @@ body {
 }
 
 .columns {
-
+    display: block;
+    position: relative;
+    margin-left: 100px;
+    padding-top: 50px;
 }
 
 .column {
-
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+    vertical-align: top;
 }
 
 .column-title {
-
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'droidsans-bold';
+    font-size: 20px;
+    padding-bottom: 20px;
+    cursor: default;
 }
 
 .column-wrapper {
-
+    display: block;
+    position: relative;
+    padding-left: 30px;
 }
 
 .column-item {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'droidsans';
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
 
+.copyright {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'droidsans';
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: right;
 }
 
 .logo-reasoning {
