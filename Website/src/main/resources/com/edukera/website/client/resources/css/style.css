@@ -821,10 +821,37 @@ body {
     color: rgba(255,255,255,1);
 }
 
-.columns {
-    display: block;
+
+.chevron {
+    display: inline-block;
     position: relative;
+    vertical-align: top;
+    height: 140px;
+    width: 140px;
+    background-color: rgba(42, 42, 42, 1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     margin-left: 100px;
+    box-shadow: 0 0 5px rgba(16, 16, 16, 0.8);
+    top: 30px;
+}
+
+.chevron-content {
+    display: inline-block;
+    position: relative;
+    font-family: 'icons-edukera';
+    font-size: 130px;
+    color: rgba(77, 77, 77, 1);
+    left: 10px;
+    cursor: default;
+}
+
+.columns {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-left: 300px;
     padding-top: 30px;
 }
 

@@ -2,6 +2,7 @@ package com.edukera.website.client.gin;
 
 
 import com.edukera.website.client.content.presenter.ButtonLanguage;
+import com.edukera.website.client.content.presenter.Chevron;
 import com.edukera.website.client.content.presenter.Column;
 import com.edukera.website.client.content.presenter.ColumnItem;
 import com.edukera.website.client.content.presenter.Columns;
@@ -58,6 +59,7 @@ public interface Injector extends Ginjector {
 	Columns getColumns();
 	Column getColumn();
 	ColumnItem getColumnItem();
+	Chevron getChevron();
 	
 	/* Logo */
 	LogoCalculus getLogoCalculus();

@@ -2,6 +2,7 @@ package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
+import com.edukera.website.client.content.presenter.Chevron;
 import com.edukera.website.client.content.presenter.Column;
 import com.edukera.website.client.content.presenter.ColumnItem;
 import com.edukera.website.client.content.presenter.Columns;
@@ -16,6 +17,7 @@ import com.google.web.bindery.event.shared.EventBus;
 public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 
 	private final ButtonLanguage mButtonLanguage;
+	private final Chevron mChevron;
 	private final Columns mColumns;
 	
 	@Inject
@@ -24,6 +26,9 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 		
 		mButtonLanguage = EdukeraWebsite.ginjector.getButtonLanguage();
 		display.add(mButtonLanguage.getDisplay().asWidget());
+		
+		mChevron = EdukeraWebsite.ginjector.getChevron();
+		display.addContainer(mChevron.getDisplay().asWidget());
 		
 		mColumns = EdukeraWebsite.ginjector.getColumns();
 		display.addContainer(mColumns.getDisplay().asWidget());
@@ -35,6 +40,7 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 	public void bind() {
 		super.bind();
 		mButtonLanguage.bind();
+		mChevron.bind();
 		mColumns.bind();
 	}
 
@@ -50,6 +56,7 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 		
 		display.setHeight(lHeight);
 		mButtonLanguage.draw();
+		mChevron.draw();
 		mColumns.draw();
 	}
 	

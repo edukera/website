@@ -1,6 +1,7 @@
 package com.edukera.website.client.gin;
 
 import com.edukera.website.client.content.presenter.ButtonLanguage;
+import com.edukera.website.client.content.presenter.Chevron;
 import com.edukera.website.client.content.presenter.Column;
 import com.edukera.website.client.content.presenter.ColumnItem;
 import com.edukera.website.client.content.presenter.Columns;
@@ -14,6 +15,7 @@ import com.edukera.website.client.content.presenter.Product;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
+import com.edukera.website.client.content.presenter.impl.ChevronImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnItemImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnsImpl;
@@ -27,6 +29,7 @@ import com.edukera.website.client.content.presenter.impl.ProductImpl;
 import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
 import com.edukera.website.client.content.view.ButtonLanguageView;
+import com.edukera.website.client.content.view.ChevronView;
 import com.edukera.website.client.content.view.ColumnItemView;
 import com.edukera.website.client.content.view.ColumnView;
 import com.edukera.website.client.content.view.ColumnsView;
@@ -145,6 +148,9 @@ public class Module extends AbstractGinModule {
 
 		bind(ColumnItem.class).to(ColumnItemImpl.class);
 		bind(ColumnItem.Display.class).to(ColumnItemView.class);
+
+		bind(Chevron.class).to(ChevronImpl.class);
+		bind(Chevron.Display.class).to(ChevronView.class);
 		
 		
 		/* Logo */
