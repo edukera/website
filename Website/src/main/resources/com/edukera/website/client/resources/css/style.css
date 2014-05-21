@@ -392,9 +392,8 @@ body {
 .connection {
     display: inline-block;
     position: relative;
-    float: right;
-    top: -36px;
-    right: 40px;
+    left: 483px;
+    top: -3px;
 }
 
 .about .connection {
