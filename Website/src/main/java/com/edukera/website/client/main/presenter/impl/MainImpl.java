@@ -55,7 +55,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		display.add(mContainerAbout.getDisplay().asWidget());
 		display.add(mFooter.getDisplay().asWidget());
 		updateAboutMode(false);
-//		fillLanguage();
+		fillLanguage();
 	}
 
 	@Override

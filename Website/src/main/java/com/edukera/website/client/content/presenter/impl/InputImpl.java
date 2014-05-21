@@ -118,9 +118,9 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 			break;
 
 		case duplicate:
-			display.unsetSavedMode();
 			display.unsetErrorMode();
-			display.setInfoMode();
+			display.unsetInfoMode();
+			display.setSavedMode();
 			String lDuplicate = DataResources.getInstance().getContent(WebsiteKeys.INPUT_EMAIL_DUPLICATE);
 			display.setMessageText(lDuplicate);
 			break;
