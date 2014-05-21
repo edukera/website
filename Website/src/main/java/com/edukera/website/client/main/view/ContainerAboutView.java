@@ -9,6 +9,7 @@ import com.google.gwt.user.client.ui.Widget;
 public class ContainerAboutView extends ADivView implements ContainerAbout.Display {
 
 	private final DivPanel mWrapper;
+	private final DivPanel mContent;
 	
 	public ContainerAboutView() {
 		mRoot.addStyleName(STYLE.containerAbout());
@@ -16,10 +17,14 @@ public class ContainerAboutView extends ADivView implements ContainerAbout.Displ
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);
 		mWrapper.addStyleName(STYLE.containerAboutWrapper());
+		
+		mContent = new DivPanel();
+		mWrapper.add(mContent);
+		mContent.addStyleName(STYLE.aboutContent());
 	}
 	
-	public void addWrapper(Widget iWidget) {
-		mWrapper.add(iWidget);
+	public void addContent(Widget iWidget) {
+		mContent.add(iWidget);
 	}
 	
 	public void setHeight(double iHeight) {

@@ -223,8 +223,9 @@ body {
 
 
 .main {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .header {
@@ -1019,3 +1020,53 @@ body {
     left: -23px;
     top: -78px;
 }
+
+.about-content {
+    display: block;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 800px;
+}
+
+.about-section {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'droidsans-bold';
+    font-size: 20px;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.about-wrapper {
+
+}
+
+.about-email {
+    cursor: pointer;
+    color: white;
+}
+
+.about-email:hover {
+    color: rgba(0, 172, 231, 1);
+}
+
+.about-legal1,
+.about-legal2,
+.about-legal3 {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: 'droidsans';
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+

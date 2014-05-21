@@ -8,9 +8,11 @@ import com.edukera.website.client.content.presenter.ColumnItemUrl;
 import com.edukera.website.client.content.presenter.Columns;
 import com.edukera.website.client.content.presenter.ComingSoon;
 import com.edukera.website.client.content.presenter.Connection;
+import com.edukera.website.client.content.presenter.ContactUs;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Hilbert;
 import com.edukera.website.client.content.presenter.Input;
+import com.edukera.website.client.content.presenter.LegalInformation;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Product;
 import com.edukera.website.client.content.presenter.Soon;
@@ -23,9 +25,11 @@ import com.edukera.website.client.content.presenter.impl.ColumnItemUrlImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnsImpl;
 import com.edukera.website.client.content.presenter.impl.ComingSoonImpl;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
+import com.edukera.website.client.content.presenter.impl.ContactUsImpl;
 import com.edukera.website.client.content.presenter.impl.FeatureImpl;
 import com.edukera.website.client.content.presenter.impl.HilbertImpl;
 import com.edukera.website.client.content.presenter.impl.InputImpl;
+import com.edukera.website.client.content.presenter.impl.LegalInformationImpl;
 import com.edukera.website.client.content.presenter.impl.LogoImpl;
 import com.edukera.website.client.content.presenter.impl.ProductImpl;
 import com.edukera.website.client.content.presenter.impl.SoonImpl;
@@ -38,9 +42,11 @@ import com.edukera.website.client.content.view.ColumnView;
 import com.edukera.website.client.content.view.ColumnsView;
 import com.edukera.website.client.content.view.ComingSoonView;
 import com.edukera.website.client.content.view.ConnectionView;
+import com.edukera.website.client.content.view.ContactUsView;
 import com.edukera.website.client.content.view.FeatureView;
 import com.edukera.website.client.content.view.HilbertView;
 import com.edukera.website.client.content.view.InputView;
+import com.edukera.website.client.content.view.LegalInformationView;
 import com.edukera.website.client.content.view.LogoView;
 import com.edukera.website.client.content.view.ProductView;
 import com.edukera.website.client.content.view.SoonView;
@@ -164,6 +170,11 @@ public class Module extends AbstractGinModule {
 		bind(Chevron.class).to(ChevronImpl.class);
 		bind(Chevron.Display.class).to(ChevronView.class);
 		
+		bind(ContactUs.class).to(ContactUsImpl.class);
+		bind(ContactUs.Display.class).to(ContactUsView.class);
+		
+		bind(LegalInformation.class).to(LegalInformationImpl.class);
+		bind(LegalInformation.Display.class).to(LegalInformationView.class);
 		
 		/* Logo */
 		

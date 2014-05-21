@@ -7,6 +7,6 @@ import com.google.gwt.user.client.ui.Widget;
 public interface ContainerAbout extends ADraw<ContainerAbout.Display> {
 
 	interface Display extends ADraw.Display {
-		void addWrapper(Widget iWidget);
+		void addContent(Widget iWidget);
 	}
 }

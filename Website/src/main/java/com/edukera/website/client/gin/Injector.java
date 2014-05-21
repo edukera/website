@@ -9,9 +9,11 @@ import com.edukera.website.client.content.presenter.ColumnItemUrl;
 import com.edukera.website.client.content.presenter.Columns;
 import com.edukera.website.client.content.presenter.ComingSoon;
 import com.edukera.website.client.content.presenter.Connection;
+import com.edukera.website.client.content.presenter.ContactUs;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Hilbert;
 import com.edukera.website.client.content.presenter.Input;
+import com.edukera.website.client.content.presenter.LegalInformation;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Product;
 import com.edukera.website.client.content.presenter.Soon;
@@ -64,6 +66,8 @@ public interface Injector extends Ginjector {
 	ColumnItemUrl getColumnItem();
 	ColumnItemAbout getColumnItemAbout();
 	Chevron getChevron();
+	ContactUs getContactUs();
+	LegalInformation getLegalInformation();
 	
 	/* Logo */
 	LogoCalculus getLogoCalculus();

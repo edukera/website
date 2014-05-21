@@ -65,6 +65,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		mContainerSky.bind();
 		mContainerFeature.bind();
 		mContainerHilbert.bind();
+		mContainerAbout.bind();
 		mFooter.bind();
 
 		registerHandler(Window.addResizeHandler(new ResizeHandler() {
@@ -88,6 +89,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		mContainerSky.draw();
 		mContainerFeature.draw();
 		mContainerHilbert.draw();
+		mContainerAbout.draw();
 		mFooter.draw();
 	}
 
