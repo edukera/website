@@ -6,9 +6,6 @@ public interface StyleCssResource extends CssResource {
   
   String about();
   
-  @ClassName("about-content")
-  String aboutContent();
-  
   @ClassName("button-language")
   String buttonLanguage();
   

@@ -11,7 +11,6 @@ public class ContainerSkyView extends ADivView implements ContainerSky.Display {
 	
 	public ContainerSkyView() {
 		mRoot.addStyleName(STYLE.container());
-		mRoot.addStyleName(STYLE.transAll());
 		
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);

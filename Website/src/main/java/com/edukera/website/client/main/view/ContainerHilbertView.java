@@ -18,7 +18,6 @@ public class ContainerHilbertView extends ADivView implements ContainerHilbert.D
 
 	public ContainerHilbertView() {
 		mRoot.addStyleName(STYLE.containerHilbert());
-		mRoot.addStyleName(STYLE.transAll());
 		
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);

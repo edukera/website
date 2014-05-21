@@ -48,14 +48,13 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		mContainerAbout = EdukeraWebsite.ginjector.getContainerAbout();
 		mFooter = EdukeraWebsite.ginjector.getFooter();
 
-		mContainerAbout.getDisplay().setHeight(0);
-		
 		display.add(mHeader.getDisplay().asWidget());
 		display.add(mContainerSky.getDisplay().asWidget());
 		display.add(mContainerFeature.getDisplay().asWidget());
 		display.add(mContainerHilbert.getDisplay().asWidget());
 		display.add(mContainerAbout.getDisplay().asWidget());
 		display.add(mFooter.getDisplay().asWidget());
+		updateAboutMode(false);
 //		fillLanguage();
 	}
 
@@ -111,9 +110,13 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 	}
 
 	private void scroll(ADraw<?> iComponent) {
-		int lBegin = display.getElement().getScrollTop();
 		int lValue = iComponent.getDisplay().getElement().getAbsoluteTop();
-		Scroller lScroller = new Scroller(display, lBegin, lValue);
+		scroll(lValue);
+	}
+	
+	private void scroll(int iValue) {
+		int lBegin = display.getElement().getScrollTop();
+		Scroller lScroller = new Scroller(display, lBegin, iValue);
 		lScroller.run(300);
 	}
 
@@ -176,18 +179,23 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 	public void updateAboutMode(boolean iAboutMode) {
 		mAboutMode = iAboutMode;
 		if (mAboutMode) {
-			mContainerSky.getDisplay().setHeight(0);
-			mContainerFeature.getDisplay().setHeight(0);
-			mContainerHilbert.getDisplay().setHeight(0);
-			mContainerAbout.getDisplay().setHeight(0);
+			display.setAbout();
+			mContainerSky.getDisplay().hide();
+			mContainerFeature.getDisplay().hide();
+			mContainerHilbert.getDisplay().hide();
+			
+			mContainerAbout.getDisplay().show();
 			
 			int lHeight = Window.getClientHeight() - 70;
 			mContainerAbout.getDisplay().setHeight(lHeight);
+			scroll(0);
 		} else {
-			mContainerSky.getDisplay().getElement().getStyle().clearHeight();
-			mContainerFeature.getDisplay().getElement().getStyle().clearHeight();
-			mContainerHilbert.getDisplay().getElement().getStyle().clearHeight();
+			display.unsetAbout();
+			mContainerSky.getDisplay().show();
+			mContainerFeature.getDisplay().show();
+			mContainerHilbert.getDisplay().show();
 			
+			mContainerAbout.getDisplay().hide();
 			mContainerAbout.getDisplay().setHeight(0);
 		}
 	}

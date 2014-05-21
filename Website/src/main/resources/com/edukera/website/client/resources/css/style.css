@@ -307,6 +307,10 @@ body {
     cursor: default;
 }
 
+.about .logo-qedu {
+    cursor: inherit;
+}
+
 .logo-math {
     position: relative;
     display: inline-block;
@@ -315,6 +319,10 @@ body {
     font-size: 40px;
     font-family: 'logo';
     cursor: default;
+}
+
+.about .logo-math {
+    cursor: inherit;
 }
 
 .logo-logo-wrapper {
@@ -340,6 +348,10 @@ body {
     top: -6px;
     left: -3px;
     cursor: default;
+}
+
+.about .logo-logo-content {
+    cursor: inherit;
 }
 
 .logo-proposition {
@@ -383,6 +395,10 @@ body {
     float: right;
     top: -36px;
     right: 40px;
+}
+
+.about .connection {
+    display: none;
 }
 
 .input-button {
@@ -736,30 +752,14 @@ body {
     width: 32px;
 }
 
-.about {
-    display: inline-block;
-    position: relative;
-    margin-left: 50px;
-}
-
-.about-content {
-    color: rgba(255,255,255,1);
-    font-family: 'geoslb712_md_btmedium', serif;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.about-content:hover {
-    color: rgba(0, 172, 231, 1);
-}
-
 .product {
     display: inline-block;
     position: relative;
     margin-left: 20px;
+}
+
+.about .product {
+    display: none;
 }
 
 .product-content {

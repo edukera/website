@@ -11,7 +11,6 @@ public class ContainerFeatureView extends ADivView implements ContainerFeature.D
 	
 	public ContainerFeatureView() {
 		mRoot.addStyleName(STYLE.containerFeature());
-		mRoot.addStyleName(STYLE.transAll());
 		
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);

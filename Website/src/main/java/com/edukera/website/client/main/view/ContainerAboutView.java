@@ -11,7 +11,6 @@ public class ContainerAboutView extends ADivView implements ContainerAbout.Displ
 	
 	public ContainerAboutView() {
 		mRoot.addStyleName(STYLE.containerAbout());
-		mRoot.addStyleName(STYLE.transAll());
 		
 		mWrapper = new DivPanel();
 		mRoot.add(mWrapper);
