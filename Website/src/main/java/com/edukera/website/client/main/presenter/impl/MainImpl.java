@@ -189,8 +189,8 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 			mContainerAbout.getDisplay().show();
 			
 			int lHeight = Window.getClientHeight() - (mHeader.getDisplay().getHeight() + mFooter.getDisplay().getHeight());
-			if (lHeight < 300) {
-				lHeight = 300;
+			if (lHeight < 350) {
+				lHeight = 350;
 			}
 			mContainerAbout.getDisplay().setHeight(lHeight);
 			scroll(0);
