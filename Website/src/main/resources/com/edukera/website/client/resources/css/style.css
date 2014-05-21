@@ -1067,6 +1067,7 @@ body {
     font-family: 'droidsans';
     font-size: 16px;
     text-align: justify;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    cursor: default;
 }
 
