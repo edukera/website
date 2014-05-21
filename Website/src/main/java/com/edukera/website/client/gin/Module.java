@@ -3,7 +3,8 @@ package com.edukera.website.client.gin;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Chevron;
 import com.edukera.website.client.content.presenter.Column;
-import com.edukera.website.client.content.presenter.ColumnItem;
+import com.edukera.website.client.content.presenter.ColumnItemAbout;
+import com.edukera.website.client.content.presenter.ColumnItemUrl;
 import com.edukera.website.client.content.presenter.Columns;
 import com.edukera.website.client.content.presenter.ComingSoon;
 import com.edukera.website.client.content.presenter.Connection;
@@ -17,7 +18,8 @@ import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.content.presenter.impl.ButtonLanguageImpl;
 import com.edukera.website.client.content.presenter.impl.ChevronImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnImpl;
-import com.edukera.website.client.content.presenter.impl.ColumnItemImpl;
+import com.edukera.website.client.content.presenter.impl.ColumnItemAboutImpl;
+import com.edukera.website.client.content.presenter.impl.ColumnItemUrlImpl;
 import com.edukera.website.client.content.presenter.impl.ColumnsImpl;
 import com.edukera.website.client.content.presenter.impl.ComingSoonImpl;
 import com.edukera.website.client.content.presenter.impl.ConnectionImpl;
@@ -30,7 +32,8 @@ import com.edukera.website.client.content.presenter.impl.SoonImpl;
 import com.edukera.website.client.content.presenter.impl.ValuePropositionImpl;
 import com.edukera.website.client.content.view.ButtonLanguageView;
 import com.edukera.website.client.content.view.ChevronView;
-import com.edukera.website.client.content.view.ColumnItemView;
+import com.edukera.website.client.content.view.ColumnItemAboutView;
+import com.edukera.website.client.content.view.ColumnItemUrlView;
 import com.edukera.website.client.content.view.ColumnView;
 import com.edukera.website.client.content.view.ColumnsView;
 import com.edukera.website.client.content.view.ComingSoonView;
@@ -53,18 +56,21 @@ import com.edukera.website.client.logo.presenter.impl.LogoReasoningImpl;
 import com.edukera.website.client.logo.view.LogoCalculusView;
 import com.edukera.website.client.logo.view.LogoDemoView;
 import com.edukera.website.client.logo.view.LogoReasoningView;
+import com.edukera.website.client.main.presenter.ContainerAbout;
 import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
 import com.edukera.website.client.main.presenter.ContainerSky;
 import com.edukera.website.client.main.presenter.Footer;
 import com.edukera.website.client.main.presenter.Header;
 import com.edukera.website.client.main.presenter.Main;
+import com.edukera.website.client.main.presenter.impl.ContainerAboutImpl;
 import com.edukera.website.client.main.presenter.impl.ContainerFeatureImpl;
 import com.edukera.website.client.main.presenter.impl.ContainerHilbertImpl;
 import com.edukera.website.client.main.presenter.impl.ContainerSkyImpl;
 import com.edukera.website.client.main.presenter.impl.FooterImpl;
 import com.edukera.website.client.main.presenter.impl.HeaderImpl;
 import com.edukera.website.client.main.presenter.impl.MainImpl;
+import com.edukera.website.client.main.view.ContainerAboutView;
 import com.edukera.website.client.main.view.ContainerFeatureView;
 import com.edukera.website.client.main.view.ContainerHilbertView;
 import com.edukera.website.client.main.view.ContainerSkyView;
@@ -108,6 +114,9 @@ public class Module extends AbstractGinModule {
 		bind(ContainerHilbert.class).to(ContainerHilbertImpl.class).in(Singleton.class);
 		bind(ContainerHilbert.Display.class).to(ContainerHilbertView.class).in(Singleton.class);
 		
+		bind(ContainerAbout.class).to(ContainerAboutImpl.class).in(Singleton.class);
+		bind(ContainerAbout.Display.class).to(ContainerAboutView.class).in(Singleton.class);
+		
 		/* Content */
 		
 		bind(Logo.class).to(LogoImpl.class).in(Singleton.class);
@@ -146,8 +155,11 @@ public class Module extends AbstractGinModule {
 		bind(Column.class).to(ColumnImpl.class);
 		bind(Column.Display.class).to(ColumnView.class);
 
-		bind(ColumnItem.class).to(ColumnItemImpl.class);
-		bind(ColumnItem.Display.class).to(ColumnItemView.class);
+		bind(ColumnItemUrl.class).to(ColumnItemUrlImpl.class);
+		bind(ColumnItemUrl.Display.class).to(ColumnItemUrlView.class);
+		
+		bind(ColumnItemAbout.class).to(ColumnItemAboutImpl.class);
+		bind(ColumnItemAbout.Display.class).to(ColumnItemAboutView.class);
 
 		bind(Chevron.class).to(ChevronImpl.class);
 		bind(Chevron.Display.class).to(ChevronView.class);

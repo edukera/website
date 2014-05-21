@@ -293,6 +293,10 @@ body {
     position: relative;
 }
 
+.about .logo-wrapper {
+    cursor: pointer;
+}
+
 .logo-qedu {
     position: relative;
     display: inline-block;
@@ -547,6 +551,16 @@ body {
     height: 620px;
     background-color: rgba(0, 172, 231, 0.04);
     padding-top: 30px;
+}
+
+.container-about {
+    width: 100%;
+}
+
+.container-about-wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: rgba(0, 172, 231, 0.04);
 }
 
 .container-hilbert {

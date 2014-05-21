@@ -64,6 +64,12 @@ public interface StyleCssResource extends CssResource {
   
   String container();
   
+  @ClassName("container-about")
+  String containerAbout();
+  
+  @ClassName("container-about-wrapper")
+  String containerAboutWrapper();
+  
   @ClassName("container-feature")
   String containerFeature();
   

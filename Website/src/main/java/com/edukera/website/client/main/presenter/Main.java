@@ -7,7 +7,8 @@ import com.edukera.website.client.generic.presenter.ADraw;
 public interface Main extends ADraw<Main.Display> {
 
 	interface Display extends ADraw.Display {
-
+		void setAbout();
+		void unsetAbout();
 	}
 	
 	Language getLanguage();
@@ -15,4 +16,6 @@ public interface Main extends ADraw<Main.Display> {
 	void scrollProduct();
 	void scrollAbout();
 	void saveEmail(String iEmail);
+	void updateAboutMode(boolean iAboutMode);
+	void clickLogo();
 }

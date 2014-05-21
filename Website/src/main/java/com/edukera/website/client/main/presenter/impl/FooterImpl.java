@@ -4,13 +4,13 @@ import com.edukera.website.client.EdukeraWebsite;
 import com.edukera.website.client.content.presenter.ButtonLanguage;
 import com.edukera.website.client.content.presenter.Chevron;
 import com.edukera.website.client.content.presenter.Column;
-import com.edukera.website.client.content.presenter.ColumnItem;
+import com.edukera.website.client.content.presenter.ColumnItemAbout;
+import com.edukera.website.client.content.presenter.ColumnItemUrl;
 import com.edukera.website.client.content.presenter.Columns;
 import com.edukera.website.client.data.DataResources;
 import com.edukera.website.client.data.WebsiteKeys;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.main.presenter.Footer;
-import com.google.gwt.user.client.Window;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
@@ -57,16 +57,16 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 	
 	private void initColumns() {
 		Column lCol0 = addColumn(mColumns, WebsiteKeys.ABOUT);
-		addColumnItem(lCol0, WebsiteKeys.COMPANY, "");
-		addColumnItem(lCol0, WebsiteKeys.ABOUT_US, "");
-		addColumnItem(lCol0, WebsiteKeys.LEGAL_INFORMATION, "");
-		addColumnItem(lCol0, WebsiteKeys.CONTACT_US, "");
+		addColumnItemAbout(lCol0, WebsiteKeys.COMPANY);
+		addColumnItemAbout(lCol0, WebsiteKeys.ABOUT_US);
+		addColumnItemAbout(lCol0, WebsiteKeys.LEGAL_INFORMATION);
+		addColumnItemAbout(lCol0, WebsiteKeys.CONTACT_US);
 		
 		Column lCol1 = addColumn(mColumns, WebsiteKeys.FOLLOW_US);
-		addColumnItem(lCol1, WebsiteKeys.FACEBOOK, "");
-		addColumnItem(lCol1, WebsiteKeys.GOOGLE_PLUS, "");
-		addColumnItem(lCol1, WebsiteKeys.TWITTER, "https://twitter.com/qedumath");
-		addColumnItem(lCol1, WebsiteKeys.LINKEDIN, "");
+		addColumnItemUrl(lCol1, WebsiteKeys.FACEBOOK, "");
+		addColumnItemUrl(lCol1, WebsiteKeys.GOOGLE_PLUS, "");
+		addColumnItemUrl(lCol1, WebsiteKeys.TWITTER, "https://twitter.com/qedumath");
+		addColumnItemUrl(lCol1, WebsiteKeys.LINKEDIN, "");
 }
 
 	private Column addColumn(Columns iColumns, String iId) {
@@ -77,12 +77,19 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 		return lColumn;
 	}
 	
-	private ColumnItem addColumnItem(Column iColumn, String iId, String iUrl) {
-		ColumnItem lColumnItem = EdukeraWebsite.ginjector.getColumnItem();
+	private ColumnItemAbout addColumnItemAbout(Column iColumn, String iId) {
+		ColumnItemAbout lColumnItemAbout = EdukeraWebsite.ginjector.getColumnItemAbout();
+		lColumnItemAbout.init(iId);
+		iColumn.getColumnItems().add(lColumnItemAbout);
+		iColumn.getDisplay().addItem(lColumnItemAbout.getDisplay().asWidget());
+		return lColumnItemAbout;
+	}
+	
+	private ColumnItemUrl addColumnItemUrl(Column iColumn, String iId, String iUrl) {
+		ColumnItemUrl lColumnItem = EdukeraWebsite.ginjector.getColumnItem();
 		lColumnItem.init(iId, iUrl);
 		iColumn.getColumnItems().add(lColumnItem);
 		iColumn.getDisplay().addItem(lColumnItem.getDisplay().asWidget());
 		return lColumnItem;
 	}
-	
 }

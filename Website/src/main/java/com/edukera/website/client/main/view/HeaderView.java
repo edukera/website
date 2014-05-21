@@ -11,6 +11,7 @@ public class HeaderView extends ADivView implements Header.Display {
 	
 	public HeaderView() {
 		mRoot.addStyleName(STYLE.header());
+		mRoot.addStyleName(STYLE.transAll());
 		
 		mContainer = new DivPanel();
 		mRoot.add(mContainer);

@@ -1,18 +1,17 @@
 package com.edukera.website.client.content.presenter.impl;
 
-import com.edukera.website.client.content.presenter.ColumnItem;
+import com.edukera.website.client.content.presenter.AColumnItem;
 import com.edukera.website.client.data.DataResources;
-import com.edukera.website.client.generic.presenter.impl.BasePresenter;
+import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-public class ColumnItemImpl extends BasePresenter<ColumnItem.Display> implements ColumnItem {
+public abstract class AColumnItemImpl<D extends AColumnItem.Display> extends ADrawImpl<D> implements AColumnItem<D> {
 
 	private String mId;
-	private String mUrl;
 	
 	@Inject
-	public ColumnItemImpl(EventBus eventBus, ColumnItem.Display display) {
+	public AColumnItemImpl(EventBus eventBus, D display) {
 		super(eventBus, display);
 	}
 
@@ -21,15 +20,13 @@ public class ColumnItemImpl extends BasePresenter<ColumnItem.Display> implements
 		super.bind();
 	}
 	
-	public void init(String iId, String iUrl) {
+	public void init(String iId) {
 		mId = iId;
-		mUrl = iUrl;
 	}
 
 	public void draw() {
 		String lText = DataResources.getInstance().getContent(mId);
 		display.setContentText(lText);
-		display.setUrl(mUrl);
 	}
 	
 }

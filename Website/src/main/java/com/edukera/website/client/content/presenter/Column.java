@@ -14,5 +14,5 @@ public interface Column extends ADraw<Column.Display> {
 	}
 	
 	void init(String iId);
-	List<ColumnItem> getColumnItems();
+	List<AColumnItem<?>> getColumnItems();
 }

@@ -7,6 +7,7 @@ import com.edukera.website.client.data.Language;
 import com.edukera.website.client.generic.presenter.ADraw;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.generic.tools.Scroller;
+import com.edukera.website.client.main.presenter.ContainerAbout;
 import com.edukera.website.client.main.presenter.ContainerFeature;
 import com.edukera.website.client.main.presenter.ContainerHilbert;
 import com.edukera.website.client.main.presenter.ContainerSky;
@@ -28,11 +29,13 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
 	PersistenceAsync sPersistence = (PersistenceAsync) GWT.create(Persistence.class);
 	
+	private boolean mAboutMode;
 	private Language mLanguage = Language.fr;
 	private final Header mHeader;
 	private final ContainerSky mContainerSky;
 	private final ContainerFeature mContainerFeature;
 	private final ContainerHilbert mContainerHilbert;
+	private final ContainerAbout mContainerAbout;
 	private final Footer mFooter;
 
 	@Inject
@@ -42,12 +45,16 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		mContainerSky = EdukeraWebsite.ginjector.getContainerSky();
 		mContainerFeature = EdukeraWebsite.ginjector.getContainerFeature();
 		mContainerHilbert = EdukeraWebsite.ginjector.getContainerHilbert();
+		mContainerAbout = EdukeraWebsite.ginjector.getContainerAbout();
 		mFooter = EdukeraWebsite.ginjector.getFooter();
 
+		mContainerAbout.getDisplay().setHeight(0);
+		
 		display.add(mHeader.getDisplay().asWidget());
 		display.add(mContainerSky.getDisplay().asWidget());
 		display.add(mContainerFeature.getDisplay().asWidget());
 		display.add(mContainerHilbert.getDisplay().asWidget());
+		display.add(mContainerAbout.getDisplay().asWidget());
 		display.add(mFooter.getDisplay().asWidget());
 //		fillLanguage();
 	}
@@ -165,5 +172,29 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		String lLocale = getLocale();
 		mLanguage = Language.getLanguage(lLocale);
 	}
+	
+	public void updateAboutMode(boolean iAboutMode) {
+		mAboutMode = iAboutMode;
+		if (mAboutMode) {
+			mContainerSky.getDisplay().setHeight(0);
+			mContainerFeature.getDisplay().setHeight(0);
+			mContainerHilbert.getDisplay().setHeight(0);
+			mContainerAbout.getDisplay().setHeight(0);
+			
+			int lHeight = Window.getClientHeight() - 70;
+			mContainerAbout.getDisplay().setHeight(lHeight);
+		} else {
+			mContainerSky.getDisplay().getElement().getStyle().clearHeight();
+			mContainerFeature.getDisplay().getElement().getStyle().clearHeight();
+			mContainerHilbert.getDisplay().getElement().getStyle().clearHeight();
+			
+			mContainerAbout.getDisplay().setHeight(0);
+		}
+	}
 
+	public void clickLogo() {
+		if (mAboutMode) {
+			updateAboutMode(false);
+		}
+	}
 }

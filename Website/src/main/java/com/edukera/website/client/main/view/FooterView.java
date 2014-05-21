@@ -13,6 +13,7 @@ public class FooterView extends ADivView implements Footer.Display {
 	
 	public FooterView() {
 		mRoot.addStyleName(STYLE.footer());
+		mRoot.addStyleName(STYLE.transAll());
 		
 		mContainer = new DivPanel();
 		mRoot.add(mContainer);

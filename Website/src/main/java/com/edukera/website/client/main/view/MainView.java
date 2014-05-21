@@ -8,5 +8,15 @@ public class MainView extends ADivView implements Main.Display {
 	public MainView() {
 		mRoot.addStyleName(STYLE.main());
 	}
+
+	@Override
+	public void setAbout() {
+		mRoot.addStyleName(STYLE.about());
+	}
+
+	@Override
+	public void unsetAbout() {
+		mRoot.removeStyleName(STYLE.about());
+	}
 	
 }
