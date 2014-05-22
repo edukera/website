@@ -6,6 +6,8 @@ import com.edukera.website.client.data.DataResources;
 import com.edukera.website.client.data.WebsiteKeys;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
 import com.edukera.website.client.resources.GAnalyticsTools;
+import com.google.gwt.event.dom.client.BlurEvent;
+import com.google.gwt.event.dom.client.BlurHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.FocusEvent;
@@ -35,19 +37,25 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 		registerHandler(display.getButtonHasClickHandlers().addClickHandler(new ClickHandler() {
 
 			@Override
-			public void onClick(ClickEvent event) {
+			public void onClick(ClickEvent iEvent) {
 				doClickButton();
 			}
-
 		}));
 
 		registerHandler(display.getHasFocusHandlers().addFocusHandler(new FocusHandler() {
 
 			@Override
-			public void onFocus(FocusEvent event) {
+			public void onFocus(FocusEvent iEvent) {
 				doFocus();
 			}
-
+		}));
+		
+		registerHandler(display.getHasBlurHandlers().addBlurHandler(new BlurHandler() {
+			
+			@Override
+			public void onBlur(BlurEvent iEvent) {
+				doBlur();
+			}
 		}));
 
 		registerHandler(display.getHasKeyDownHandler().addKeyDownHandler(new KeyDownHandler() {
@@ -82,6 +90,18 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 			mFirst = true;
 			display.setFocus();
 			display.clearInput();
+		}
+	}
+	
+
+	private void doBlur() {
+		String lEmail = display.getInputText();
+		if (lEmail != null &&
+				lEmail.length() == 0) {
+			mFirst = false;
+			display.unsetFocus();
+			display.clearInput();
+			draw();
 		}
 	}
 
