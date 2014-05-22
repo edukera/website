@@ -64,9 +64,9 @@ public class FooterImpl extends ADrawImpl<Footer.Display> implements Footer {
 		
 		Column lCol1 = addColumn(mColumns, WebsiteKeys.FOLLOW_US);
 		addColumnItemUrl(lCol1, WebsiteKeys.FACEBOOK, "https://facebook.com/qedumath");
-		addColumnItemUrl(lCol1, WebsiteKeys.GOOGLE_PLUS, "");
+		addColumnItemUrl(lCol1, WebsiteKeys.GOOGLE_PLUS, "https://plus.google.com/114920165046017971517");
 		addColumnItemUrl(lCol1, WebsiteKeys.TWITTER, "https://twitter.com/qedumath");
-		addColumnItemUrl(lCol1, WebsiteKeys.LINKEDIN, "");
+		addColumnItemUrl(lCol1, WebsiteKeys.LINKEDIN, "https://www.linkedin.com/company/edukera");
 }
 
 	private Column addColumn(Columns iColumns, String iId) {
