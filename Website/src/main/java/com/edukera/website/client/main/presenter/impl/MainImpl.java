@@ -20,6 +20,9 @@ import com.edukera.website.client.service.PersistenceAsync;
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.inject.Inject;
@@ -28,7 +31,7 @@ import com.google.web.bindery.event.shared.EventBus;
 public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
 	PersistenceAsync sPersistence = (PersistenceAsync) GWT.create(Persistence.class);
-	
+
 	private boolean mAboutMode;
 	private Language mLanguage = Language.fr;
 	private final Header mHeader;
@@ -75,7 +78,19 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 				draw();
 			}
 		}));
-		
+
+		registerHandler(History.addValueChangeHandler(new ValueChangeHandler<String>() {
+
+			@Override
+			public void onValueChange(ValueChangeEvent<String> event) {
+				String historyToken = event.getValue();
+				if (historyToken.equals("about")) {
+					updateAboutMode(true);
+				} else {
+					updateAboutMode(false);
+				}
+			}
+		}));
 	}
 
 	@Override
@@ -115,7 +130,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		int lValue = iComponent.getDisplay().getElement().getAbsoluteTop();
 		scroll(lValue);
 	}
-	
+
 	private void scroll(int iValue) {
 		int lBegin = display.getElement().getScrollTop();
 		Scroller lScroller = new Scroller(display, lBegin, iValue);
@@ -125,7 +140,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 	@Override
 	public void saveEmail(String iEmail) {
 		sPersistence.saveEmail(iEmail, mLanguage.toString(), new AsyncCallback<Integer>() {
-			
+
 			@Override
 			public void onSuccess(Integer iResult) {
 				if (iResult != null) {
@@ -151,15 +166,15 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 				fwdInput(State.error);
 			}
 		});
-		
+
 	}
-	
-	
+
+
 	private void fwdInput(State iState) {
 		EdukeraWebsite.ginjector.getInput().setState(iState);
 		EdukeraWebsite.ginjector.getInput().draw();
 	}
-	
+
 	private native String getInternalLocale() /*-{
 	return navigator.language;
 }-*/;
@@ -177,7 +192,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 		String lLocale = getLocale();
 		mLanguage = Language.getLanguage(lLocale);
 	}
-	
+
 	public void updateAboutMode(boolean iAboutMode) {
 		mAboutMode = iAboutMode;
 		if (mAboutMode) {
@@ -185,21 +200,22 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 			mContainerSky.getDisplay().hide();
 			mContainerFeature.getDisplay().hide();
 			mContainerHilbert.getDisplay().hide();
-			
+
 			mContainerAbout.getDisplay().show();
-			
+
 			int lHeight = Window.getClientHeight() - (mHeader.getDisplay().getHeight() + mFooter.getDisplay().getHeight());
 			if (lHeight < 350) {
 				lHeight = 350;
 			}
 			mContainerAbout.getDisplay().setHeight(lHeight);
 			scroll(0);
+			History.newItem("about");
 		} else {
 			display.unsetAbout();
 			mContainerSky.getDisplay().show();
 			mContainerFeature.getDisplay().show();
 			mContainerHilbert.getDisplay().show();
-			
+
 			mContainerAbout.getDisplay().hide();
 			mContainerAbout.getDisplay().setHeight(0);
 		}
@@ -207,6 +223,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 
 	public void clickLogo() {
 		if (mAboutMode) {
+			History.newItem("");
 			updateAboutMode(false);
 		}
 	}
