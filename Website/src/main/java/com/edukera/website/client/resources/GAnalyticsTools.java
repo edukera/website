@@ -38,6 +38,10 @@ public class GAnalyticsTools {
 		trackEvent("email", "email_store", "error");
 	}
 
+	public static void aboutClick() {
+		trackEvent("browsing", "about", "click");
+	}
+
 	public static native void trackEvent(String category, String action, String label) /*-{
     $wnd._gaq.push(['_trackEvent', category, action, label]);
 }-*/;

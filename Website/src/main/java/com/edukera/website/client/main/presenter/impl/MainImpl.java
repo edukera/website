@@ -210,6 +210,7 @@ public class MainImpl extends ADrawImpl<Main.Display> implements Main {
 			mContainerAbout.getDisplay().setHeight(lHeight);
 			scroll(0);
 			History.newItem("about");
+			GAnalyticsTools.aboutClick();
 		} else {
 			display.unsetAbout();
 			mContainerSky.getDisplay().show();
