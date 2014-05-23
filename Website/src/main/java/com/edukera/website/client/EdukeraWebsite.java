@@ -15,7 +15,6 @@ public class EdukeraWebsite implements EntryPoint {
 	public static final Injector ginjector = GWT.create(Injector.class);
 	
 	public void onModuleLoad() {
-//		GAnalyticsTools.start();
 		loadStyles();
 		
 		Main lMain = ginjector.getMain();
