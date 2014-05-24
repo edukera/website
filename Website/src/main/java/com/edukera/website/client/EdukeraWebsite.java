@@ -25,6 +25,13 @@ public class EdukeraWebsite implements EntryPoint {
 	
 	
 	private void loadStyles() {
+		WebsiteResources.INSTANCE.iconsEdukeraWebfont().ensureInjected();
+		WebsiteResources.INSTANCE.droidsansWebfont().ensureInjected();
+		WebsiteResources.INSTANCE.droidsansBoldWebfont().ensureInjected();
+		WebsiteResources.INSTANCE.geometricslabserifMediumItalicWebfontWebfont().ensureInjected();
+		WebsiteResources.INSTANCE.geometricslabserifMediumWebfontWebfont().ensureInjected();
+		WebsiteResources.INSTANCE.geometricSlabserif703BoldBt().ensureInjected();
+		WebsiteResources.INSTANCE.logo().ensureInjected();
 		WebsiteResources.INSTANCE.styleCss().ensureInjected();
 	}
 
