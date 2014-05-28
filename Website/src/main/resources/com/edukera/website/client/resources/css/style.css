@@ -420,7 +420,7 @@ body {
     display: block;
     position: relative;
     color: white;
-    font-family: 'logo';
+    font-family: 'droidsans';
     font-size: 55px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
     cursor: default;
@@ -437,7 +437,7 @@ body {
     display: block;
     position: relative;
     color: white;
-    font-family: 'logo';
+    font-family: 'droidsans';
     font-size: 24px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
     cursor: default;
@@ -454,7 +454,7 @@ body {
     display: block;
     position: relative;
     color: white;
-    font-family: 'logo';
+    font-family: 'droidsans';
     font-size: 24px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
     text-align: right;
@@ -470,8 +470,8 @@ body {
     width: 1024px;
     margin: 0 auto;
     height: 620px;
-    background-color: rgba(0, 172, 231, 0.04);
-    padding-top: 30px;
+/*    background-color: rgba(0, 172, 231, 0.04);*/
+    padding: 30px;
 }
 
 .container-about {
