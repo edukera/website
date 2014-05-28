@@ -420,7 +420,7 @@ body {
     display: block;
     position: relative;
     color: white;
-    font-family: 'droidsans';
+    font-family: 'logo';
     font-size: 55px;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
     cursor: default;
@@ -974,4 +974,3 @@ body {
     margin-bottom: 20px;
     cursor: default;
 }
-
