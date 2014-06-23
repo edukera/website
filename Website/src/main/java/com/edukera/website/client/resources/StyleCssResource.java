@@ -167,6 +167,8 @@ public interface StyleCssResource extends CssResource {
   @ClassName("input-message-content")
   String inputMessageContent();
   
+  String launch();
+  
   String logo();
   
   @ClassName("logo-calculus")

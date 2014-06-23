@@ -24,6 +24,7 @@ public static final String INPUT_EMAIL_DUPLICATE = "input_email_duplicate";
 public static final String INPUT_EMAIL_ERROR = "input_email_error";
 public static final String INPUT_EMAIL_MALFORMED = "input_email_malformed";
 public static final String INPUT_EMAIL_SAVED = "input_email_saved";
+public static final String LAUNCH = "launch";
 public static final String LEGAL_1 = "legal_1";
 public static final String LEGAL_2 = "legal_2";
 public static final String LEGAL_3 = "legal_3";

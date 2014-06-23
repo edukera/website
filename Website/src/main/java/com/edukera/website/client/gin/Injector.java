@@ -13,6 +13,7 @@ import com.edukera.website.client.content.presenter.ContactUs;
 import com.edukera.website.client.content.presenter.Feature;
 import com.edukera.website.client.content.presenter.Hilbert;
 import com.edukera.website.client.content.presenter.Input;
+import com.edukera.website.client.content.presenter.Launch;
 import com.edukera.website.client.content.presenter.LegalInformation;
 import com.edukera.website.client.content.presenter.Logo;
 import com.edukera.website.client.content.presenter.Product;
@@ -68,6 +69,7 @@ public interface Injector extends Ginjector {
 	Chevron getChevron();
 	ContactUs getContactUs();
 	LegalInformation getLegalInformation();
+	Launch getLaunch();
 	
 	/* Logo */
 	LogoCalculus getLogoCalculus();

@@ -2,6 +2,7 @@ package com.edukera.website.client.main.presenter.impl;
 
 import com.edukera.website.client.EdukeraWebsite;
 import com.edukera.website.client.content.presenter.Input;
+import com.edukera.website.client.content.presenter.Launch;
 import com.edukera.website.client.content.presenter.Soon;
 import com.edukera.website.client.content.presenter.ValueProposition;
 import com.edukera.website.client.generic.presenter.impl.ADrawImpl;
@@ -15,6 +16,7 @@ public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements
 	private final ValueProposition mValueProposition;
 	private final Soon mSoon;
 	private final Input mInput;
+	private final Launch mLaunch;
 	
 	@Inject
 	public ContainerSkyImpl(EventBus eventBus, ContainerSky.Display display) {
@@ -28,6 +30,8 @@ public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements
 		mInput = EdukeraWebsite.ginjector.getInput();
 		display.addWrapper(mInput.getDisplay().asWidget());
 		
+		mLaunch = EdukeraWebsite.ginjector.getLaunch();
+		display.addWrapper(mLaunch.getDisplay().asWidget());
 	}
 	
 	@Override
@@ -36,6 +40,7 @@ public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements
 		mValueProposition.bind();
 		mSoon.bind();
 		mInput.bind();
+		mLaunch.bind();
 	}
 
 	@Override
@@ -48,6 +53,7 @@ public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements
 		mValueProposition.draw();
 		mSoon.draw();
 		mInput.draw();
+		mLaunch.draw();
 	}
 	
 }
