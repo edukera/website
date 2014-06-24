@@ -108,6 +108,9 @@ public class InputImpl extends ADrawImpl<Input.Display> implements Input {
 	private void doClickButton() {
 		String lEmail = display.getInputText();
 		GAnalyticsTools.clickButton();
+		if (lEmail != null) {
+			lEmail = lEmail.toLowerCase();
+		}
 		if (lEmail != null &&
 				checkEmail(lEmail)) {
 			GAnalyticsTools.validEmail();
