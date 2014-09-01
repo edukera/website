@@ -38,11 +38,11 @@ public class LogoView extends ADivView implements Logo.Display {
 		mLogoContent.setText("j");
 	}
 	
-	public void setQeduText(String iText) {
+	public void setEdukText(String iText) {
 		mQedu.setText(iText);
 	}
 	
-	public void setMathText(String iText) {
+	public void setEraText(String iText) {
 		mMath.setText(iText);
 	}
 	

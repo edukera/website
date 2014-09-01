@@ -13,8 +13,8 @@ public class LogoImpl extends BasePresenter<Logo.Display> implements Logo {
 	@Inject
 	public LogoImpl(EventBus eventBus, Logo.Display display) {
 		super(eventBus, display);
-		display.setQeduText("Qedu");
-		display.setMathText("math");
+		display.setEdukText("eduk");
+		display.setEraText("era");
 
 	}
 	

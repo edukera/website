@@ -31,7 +31,7 @@ public class ContainerSkyImpl extends ADrawImpl<ContainerSky.Display> implements
 		display.addWrapper(mInput.getDisplay().asWidget());
 		
 		mLaunch = EdukeraWebsite.ginjector.getLaunch();
-		display.addWrapper(mLaunch.getDisplay().asWidget());
+//		display.addWrapper(mLaunch.getDisplay().asWidget());
 	}
 	
 	@Override
