@@ -34,7 +34,7 @@ public class ButtonLanguageImpl extends ADrawImpl<ButtonLanguage.Display> implem
 
 		}));
 		
-		addLanguage(Language.en);
+//		addLanguage(Language.en);
 		addLanguage(Language.fr);
 		
 //		for (final Language lLanguage : Language.values()) {

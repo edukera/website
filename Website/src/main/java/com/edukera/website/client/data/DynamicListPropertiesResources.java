@@ -13,18 +13,18 @@ public class DynamicListPropertiesResources {
 	static {
 		MAP = new HashMap<Language, Map<String,TextResource>>();
 
-putMap(Language.de, "website", ListPropertiesResources.INSTANCE.websitedeProperties());
-putMap(Language.el, "website", ListPropertiesResources.INSTANCE.websiteelProperties());
-putMap(Language.en, "website", ListPropertiesResources.INSTANCE.websiteenProperties());
-putMap(Language.es, "website", ListPropertiesResources.INSTANCE.websiteesProperties());
+//putMap(Language.de, "website", ListPropertiesResources.INSTANCE.websitedeProperties());
+//putMap(Language.el, "website", ListPropertiesResources.INSTANCE.websiteelProperties());
+//putMap(Language.en, "website", ListPropertiesResources.INSTANCE.websiteenProperties());
+//putMap(Language.es, "website", ListPropertiesResources.INSTANCE.websiteesProperties());
 putMap(Language.fr, "website", ListPropertiesResources.INSTANCE.websitefrProperties());
-putMap(Language.it, "website", ListPropertiesResources.INSTANCE.websiteitProperties());
-putMap(Language.jp, "website", ListPropertiesResources.INSTANCE.websitejpProperties());
-putMap(Language.hi, "website", ListPropertiesResources.INSTANCE.websitehiProperties());
-putMap(Language.ko, "website", ListPropertiesResources.INSTANCE.websitekoProperties());
-putMap(Language.pt, "website", ListPropertiesResources.INSTANCE.websiteptProperties());
-putMap(Language.ru, "website", ListPropertiesResources.INSTANCE.websiteruProperties());
-putMap(Language.zh, "website", ListPropertiesResources.INSTANCE.websitezhProperties());
+//putMap(Language.it, "website", ListPropertiesResources.INSTANCE.websiteitProperties());
+//putMap(Language.jp, "website", ListPropertiesResources.INSTANCE.websitejpProperties());
+//putMap(Language.hi, "website", ListPropertiesResources.INSTANCE.websitehiProperties());
+//putMap(Language.ko, "website", ListPropertiesResources.INSTANCE.websitekoProperties());
+//putMap(Language.pt, "website", ListPropertiesResources.INSTANCE.websiteptProperties());
+//putMap(Language.ru, "website", ListPropertiesResources.INSTANCE.websiteruProperties());
+//putMap(Language.zh, "website", ListPropertiesResources.INSTANCE.websitezhProperties());
 
 		
 }
