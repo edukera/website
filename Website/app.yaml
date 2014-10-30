@@ -1,0 +1,14 @@
+application: edukerawebsite
+version: 4
+runtime: php
+api_version: 1
+
+handlers:
+- url: /theme
+  static_dir: theme
+
+- url: /uploads
+  static_dir: uploads
+
+- url: /.*
+  script: index.php
