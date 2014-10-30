@@ -65,7 +65,7 @@
 											</a>
 										</li>
 									</ul><!-- .list-inline -->
-								</div>		
+								</div>
 							</aside><!-- .pull-right -->
 						</div><!-- .col-md-5 -->
 					</div><!-- .row -->
@@ -141,7 +141,7 @@
 								</article><!-- .teamp-wp -->
 							</li><!-- .col-md-3 -->
 
-						</ul>					
+						</ul>
 					</div><!-- .row -->
 				</div><!-- #team.tab-pane -->
 				<div class="tab-pane pv20 fade" id="legal">

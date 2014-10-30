@@ -177,14 +177,12 @@ function f_formValidator(){
     $('.form-validator').each(function(i) {
         $(this).validate({
             rules: {
-                email    :     {required: true, email: true }
-//		,
-//                msg      :     {required: true, minlength: 10 }
+                email    :     {required: true, email: true },
+                msg      :     {required: true, minlength: 10 }
             },
             messages: {
-                email    :      errorMail
-//		,
-//              msg      :      errorMsg
+                email    :      errorMail,
+		msg      :      errorMsg
             }
         });
     });
@@ -225,7 +223,7 @@ function myInitPages() {
     f_topCarousel();
     f_presentationColorbox();
     f_aboutTab();
-    f_formValidator();
+//    f_formValidator();
     f_contactMap();
     $(window).on('resize',function(){
         f_headerSticky();
