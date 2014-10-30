@@ -1,7 +1,12 @@
 <?php
 
+use \google\appengine\api\mail\Message;
+
+// Sender email
+$sender  = 'website@edukera.com';
+
 // Email du destinataire
-$destinataire  = 'jeremie.maquet@gmail.com';
+$destinataire  = 'contact@edukera.com';
 
 // Nettoyer et enregistrer ke texte
 function Rec($text){
@@ -29,35 +34,40 @@ $email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, s
 $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si besoin
 
 // Subjet
-$subject = 'Un message vous a été envoyé à partir du site Internet http://www.edukera.com';
+$subject = '[WEBSITE] message edukera.com';
 
 // Corps du message
 $body     ='';
-$body    .= "<span style='text-decoration:underline'>Email</span> <br/><br/> ".$email. "<br/><br/>--<br/><br/>";
-$body    .= "<span style='text-decoration:underline'>Message</span> <br/><br/>".$message;
+$body    .= "Email:  ".$email. "\n";
+$body    .= "Message:\n".$message;
 
 //Headers
 $headers  = '';
 $headers  = 'MIME-Version: 1.0' . "\n";
-$headers .= 'Content-type: text/html; charset=UTF-8' . "\n"; 
-$headers .= 'From: Edukera' . "\r\n";        
+$headers .= 'Content-type: text/html; charset=UTF-8' . "\n";
+$headers .= 'From: Edukera' . "\r\n";
 
-    if ($_POST['submit']) {
-        if (($email != '') && ($message != '')){
-            // Envoi du mail
-            if (mail($destinataire, $subject, $body, $headers)){
+if ($_POST['submit']) {
+    if (($email != '') && ($message != '')){
+        try
+            {
+                $message = new Message();
+                $message->setSender($sender);
+                $message->addTo($destinataire);
+                $message->setSubject($subject);
+                $message->setTextBody($body);
+                $message->send();
                 $form_feedback = '<div class="alert alert-success mb15">'.CONTACT_OK.'</div>';
-            }
-            else{
+            } catch (InvalidArgumentException $e) {
                 $form_feedback = '<div class="alert alert-danger mb15">'.CONTACT_KO.'</div>';
-            };
         }
-        else{
-            // Si un des 3 champs n'est pas rempli
-            $form_feedback = '<div class="alert alert-warning mb15">'.CONTACT_INVALID.'</div>';
-            $err_formulaire = true;
-        };
     }
+    else{
+        // Si un des 3 champs n'est pas rempli
+        $form_feedback = '<div class="alert alert-warning mb15">'.CONTACT_INVALID.'</div>';
+        $err_formulaire = true;
+    };
+}
 
 
 ?>

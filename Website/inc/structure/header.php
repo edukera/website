@@ -1,4 +1,5 @@
 <?php $url = $_SERVER['PHP_SELF']; ?>
+<?php require_once('google/appengine/api/mail/Message.php'); ?>
 <?php include_once('lang/trad.php'); ?>
 <?php include_once('trait/mail.php'); ?>
 <!doctype html>

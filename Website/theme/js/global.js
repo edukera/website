@@ -1,5 +1,5 @@
 /*!
-* Project Name - @author: Jérémie Maquet || www.jmaquet.fr/ 
+* Project Name - @author: Jérémie Maquet || www.jmaquet.fr/
 */
 
 /* Copyright (c) 2007-2013 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com  Dual licensed under MIT and GPL. * @author Ariel Flesler * @version 1.4.6 */
@@ -7,7 +7,7 @@
 
 /* Copyright (c) 2007-2010 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com Dual licensed under MIT and GPL. @author Ariel Flesler @version 1.2.9b */
 ;(function($){var h=location.href.replace(/#.*/,'');var i=$.localScroll=function(a){$('body').localScroll(a)};i.defaults={duration:1000,axis:'y',event:'click',stop:true,target:window,reset:true};i.hash=function(a){if(location.hash){a=$.extend({},i.defaults,a);a.hash=false;if(a.reset){var d=a.duration;delete a.duration;$(a.target).scrollTo(0,a);a.duration=d}scroll(0,location,a)}};$.fn.localScroll=function(b){b=$.extend({},i.defaults,b);return b.lazy?this.bind(b.event,function(e){var a=$([e.target,e.target.parentNode]).filter(filter)[0];if(a)scroll(e,a,b)}):this.find('a,area').filter(filter).bind(b.event,function(e){scroll(e,this,b)}).end().end();function filter(){return!!this.href&&!!this.hash&&this.href.replace(this.hash,'')==h&&(!b.filter||$(this).is(b.filter))}};function scroll(e,a,b){var c=a.hash.slice(1),elem=document.getElementById(c)||document.getElementsByName(c)[0];if(!elem)return;if(e)e.preventDefault();var d=$(b.target);if(b.lock&&d.is(':animated')||b.onBefore&&b.onBefore(e,elem,d)===false)return;if(b.stop)d._scrollable().stop(true);if(b.hash){var f=b.offset;f=f&&f.top||f||0;var g=elem.id==c?'id':'name',$a=$('<a> </a>').attr(g,c).css({position:'absolute',top:$(window).scrollTop()+f,left:$(window).scrollLeft()});elem[g]='';$('body').prepend($a);location=a.hash;$a.remove();elem[g]=c}d.scrollTo(elem,b).trigger('notify.serialScroll',[elem])}})($);
- 
+
  /* PlaceHolder : https://github.com/mathiasbynens/$-placeholder */
  (function(window,document,$){var isInputSupported="placeholder"in document.createElement("input");var isTextareaSupported="placeholder"in document.createElement("textarea");var prototype=$.fn;var valHooks=$.valHooks;var propHooks=$.propHooks;var hooks;var placeholder;if(isInputSupported&&isTextareaSupported){placeholder=prototype.placeholder=function(){return this};placeholder.input=placeholder.textarea=true}else{placeholder=prototype.placeholder=function(){var $this=this;$this.filter((isInputSupported? "textarea":":input")+"[placeholder]").not(".placeholder").bind({"focus.placeholder":clearPlaceholder,"blur.placeholder":setPlaceholder}).data("placeholder-enabled",true).trigger("blur.placeholder");return $this};placeholder.input=isInputSupported;placeholder.textarea=isTextareaSupported;hooks={"get":function(element){var $element=$(element);var $passwordInput=$element.data("placeholder-password");if($passwordInput)return $passwordInput[0].value;return $element.data("placeholder-enabled")&&$element.hasClass("placeholder")?"":element.value},"set":function(element,value){var $element=$(element);var $passwordInput=$element.data("placeholder-password");if($passwordInput)return $passwordInput[0].value=value;if(!$element.data("placeholder-enabled"))return element.value=value;if(value==""){element.value=value;if(element!=document.activeElement)setPlaceholder.call(element)}else if($element.hasClass("placeholder"))clearPlaceholder.call(element,true,value)||(element.value=value);else element.value=value;return $element}};if(!isInputSupported){valHooks.input=hooks;propHooks.value=hooks}if(!isTextareaSupported){valHooks.textarea=hooks;propHooks.value=hooks}$(function(){$(document).delegate("form","submit.placeholder",function(){var $inputs=$(".placeholder",this).each(clearPlaceholder);setTimeout(function(){$inputs.each(setPlaceholder)},10)})});$(window).bind("beforeunload.placeholder",function(){$(".placeholder").each(function(){this.value=""})})}function args(elem){var newAttrs={};var rinline$=/^$\d+$/;$.each(elem.attributes,function(i,attr){if(attr.specified&&!rinline$.test(attr.name))newAttrs[attr.name]=attr.value});return newAttrs}function clearPlaceholder(event,value){var input=this;var $input=$(input);if(input.value==$input.attr("placeholder")&&$input.hasClass("placeholder"))if($input.data("placeholder-password")){$input=$input.hide().next().show().attr("id",$input.removeAttr("id").data("placeholder-id"));if(event===true)return $input[0].value=value;$input.focus()}else{input.value="";$input.removeClass("placeholder");input==document.activeElement&&input.select()}}function setPlaceholder(){var $replacement;var input=this;var $input=$(input);var id=this.id;if(input.value==""){if(input.type=="password"){if(!$input.data("placeholder-textinput")){try{$replacement=$input.clone().attr({"type":"text"})}catch(e){$replacement=$("<input>").attr($.extend(args(this),{"type":"text"}))}$replacement.removeAttr("name").data({"placeholder-password":$input,"placeholder-id":id}).bind("focus.placeholder",clearPlaceholder);$input.data({"placeholder-textinput":$replacement,"placeholder-id":id}).before($replacement)}$input=$input.removeAttr("id").hide().prev().attr("id",id).show()}$input.addClass("placeholder");$input[0].value=$input.attr("placeholder")}else $input.removeClass("placeholder")}})(this,document,$);
 
@@ -27,11 +27,11 @@ function f_winHeight(){
     if(isStore == false){
         if(winHeight>=820){
             winHeight = 820;
-        }        
+        }
     }else{
         if(winHeight>=720){
             winHeight = 720;
-        }    
+        }
     }
     return winHeight;
 }
@@ -40,8 +40,8 @@ function f_winHeight(){
 function f_headerActive(){
     $('.anchor').waypoint(function(direction) {
         if (direction === 'down') {
-            var href = $(this).attr('id'); 
-            $('#header a').removeClass('active');      
+            var href = $(this).attr('id');
+            $('#header a').removeClass('active');
             if( (href == 'section-about-tab') || (href == 'section-about') ){
                 $('#header a[href=#section-about]').addClass('active');
             }else if(href == 'section-presentation'){
@@ -51,13 +51,13 @@ function f_headerActive(){
       },{ offset: '2px' } )
       .waypoint(function(direction) {
         if (direction === 'up') {
-            var href = $(this).attr('id'); 
-            $('#header a').removeClass('active');      
+            var href = $(this).attr('id');
+            $('#header a').removeClass('active');
             if( (href == 'section-quote') || (href == 'section-about-tab') ){
                 $('#header a[href=#section-about]').addClass('active');
             }else if( href == 'section-about'){
                 $('#header a[href=#section-presentation]').addClass('active');
-            } 
+            }
         }
       }, { offset: '0px' } );
 }
@@ -97,7 +97,7 @@ function f_topCarousel(){
             pauseOnHover    : true,
             duration        : 500,
             timeoutDuration : 6000
-        },    
+        },
         pagination : {
             container       : ".carousel-pagination",
             deviation       : 0
@@ -150,7 +150,7 @@ function f_contactMap() {
             center: myLatlng,
             disableDefaultUI: true
         }
-        var map = new google.maps.Map(document.getElementById(id),myOptions);        
+        var map = new google.maps.Map(document.getElementById(id),myOptions);
         var contentString = '<div style="text-align: center; font-size:14px; overflow:hidden;"><br/><img width="174" height="116" src="theme/icons/logo.png"/><br/><br/><div style="margin: auto; text-align: left; width: 247px; overflow:hidden; line-height: 135%;"><strong>Edukera</strong><br/> 171, av Charles de Gaulle<br/>92200 Neuilly-sur-Seine <br/>contact@edukera.com<br/><a href="http://www.edukera.com/" title="Visitez le site Internet">http://www.edukera.com/</a><br/></div><br/></div>';
         var infowindow = new google.maps.InfoWindow({
             content: contentString
@@ -162,9 +162,9 @@ function f_contactMap() {
          });
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map,marker);
-        });      
-    });                      
-} 
+        });
+    });
+}
 
 /* Function : section ABOUT - Contact form validator */
 function f_formValidator(){
@@ -175,16 +175,16 @@ function f_formValidator(){
         }
     });
     $('.form-validator').each(function(i) {
-        $(this).validate({ 
+        $(this).validate({
             rules: {
-                email    :     {required: true, email: true },          
-                msg      :     {required: true, minlength: 10 }        
+                email    :     {required: true, email: true },
+                msg      :     {required: true, minlength: 10 }
             },
             messages: {
                 email    :      errorMail,
                 msg      :      errorMsg
             }
-        });           
+        });
     });
 }
 
@@ -209,7 +209,7 @@ function myInitPages() {
     $("a[rel='external']")
         .addClass('external')
         .each(function(){
-            la_cible = $(this).attr("href"); 
+            la_cible = $(this).attr("href");
             title =  la_cible + " (nouvelle fenêtre)";
             if($(this).attr("title")) title = $(this).attr("title") + " " + la_cible + " (nouvelle fenêtre)";
             $(this).attr("title",title);
@@ -219,27 +219,24 @@ function myInitPages() {
     f_winHeight();
     f_headerSticky();
     f_headerActive();
-    f_topHeight(); 
+    f_topHeight();
     f_topCarousel();
     f_presentationColorbox();
     f_aboutTab();
     f_formValidator();
     f_contactMap();
-    $(window).on('resize',function(){  
-        f_headerSticky(); 
+    $(window).on('resize',function(){
+        f_headerSticky();
         f_topHeight();
     });
     $(window).scroll(function(){
-        f_headerSticky(); 
+        f_headerSticky();
     });
 
     $('.dropdown-toggle').dropdown()
 }
 
 /* Fire functions when dom ready */
-$(document).ready(function() { 
+$(document).ready(function() {
     myInitPages();
 });
-
-
-
