@@ -37,7 +37,7 @@
 							<h2 class="h-like-d f-wh"><?php echo NAV_CONNECT_2; ?> <span class="f-bl-a">edukera</span></h2>
 							<p class="f12 f-wh mt5"><?php echo NAV_CONNECT_2_TXT; ?></p>
 						</div><!-- .media-body -->
-					</a><!-- .media -->	
+					</a><!-- .media -->
 					<div class="mt40">
 						<h3 class="f17 fB f-wh"><?php echo NAV_FOLLOW; ?></h3>
 						<ul class="list-inline mt15" role="menu">
@@ -62,7 +62,7 @@
 								</a>
 							</li>
 						</ul><!-- .list-inline -->
-					</div>			
+					</div>
 				</div><!-- .col-md-4 -->
 			</div><!-- .row -->
 			<small class="f13 fC f-bl-a mt50"><?php echo NAV_COPYRIGHT; ?></small>

@@ -177,12 +177,14 @@ function f_formValidator(){
     $('.form-validator').each(function(i) {
         $(this).validate({
             rules: {
-                email    :     {required: true, email: true },
-                msg      :     {required: true, minlength: 10 }
+                email    :     {required: true, email: true }
+//		,
+//                msg      :     {required: true, minlength: 10 }
             },
             messages: {
-                email    :      errorMail,
-                msg      :      errorMsg
+                email    :      errorMail
+//		,
+//              msg      :      errorMsg
             }
         });
     });
