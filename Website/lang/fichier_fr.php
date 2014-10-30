@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //--------------------------------------------------------
 //** NAVIGATION
@@ -14,8 +14,8 @@ define('NAV_SIGN_1', 			      	 "S’inscrire");
 define('NAV_SIGN_2', 			      	 "S’inscrire/Se connecter");
 
 define('NAV_CONNECT_1', 			      "Se connecter");
-define('NAV_CONNECT_2', 			      "Essayer");
-define('NAV_CONNECT_2_TXT', 			  "L’application est gratuite pendant la version beta !<br/>C’est le bon moment pour se lancer !");
+define('NAV_CONNECT_2', 			      "Nous suivre");
+define('NAV_CONNECT_2_TXT', 			  "L’application est bientôt disponible!<br/> suivez-nous pour être prévenu !");
 
 define('NAV_FOLLOW', 			      	  "Suivez-nous");
 define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;");
@@ -25,7 +25,7 @@ define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;"
 //--------------------------------------------------------
 
 define('TOP_TITLE_1', 			      		"Vivez les <span class=\"f-bl-a\">maths</span><br> différemment");
-define('TOP_TITLE_2', 			      		"Version <span class=\"f-bl-a\">beta</span>, utilisation gratuite.");
+define('TOP_TITLE_2', 			      		"Version <span class=\"f-bl-a\">beta</span> bientôt disponible.");
 
 define('TOP_STORE_1', 			      		"L’application edukera est disponible qu’avec <span class=\"f-bl-a\">Chrome</span>.");
 define('TOP_STORE_2', 			      		"Nous travaillons encore sur les autres navigateurs pour vous offrir...");

@@ -16,7 +16,19 @@
 				<div id="top-title">
 					<h1 class="h-like-a"><?php echo TOP_TITLE_1; ?></h1>
 					<p class="f25 m5"><?php echo TOP_TITLE_2; ?></p>
-					<a href="#" class="btn btn-lg mt30 hidden-print" role="link" target="_blank"><?php echo NAV_CONNECT_2; ?></a>
+					<!--<a href="#" class="btn btn-lg mt30 hidden-print" role="link" target="_blank"><?php echo NAV_CONNECT_2; ?></a>-->
+					<div style="padding-top:35px">
+					  <a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Twitter" class="sprite social-tw-a" role="link" target="_blank">
+					    <span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Twitter</span>
+					  </a>
+					  <a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
+					  <span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Google+</span>
+					  </a>
+					  <a href="#" title="<?php echo TITLE_FOLLOW_1 ?> LinkedIn" class="sprite social-in-a" role="link" target="_blank">
+					    <span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> LinkedIn</span>
+					  </a>
+					</div>
+					<!-- -->
 				</div><!-- #top-title -->
 			</div><!-- .col-absolute.right -->
 		</div><!-- .container -->
@@ -37,7 +49,7 @@
 									<h3 class="f14 f-bl-a fUpp"><?php echo TOP_STORE_3; ?></h3>
 									<small class="f-wh f12"><?php echo TOP_STORE_4; ?></small>
 								</div><!-- .media-body -->
-							</div><!-- .media -->				
+							</div><!-- .media -->
 						</a>
 					</div><!-- .col-md-4 -->
 				</div><!-- .row -->

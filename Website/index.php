@@ -1,6 +1,6 @@
 <?php include('inc/structure/header.php') ?>
 
-<div id="main" role="main" class="">
+<div id="main" role="main" class="store-off">
 	<?php include('inc/sections/top.php') ?>
 	<?php include('inc/sections/presentation.php') ?>
 	<?php include('inc/sections/about.php') ?>
