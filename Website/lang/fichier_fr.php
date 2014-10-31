@@ -37,16 +37,21 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', 			      	"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.");
+define('PRESENTATION_TXT', 			      	"Edukera propose aux élèves du lycée une application en ligne leur permettant de résoudre des exercices de mathématiques. L'élève apprend les mathématiques par la résolution d’exercices et le suivi de son activité. Pour résoudre un exercice, l’élève élabore dans l’application un raisonnement mathématique validé de manière automatique.");
 
-define('PRESENTATION_BLOC_1_TITLE',   		"Une construction itérative du raisonnement");
-define('PRESENTATION_BLOC_1_TXT',   		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure at saepe nihil ratione repudiandae, ex consequuntur architecto, blanditiis sint quas cumque necessitatibus obcaecati atque amet nobis id, rerum quidem!");
+define('PRESENTATION_BLOC_1_TITLE',   		"Une construction itérative de raisonnement");
+define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement mathématique étape par étape, par assemblage et paramétrage des raisonnements élémentaires disponibles dans le cours.
 
-define('PRESENTATION_BLOC_2_TITLE',   		"Un apprentissage suivi");
-define('PRESENTATION_BLOC_2_TXT',   		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo fuga dicta laboriosam voluptatibus reiciendis nisi eligendi omnis, aliquid quidem aspernatur illum nihil deleniti ipsum, nesciunt. Id cupiditate mollitia repudiandae rerum molestias aliquam dolor et quidem consequuntur deserunt est eum quae quis totam, assumenda maxime harum quia suscipit, perspiciatis consequatur.");
+Si toutes les propositions mathématiques de la copie sont correctement justifiées, alors l’exercice est résolu et l’élève peut passer à l’exercice suivant.");
 
-define('PRESENTATION_BLOC_3_TITLE',   		"Une construction itérative du raisonnement");
-define('PRESENTATION_BLOC_3_TXT',   		"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure at saepe nihil ratione repudiandae, ex consequuntur architecto, blanditiis sint quas cumque necessitatibus obcaecati atque amet nobis id, rerum quidem!");
+define('PRESENTATION_BLOC_2_TITLE',   		"Apprentissage");
+define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">Deux types d’exercices sont proposés :</p>
+<ul style=\"margin-bottom:10px\"><li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices didactiques</span> : ils font partie d’un parcours pédagogique qui présente les méthodes de résolution d’exercice à l’aide de fiches méthodologiques et d’exercices élémentaires</li>
+<li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices d’entraînement</span> : ils sont triés par difficulté et permettent à l’élève de mettre en pratique les méthodes présentées dans les parcours pédagogiques.</li>
+</ul><p style=\"margin-bottom:5px\">Enfin, l’élève peut <span style=\"font-style:italic\">créer et résoudre ses exercices</span>, comme exemple ceux qu’il doit effectuer en classe.</p>");
+
+define('PRESENTATION_BLOC_3_TITLE',   		"Validation");
+define('PRESENTATION_BLOC_3_TXT',   		"L'élève suit sa progression globale par le nombre de chapitres validés. Un chapitre est validé lorsque l'élève réussit un défi consistant à résoudre des exercices en temps limité.");
 
 
 //--------------------------------------------------------
