@@ -44,23 +44,23 @@
 								<div class="mt40 hidden-print">
 									<h3 class="h-like-f f-gy-b"><?php echo CONTACT_FOLLOW; ?></h3>
 									<ul class="list-inline mt15" role="menu">
-										<li class="mr20" role="menuitem">
+<!--										<li class="mr20" role="menuitem">
 											<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Facebook" class="sprite social-fb-a" role="link" target="_blank">
 												<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Facebook</span>
 											</a>
-										</li>
+										</li> -->
 										<li class="mr20" role="menuitem">
-											<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> LinkedIn" class="sprite social-in-a" role="link" target="_blank">
+											<a href="http://www.linkedin.com/company/edukera?trk=prof-0-ovw-curr_pos" title="<?php echo TITLE_FOLLOW_1 ?> LinkedIn" class="sprite social-in-a" role="link" target="_blank">
 												<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> LinkedIn</span>
 											</a>
 										</li>
 										<li class="mr20" role="menuitem">
-											<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
+											<a href="https://plus.google.com/u/0/b/108941836539544483457/108941836539544483457/posts/" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
 												<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Google+</span>
 											</a>
 										</li>
 										<li role="menuitem">
-											<a href="#" title="<?php echo TITLE_FOLLOW_1 ?>Twitter" class="sprite social-tw-a" role="link" target="_blank">
+											<a href="https://twitter.com/edukera" title="<?php echo TITLE_FOLLOW_1 ?>Twitter" class="sprite social-tw-a" role="link" target="_blank">
 												<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Twitter</span>
 											</a>
 										</li>
@@ -122,11 +122,11 @@
 										<p class="f15 mt20"><?php echo TEAM_BLOC_2_TXT; ?></p>
 										<ul class="list-inline mt25" role="menu">
 											<li class="mr5" role="menuitem">
-												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> LinkedIn" class="sprite social-in-b" role="link" target="_blank">
+												<a href="http://fr.linkedin.com/in/guillaumeduhamel" title="<?php echo TITLE_FOLLOW_2 ?> LinkedIn" class="sprite social-in-b" role="link" target="_blank">
 													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> LinkedIn</span>
 												</a>
 											</li>
-											<li class="mr5" role="menuitem">
+<!--											<li class="mr5" role="menuitem">
 												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Google+" class="sprite social-gg-b" role="link" target="_blank">
 													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Google+</span>
 												</a>
@@ -135,7 +135,7 @@
 												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Twitter" class="sprite social-tw-b" role="link" target="_blank">
 													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Twitter</span>
 												</a>
-											</li>
+											</li> -->
 										</ul><!-- .list-inline -->
 									</div>
 								</article><!-- .teamp-wp -->

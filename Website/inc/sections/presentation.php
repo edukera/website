@@ -19,28 +19,28 @@
 									<h3 class="h-like-e f-bl-a"><?php echo PRESENTATION_BLOC_1_TITLE; ?></h3>
 									<p class="mt15"><?php echo PRESENTATION_BLOC_1_TXT; ?></p>
 								</div><!-- .media-body -->
-							</div><!-- .media -->				
+							</div><!-- .media -->
 						</div><!-- .col-md-5 -->
 						<div class="col-md-5 col-md-offset-1">
-							<a href="uploads/capture-1.jpg" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group1">
+							<a href="uploads/pres-1.png" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>">
 								<figure class="rounded">
-									<img src="uploads/capture-1.jpg" alt="">
+									<img src="uploads/pres-1.png" alt="">
 								</figure>
 							</a>
-							<a href="uploads/test.jpg" class="colorbox" data-colorbox="group1"></a>
-							<a href="uploads/carousel-1.jpg" class="colorbox" data-colorbox="group1"></a>
+<!--							<a href="uploads/test.jpg" class="colorbox" data-colorbox="group1"></a>
+							<a href="uploads/carousel-1.jpg" class="colorbox" data-colorbox="group1"></a> -->
 						</div><!-- .col-md-5 -->
 					</article>
 				</li>
 				<li class="mt40 clearfix" role="listitem">
 					<article role="article">
 						<div class="col-md-5 col-md-offset-1">
-							<a href="uploads/capture-1.jpg" class="capture-rounded left colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
+							<a href="uploads/pres-2.png" class="capture-rounded left colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>">
 								<figure class="rounded">
-									<img src="uploads/capture-1.jpg" alt="">
+									<img src="uploads/pres-2.png" alt="">
 								</figure>
 							</a>
-							<a href="uploads/carousel-1.jpg" class="colorbox" title="tefdfdfdstlol" data-colorbox="group2"></a>
+							<a href="uploads/pres-2.png" class="colorbox" title="tefdfdfdstlol"></a>
 						</div><!-- .col-md-5 -->
 						<div class="col-md-5 ph0 ml50">
 							<div class="media mt40">
@@ -51,7 +51,7 @@
 									<h3 class="h-like-e f-bl-a"><?php echo PRESENTATION_BLOC_2_TITLE; ?></h3>
 									<p class="mt15"><?php echo PRESENTATION_BLOC_2_TXT; ?></p>
 								</div><!-- .media-body -->
-							</div><!-- .media -->				
+							</div><!-- .media -->
 						</div><!-- .col-md-5 -->
 					</article>
 				</li>
@@ -66,15 +66,15 @@
 									<h3 class="h-like-e f-bl-a"><?php echo PRESENTATION_BLOC_3_TITLE; ?></h3>
 									<p class="mt15"><?php echo PRESENTATION_BLOC_3_TXT; ?></p>
 								</div><!-- .media-body -->
-							</div><!-- .media -->				
+							</div><!-- .media -->
 						</div><!-- .col-md-5 -->
 						<div class="col-md-5 col-md-offset-1">
-							<a href="uploads/capture-1.jpg" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
+							<a href="uploads/pres-3.png" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>">
 								<figure class="rounded">
-									<img src="uploads/capture-1.jpg" alt="">
+									<img src="uploads/pres-3.png" alt="">
 								</figure>
 							</a>
-							<a href="uploads/test.jpg" class="colorbox" title="tefdfdfdstlol" data-colorbox="group2"></a>
+							<a href="uploads/test.jpg" class="colorbox" title="tefdfdfdstlol"></a>
 						</div><!-- .col-md-5 -->
 					</article>
 				</li>

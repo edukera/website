@@ -58,11 +58,13 @@
                                 <a href="#section-about" class="header-link skip-link" role="link"><?php echo NAV_ABOUT; ?></a>
                             </li>
                             <li class="mr50" role="menuitem">
-                                <a href="#" class="header-link" role="link" target="_blank"><?php echo NAV_SIGN_1; ?></a>
+<!--                               <a href="#" class="header-link" role="link" target="_blank"><?php echo NAV_SIGN_1; ?></a> --><div style="">
+                               <div style="position:relative;top:5px" class="header-link"><?php echo NAV_SIGN_1; ?></div></div>
                             </li>
                         </ul><!-- .list-inline -->
                     </div><!-- .col-md-6-->
-                    <a href="#" target="_blank" class="btn-connect" role="link"><?php echo NAV_CONNECT_1; ?></a>
+<!--                    <a href="#" target="_blank" class="btn-connect" role="link"><?php echo NAV_CONNECT_1; ?></a> -->
+                    <div class="btn-connect" role="link"><?php echo NAV_CONNECT_1; ?></div>
                 </div><!-- .row -->
             </div><!-- .container -->
         </header><!-- #header -->

@@ -41,23 +41,23 @@
 					<div class="mt40">
 						<h3 class="f17 fB f-wh"><?php echo NAV_FOLLOW; ?></h3>
 						<ul class="list-inline mt15" role="menu">
-							<li class="mr20" role="menuitem">
+<!--							<li class="mr20" role="menuitem">
 								<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Facebook" class="sprite social-fb-a" role="link" target="_blank">
 									<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Facebook</span>
 								</a>
-							</li>
+							</li> -->
 							<li class="mr20" role="menuitem">
-								<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> LinkedIn" class="sprite social-in-a" role="link" target="_blank">
+								<a href="http://www.linkedin.com/company/edukera?trk=prof-0-ovw-curr_pos" title="<?php echo TITLE_FOLLOW_1 ?> LinkedIn" class="sprite social-in-a" role="link" target="_blank">
 									<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> LinkedIn</span>
 								</a>
 							</li>
 							<li class="mr20" role="menuitem">
-								<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
+								<a href="https://plus.google.com/u/0/b/108941836539544483457/108941836539544483457/posts/" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
 									<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Google+</span>
 								</a>
 							</li>
 							<li role="menuitem">
-								<a href="#" title="<?php echo TITLE_FOLLOW_1 ?> Twitter" class="sprite social-tw-a" role="link" target="_blank">
+								<a href="https://twitter.com/edukera" title="<?php echo TITLE_FOLLOW_1 ?> Twitter" class="sprite social-tw-a" role="link" target="_blank">
 									<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Twitter</span>
 								</a>
 							</li>
@@ -68,15 +68,15 @@
 			<small class="f13 fC f-bl-a mt50"><?php echo NAV_COPYRIGHT; ?></small>
 		</div><!-- .container -->
 
-		<nav class="footer-lang">
+<!--		<nav class="footer-lang">
 			<div class="dropdown">
 				<a data-toggle="dropdown" id="langLabel" class="dropdown-toggle" href="#"><?php echo $lang; ?></a>
 				<ul class="dropdown-menu" role="menu" aria-labelledby="langLabel">
 					<li><a href="<?php echo $url ?>?lang=fr">Français <small>Fr</small></a></li>
 					<li><a href="<?php echo $url ?>?lang=en">Anglais <small>En</small></a></li>
-				</ul><!-- .dropdown-menu -->
-			</div><!-- .dropdown-->
-		</nav><!-- .footer-lang-->
+				</ul>
+			</div>
+		</nav> --> <!-- .footer-lang-->
 
 	</footer><!-- #footer -->
 

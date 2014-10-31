@@ -37,7 +37,7 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', 			      	"Edukera propose aux élèves du lycée une application en ligne leur permettant de résoudre des exercices de mathématiques. L'élève apprend les mathématiques par la résolution d’exercices et le suivi de son activité. Pour résoudre un exercice, l’élève élabore dans l’application un raisonnement mathématique validé de manière automatique.");
+define('PRESENTATION_TXT', 			      	"Edukera propose aux élèves du lycée une application en ligne leur permettant de résoudre des exercices de mathématiques. L'élève élabore dans l’application un raisonnement mathématique validé de manière automatique. Il apprend les mathématiques par la résolution d’exercices et le suivi de son activité.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Une construction itérative de raisonnement");
 define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement mathématique étape par étape, par assemblage et paramétrage des raisonnements élémentaires disponibles dans le cours.
@@ -85,10 +85,10 @@ define('CONTACT_ADDRESS', 			      	"171, av Charles de Gaulle - 2e étage - 922
 define('TEAM_TITLE', 			      		"L’équipe partage la conviction que l’enseignement des mathématiques ne doit pas échapper à la révolution numérique en marche, et met en oeuvre tout son savoir-faire et toute sa passion pour le révolutionner.");
 
 define('TEAM_BLOC_1_JOB', 			      	"Co-fondateur");
-define('TEAM_BLOC_1_TXT', 			      	"Avant edukera, Benoît a développé des solutions d’analyse prédictive, notamment au sein de la société KXEN.");
+define('TEAM_BLOC_1_TXT', 			      	"Avant edukera, Benoît a développé pendant plus de dix ans des solutions d’analyse prédictive, notamment au sein de la société KXEN.");
 
 define('TEAM_BLOC_2_JOB', 			      	"Co-fondateur");
-define('TEAM_BLOC_2_TXT', 			      	"Lorem ipsum dolor sit amet. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet.");
+define('TEAM_BLOC_2_TXT', 			      	"Sorti en 2009 de l'EPITA avec une spécialisation en Intelligence Artificielle, Guillaume a développé avec Benoît des solutions de traitement et d'analyse de données pour l'optimisation du marketing direct des entreprises.");
 
 define('TEAM_BLOC_3_JOB', 			      	"Commercial");
 define('TEAM_BLOC_3_TXT', 			      	"Lorem ipsum dolor sit amet.");
