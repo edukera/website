@@ -16,9 +16,9 @@
 					<a href="#legal" role="tab" data-toggle="tab"><?php echo NAV_LEGAL; ?></a>
 				</li>
 			</ul><!-- .tab-nav -->
-			<div class="tab-content pv30">
+			<div class="tab-content pv0">
 				<div class="anchor" id="section-about-tab"></div>
-				<div class="tab-pane pv20 fade in active" id="contact">
+				<div class="tab-pane pv0 fade in active" id="contact">
 					<h3 class="h-like-i f-bl-a"><?php echo CONTACT_TITLE; ?></h3>
 					<div class="row mt50">
 						<div class="col-md-6 pl60">
@@ -78,14 +78,14 @@
 						</div><!-- .about-map-->
 					</div>
 				</div><!-- #contact.tab-pane -->
-				<div class="tab-pane pv20 fade" id="team">
+				<div class="tab-pane pv0 fade" id="team">
 					<h3 class="h-like-i f-bl-a fC"><?php echo TEAM_TITLE; ?></h3>
 					<div class="row">
 						<ul class="col-md-12 ph0" role="list">
 							<li class="col-md-3 col-md-offset-3 ph20 mt50" role="listitem">
 								<article class="team-wp bg-gy-a" role="article">
 									<figure class="team-picture">
-										<img src="uploads/team-romain.jpg" alt="Benoît Rognier">
+										<img src="uploads/team-br.png" alt="Benoît Rognier">
 									</figure><!-- .team-picture -->
 									<div class="pa15 pt25">
 										<h4 class="h-like-f f-gy-b">Benoît Rognier</h4>
@@ -93,11 +93,11 @@
 										<p class="f15 mt20"><?php echo TEAM_BLOC_1_TXT; ?></p>
 										<ul class="list-inline mt25" role="menu">
 											<li class="mr5" role="menuitem">
-												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> LinkedIn" class="sprite social-in-b" role="link" target="_blank">
+												<a href="http://fr.linkedin.com/in/benoitrognier" title="<?php echo TITLE_FOLLOW_2 ?> LinkedIn" class="sprite social-in-b" role="link" target="_blank">
 													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> LinkedIn</span>
 												</a>
 											</li>
-											<li class="mr5" role="menuitem">
+											<!--<li class="mr5" role="menuitem">
 												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Google+" class="sprite social-gg-b" role="link" target="_blank">
 													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Google+</span>
 												</a>
@@ -106,7 +106,7 @@
 												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Twitter" class="sprite social-tw-b" role="link" target="_blank">
 													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Twitter</span>
 												</a>
-											</li>
+											</li>-->
 										</ul><!-- .list-inline -->
 									</div>
 								</article><!-- .teamp-wp -->
@@ -114,10 +114,10 @@
 							<li class="col-md-3 ph20 mt50" role="listitem">
 								<article class="team-wp bg-gy-a" role="article">
 									<figure class="team-picture">
-										<img src="uploads/team-romain.jpg" alt="Benoît Rognier">
+										<img src="uploads/team-gd.png" alt="Guillaume Duhamel">
 									</figure><!-- .team-picture -->
 									<div class="pa15 pt25">
-										<h4 class="h-like-f f-gy-b">Benoît Rognier</h4>
+										<h4 class="h-like-f f-gy-b">Guillaume Duhamel</h4>
 										<h5 class="btn btn-sm mt10 no-link"><?php echo TEAM_BLOC_2_JOB; ?></h5>
 										<p class="f15 mt20"><?php echo TEAM_BLOC_2_TXT; ?></p>
 										<ul class="list-inline mt25" role="menu">

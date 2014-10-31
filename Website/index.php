@@ -5,7 +5,7 @@
 	<?php include('inc/sections/presentation.php') ?>
 	<?php include('inc/sections/about.php') ?>
 	<?php include('inc/sections/quote.php') ?>
-	<?php include('inc/sections/testimonials.php') ?>
+	<?php /*include('inc/sections/testimonials.php')*/ ?>
 </div>
 
 <?php include('inc/structure/footer.php') ?>

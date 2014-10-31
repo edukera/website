@@ -776,7 +776,7 @@ a.social-gg-b:focus{
 
 /* Stripped background */
 .stripped-bg{
-	border-top: 1px solid #b7b7b7;
+	/*border-top: 1px solid #b7b7b7;*/
 	background: url(../img/bg/bg-stripped.png) #222222 repeat;
 	-webkit-background-size: 24px 24px;
 	   -moz-background-size: 24px 24px;

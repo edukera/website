@@ -14,7 +14,7 @@ define('NAV_SIGN_1', 			      	 "S’inscrire");
 define('NAV_SIGN_2', 			      	 "S’inscrire/Se connecter");
 
 define('NAV_CONNECT_1', 			      "Se connecter");
-define('NAV_CONNECT_2', 			      "Nous suivre");
+define('NAV_CONNECT_2', 			      "");
 define('NAV_CONNECT_2_TXT', 			  "L’application est bientôt disponible!<br/> suivez-nous pour être prévenu !");
 
 define('NAV_FOLLOW', 			      	  "Suivez-nous");
@@ -82,12 +82,12 @@ define('CONTACT_ADDRESS', 			      	"171, av Charles de Gaulle - 2e étage - 922
 
 /* ABOUT : TEAM */
 
-define('TEAM_TITLE', 			      		"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.");
+define('TEAM_TITLE', 			      		"L’équipe partage la conviction que l’enseignement des mathématiques ne doit pas échapper à la révolution numérique en marche, et met en oeuvre tout son savoir-faire et toute sa passion pour le révolutionner.");
 
 define('TEAM_BLOC_1_JOB', 			      	"Co-fondateur");
-define('TEAM_BLOC_1_TXT', 			      	"Lorem ipsum dolor sit amet, Lorem lorem ipsum dolor sit amet.consectetuer adip iscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet.");
+define('TEAM_BLOC_1_TXT', 			      	"Avant edukera, Benoît a développé des solutions d’analyse prédictive, notamment au sein de la société KXEN.");
 
-define('TEAM_BLOC_2_JOB', 			      	"Développeur");
+define('TEAM_BLOC_2_JOB', 			      	"Co-fondateur");
 define('TEAM_BLOC_2_TXT', 			      	"Lorem ipsum dolor sit amet. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet.");
 
 define('TEAM_BLOC_3_JOB', 			      	"Commercial");
