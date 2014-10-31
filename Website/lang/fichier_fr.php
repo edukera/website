@@ -46,9 +46,9 @@ Si toutes les propositions mathématiques de la copie sont correctement justifi�
 
 define('PRESENTATION_BLOC_2_TITLE',   		"Apprentissage");
 define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">Deux types d’exercices sont proposés :</p>
-<ul style=\"margin-bottom:10px\"><li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices didactiques</span> : ils font partie d’un parcours pédagogique qui présente les méthodes de résolution d’exercice à l’aide de fiches méthodologiques et d’exercices élémentaires</li>
+<ul style=\"margin-bottom:10px\"><li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices didactiques</span> : ils font partie d’un parcours pédagogique qui présente les méthodes de résolution d’exercices à l’aide de fiches méthodologiques et d’exercices élémentaires</li>
 <li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices d’entraînement</span> : ils sont triés par difficulté et permettent à l’élève de mettre en pratique les méthodes présentées dans les parcours pédagogiques.</li>
-</ul><p style=\"margin-bottom:5px\">Enfin, l’élève peut <span style=\"font-style:italic\">créer et résoudre ses exercices</span>, comme exemple ceux qu’il doit effectuer en classe.</p>");
+</ul><p style=\"margin-bottom:5px\">Enfin, l’élève peut <span style=\"font-style:italic\">créer et résoudre ses exercices</span>, comme par exemple ceux qu’il doit effectuer en classe.</p>");
 
 define('PRESENTATION_BLOC_3_TITLE',   		"Validation");
 define('PRESENTATION_BLOC_3_TXT',   		"L'élève suit sa progression globale par le nombre de chapitres validés. Un chapitre est validé lorsque l'élève réussit un défi consistant à résoudre des exercices en temps limité.");
