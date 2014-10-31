@@ -5,9 +5,9 @@
 			<div class="col-absolute left hidden-print">
 				<div id="top-carousel">
 					<ul class="carousel">
-						<li style="background-image:url(uploads/carousel-1.jpg);"><a href="uploads/capture-1.jpg" class="colorbox"></a></li>
-						<li style="background-image:url(uploads/carousel-1.jpg);"><a href="uploads/carousel-1.jpg" class="colorbox"></a></li>
-						<li><iframe width="404" height="264" src="//www.youtube.com/embed/v9QfQEzJzh0" allowfullscreen class="embed"></iframe></li>
+						<li style="background-image:url(uploads/carousel-1.png);"><a href="uploads/carousel-2.png" class="colorbox"></a></li>
+						<li style="background-image:url(uploads/carousel-2.png);"><a href="uploads/carousel-1.png" class="colorbox"></a></li>
+						<!--<li><iframe width="404" height="264" src="//www.youtube.com/embed/v9QfQEzJzh0" allowfullscreen class="embed"></iframe></li>-->
 					</ul><!-- carousel -->
 					<nav class="carousel-pagination"></nav>
 				</div><!-- #top-carousel -->

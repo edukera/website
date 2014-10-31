@@ -36,7 +36,7 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //** SECTION :: PRESENTATION
 //--------------------------------------------------------
 
-define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’est <span class=\"f-bl-a\">edukera</span> ?");
+define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
 define('PRESENTATION_TXT', 			      	"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Une construction itérative du raisonnement");
@@ -102,7 +102,7 @@ define('MENTION_TXT_4', 			      	"Le Site est hébergé par la société Google
 //** SECTION :: QUOTE
 //--------------------------------------------------------
 
-define('QUOTE_TITLE', 			     		  "Les mathématiques sont un jeu qui s’exerce selon des <span class=\"f-bl-a\">règles simples</span> avec des symboles qui n’ont en soi aucune importance particulière.");
+define('QUOTE_TITLE', 			     		  "Les mathématiques sont un jeu qui s’exerce selon des <span class=\"f-yl-a\">règles simples</span> avec des symboles qui n’ont en soi aucune importance particulière.");
 
 //--------------------------------------------------------
 //** SECTION :: TESTIMONIALS

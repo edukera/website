@@ -9,7 +9,7 @@
 				<figcaption class="author">
 					<a href="#" class="d-inbl v-m" target="_blank">
 						<img src="uploads/quote-hilbert.jpg" alt="Portrait de David Hilbert" class="mr15">
-						<strong class="f18 f-bl-a">David Hilbert</strong>
+						<strong class="f18 f-wh">David Hilbert</strong>
 					</a>
 				</figcaption><!-- .author -->
 		</figure><!-- .col-md-9.quote-wp -->
