@@ -52,7 +52,7 @@
 								</a>
 							</li>
 							<li class="mr20" role="menuitem">
-								<a href="https://plus.google.com/108941836539544483457" rel="publisher" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
+								<a href="https://plus.google.com/+Edukera" rel="publisher" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
 									<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Google+</span>
 								</a>
 							</li>

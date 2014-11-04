@@ -55,7 +55,7 @@
 											</a>
 										</li>
 										<li class="mr20" role="menuitem">
-											<a href="https://plus.google.com/u/0/b/108941836539544483457/108941836539544483457/posts/" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
+											<a href="https://plus.google.com/+Edukera" title="<?php echo TITLE_FOLLOW_1 ?> Google+" class="sprite social-gg-a" role="link" target="_blank">
 												<span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Google+</span>
 											</a>
 										</li>
@@ -82,7 +82,7 @@
 					<h3 class="h-like-i f-bl-a fC"><?php echo TEAM_TITLE; ?></h3>
 					<div class="row">
 						<ul class="col-md-12 ph0" role="list">
-							<li class="col-md-3 col-md-offset-3 ph20 mt50" role="listitem">
+							<li class="col-md-3 ph20 mt50" role="listitem">
 								<article class="team-wp bg-gy-a" role="article">
 									<figure class="team-picture">
 										<img src="uploads/team-br.png" alt="Benoît Rognier">
@@ -140,7 +140,64 @@
 									</div>
 								</article><!-- .teamp-wp -->
 							</li><!-- .col-md-3 -->
-
+							<li class="col-md-3 ph20 mt50" role="listitem">
+								<article class="team-wp bg-gy-a" role="article">
+									<figure class="team-picture">
+										<img src="uploads/team-rg.jpg" alt="Benoît Rognier">
+									</figure><!-- .team-picture -->
+									<div class="pa15 pt25">
+										<h4 class="h-like-f f-gy-b">Romain Guillot</h4>
+										<h5 class="btn btn-sm mt10 no-link"><?php echo TEAM_BLOC_3_JOB; ?></h5>
+										<p class="f15 mt20"><?php echo TEAM_BLOC_3_TXT; ?></p>
+										<ul class="list-inline mt25" role="menu">
+											<li class="mr5" role="menuitem">
+												<a href="https://www.linkedin.com/profile/view?id=51135997&locale=fr_FR" title="<?php echo TITLE_FOLLOW_2 ?> LinkedIn" class="sprite social-in-b" role="link" target="_blank">
+													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> LinkedIn</span>
+												</a>
+											</li>
+											<!--<li class="mr5" role="menuitem">
+												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Google+" class="sprite social-gg-b" role="link" target="_blank">
+													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Google+</span>
+												</a>
+											</li>
+											<li role="menuitem">
+												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Twitter" class="sprite social-tw-b" role="link" target="_blank">
+													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Twitter</span>
+												</a>
+											</li>-->
+										</ul><!-- .list-inline -->
+									</div>
+								</article><!-- .teamp-wp -->
+							</li><!-- .col-md-3 -->
+							<li class="col-md-3 ph20 mt50" role="listitem">
+								<article class="team-wp bg-gy-a" role="article">
+									<figure class="team-picture">
+										<img src="uploads/avatar-jmaquet.jpg" alt="Jérémie Marquet">
+									</figure><!-- .team-picture -->
+									<div class="pa15 pt25">
+										<h4 class="h-like-f f-gy-b">Jérémie Maquet</h4>
+										<h5 class="btn btn-sm mt10 no-link"><?php echo TEAM_BLOC_4_JOB; ?></h5>
+										<p class="f15 mt20"><?php echo TEAM_BLOC_4_TXT; ?></p>
+										<ul class="list-inline mt25" role="menu">
+											<li class="mr5" role="menuitem">
+												<a href=" https://www.linkedin.com/profile/view?id=167651918" title="<?php echo TITLE_FOLLOW_2 ?> LinkedIn" class="sprite social-in-b" role="link" target="_blank">
+													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> LinkedIn</span>
+												</a>
+											</li>
+<!--											<li class="mr5" role="menuitem">
+												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Google+" class="sprite social-gg-b" role="link" target="_blank">
+													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Google+</span>
+												</a>
+											</li>
+											<li role="menuitem">
+												<a href="#" title="<?php echo TITLE_FOLLOW_2 ?> Twitter" class="sprite social-tw-b" role="link" target="_blank">
+													<span class="sr-only"><?php echo TITLE_FOLLOW_2 ?> Twitter</span>
+												</a>
+											</li> -->
+										</ul><!-- .list-inline -->
+									</div>
+								</article><!-- .teamp-wp -->
+							</li><!-- .col-md-3 -->
 						</ul>
 					</div><!-- .row -->
 				</div><!-- #team.tab-pane -->
