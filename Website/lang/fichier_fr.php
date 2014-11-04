@@ -88,7 +88,7 @@ define('TEAM_BLOC_1_JOB', 			      	"Co-fondateur");
 define('TEAM_BLOC_1_TXT', 			      	"Avant edukera, Benoît a développé pendant plus de dix ans des solutions d’analyse prédictive, notamment au sein de la société KXEN.");
 
 define('TEAM_BLOC_2_JOB', 			      	"Co-fondateur");
-define('TEAM_BLOC_2_TXT', 			      	"Promo EPITA 2009 avec spécialité en Intelligence Artificielle, Guillaume a développé avec Benoît des solutions d'analyse de données pour le marketing direct des entreprises.");
+define('TEAM_BLOC_2_TXT', 			      	"Promo EPITA 2009, Guillaume a développé avec Benoît des solutions d'analyse de données pour le marketing direct des entreprises.");
 
 define('TEAM_BLOC_3_JOB', 			      	"Graphiste");
 define('TEAM_BLOC_3_TXT', 			      	"Amoureux de conception simple et épuré, Romain aime allier ergonomie et esthétisme.");
