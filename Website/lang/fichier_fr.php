@@ -91,7 +91,7 @@ define('TEAM_BLOC_2_JOB', 			      	"Co-fondateur");
 define('TEAM_BLOC_2_TXT', 			      	"Promo EPITA 2009, Guillaume a développé avec Benoît des solutions d'analyse de données pour le marketing direct des entreprises.");
 
 define('TEAM_BLOC_3_JOB', 			      	"Graphiste");
-define('TEAM_BLOC_3_TXT', 			      	"Amoureux de conception simple et épuré, Romain aime allier ergonomie et esthétisme.");
+define('TEAM_BLOC_3_TXT', 			      	"Amoureux de conception simple et épurée, Romain aime allier ergonomie et esthétisme.");
 
 define('TEAM_BLOC_4_JOB', 			      	"Intégrateur");
 define('TEAM_BLOC_4_TXT', 			      	"Passionné d'interface web et mobile, Jérémie aime donner vie aux concepts et maquettes.");
