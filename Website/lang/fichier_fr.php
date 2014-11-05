@@ -82,7 +82,7 @@ define('CONTACT_ADDRESS', 			      	"171, av Charles de Gaulle - 2e étage - 922
 
 /* ABOUT : TEAM */
 
-define('TEAM_TITLE', 			      		"L’équipe partage la conviction que l’enseignement des mathématiques ne doit pas échapper à la révolution numérique en marche, et met en oeuvre tout son savoir-faire et toute sa passion pour le révolutionner.");
+define('TEAM_TITLE', 			      		"L’équipe partage la conviction que l’enseignement des mathématiques ne doit pas échapper à la révolution numérique en marche.");
 
 define('TEAM_BLOC_1_JOB', 			      	"Co-fondateur");
 define('TEAM_BLOC_1_TXT', 			      	"Avant edukera, Benoît a développé pendant plus de dix ans des solutions d’analyse prédictive, notamment au sein de la société KXEN.");
