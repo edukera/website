@@ -33,7 +33,7 @@ $email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, s
 $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si besoin
 
 // Subjet
-$subject = '[WEBSITE] message edukera.com';
+$subject = '[WEBSITE] message de '.$email;
 
 // Corps du message
 $body     ='';
