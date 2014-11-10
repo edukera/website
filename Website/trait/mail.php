@@ -10,11 +10,10 @@ $destinataire  = 'contact@edukera.com';
 
 // Nettoyer et enregistrer ke texte
 function Rec($text){
-    $text = htmlspecialchars(trim($text), ENT_QUOTES);
+    $text = trim($text);
     if (1 === get_magic_quotes_gpc()){
         $text = stripslashes($text);
     }
-    $text = nl2br($text);
     return $text;
 };
 
