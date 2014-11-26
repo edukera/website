@@ -22,7 +22,7 @@
 							</div><!-- .media -->
 						</div><!-- .col-md-5 -->
 						<div class="col-md-5 col-md-offset-1">
-							<a href="uploads/pres-1.png" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>">
+							<a href="uploads/pres-1.png" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
 								<figure class="rounded">
 									<img src="uploads/pres-1.png" alt="">
 								</figure>
@@ -35,7 +35,7 @@
 				<li class="mt40 clearfix" role="listitem">
 					<article role="article">
 						<div class="col-md-5 col-md-offset-1">
-							<a href="uploads/pres-2.png" class="capture-rounded left colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>">
+							<a href="uploads/pres-2.png" class="capture-rounded left colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
 								<figure class="rounded">
 									<img src="uploads/pres-2.png" alt="">
 								</figure>
@@ -69,7 +69,7 @@
 							</div><!-- .media -->
 						</div><!-- .col-md-5 -->
 						<div class="col-md-5 col-md-offset-1">
-							<a href="uploads/pres-3.png" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>">
+							<a href="uploads/pres-3.png" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
 								<figure class="rounded">
 									<img src="uploads/pres-3.png" alt="">
 								</figure>

@@ -446,7 +446,7 @@ body{
 /* ----------------------------- */
 
 /* Colorbox Core Style The following CSS is consistent between example themes and should not be altered. */
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; /*overflow:hidden;*/}
 #cboxWrapper {max-width:none;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
 #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
@@ -476,12 +476,12 @@ body{
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
         #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
-        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(../img/colorbox/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
-        #cboxPrevious:hover{background-position:bottom left;}
-        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(../img/colorbox/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
-        #cboxNext:hover{background-position:bottom right;}
-        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(../img/colorbox/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:bottom center;}
+        #cboxPrevious{position:absolute; top:50%; left:-45px; margin-top:-32px; background:url(../img/colorbox/controls.png) no-repeat 0 0; width:30px; height:45px; text-indent:-9999px;-webkit-transition: opacity 0.2s ease-out;-o-transition: opacity 0.2s ease-out;transition: opacity 0.2s ease-out;}
+        #cboxPrevious:hover{opacity: 0.8;}
+        #cboxNext{position:absolute; top:50%; right:-45px; margin-top:-32px; background:url(../img/colorbox/controls.png) no-repeat -35px 0; width:30px; height:45px; text-indent:-9999px; -webkit-transition: opacity 0.2s ease-out;-o-transition: opacity 0.2s ease-out;transition: opacity 0.2s ease-out;}
+        #cboxNext:hover{opacity: 0.8;}
+        #cboxClose{position:absolute; top:-25px; right:0px; display:block; background:url(../img/colorbox/controls.png) no-repeat -65px 0; width:15px; height:15px; text-indent:-9999px;-webkit-transition: opacity 0.2s ease-out;-o-transition: opacity 0.2s ease-out;transition: opacity 0.2s ease-out;}
+        #cboxClose:hover{opacity: 0.8;}
 
 
 
