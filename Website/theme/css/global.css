@@ -399,6 +399,7 @@ a 						  { cursor: pointer;}
 .icon-arrow-r 				{ height: 40px; width: 30px; background-position: -400px 0;}
 .icon-logo 					{ height: 70px; width: 70px; background-position: -430px 0;}
 .icon-gg-store  			{ height: 100px; width: 120px; background-position: -500px 0;}
+.icon-fullscreen  			{ height: 50px; width: 50px; background-position: -630px 0;}
 
 
 /* ----------------------------- */
@@ -831,6 +832,12 @@ a.social-gg-b:focus{
 	   -moz-background-size: 580px 367px;
 	     -o-background-size: 580px 367px;
 	        background-size: 580px 367px;
+}
+#top-carousel .icon-fullscreen {
+	position: absolute;
+	z-index: 99;
+	right: 10px;
+	bottom: 5px;
 }
 #top-carousel .caroufredsel_wrapper{
 	height: 264px !important;

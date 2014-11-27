@@ -5,8 +5,8 @@
 			<div class="col-absolute left hidden-print">
 				<div id="top-carousel">
 					<ul class="carousel">
-						<li style="background-image:url(uploads/carousel-1.png);"><a href="uploads/carousel-2.png" class="colorbox" data-colorbox="group1"></a></li>
-						<li style="background-image:url(uploads/carousel-2.png);"><a href="uploads/carousel-1.png" class="colorbox" data-colorbox="group1"></a></li>
+						<li style="background-image:url(uploads/carousel-1.png);"><a href="uploads/carousel-2.png" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
+						<li style="background-image:url(uploads/carousel-2.png);"><a href="uploads/carousel-1.png" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
 						<!--<li><iframe width="404" height="264" src="//www.youtube.com/embed/v9QfQEzJzh0" allowfullscreen class="embed"></iframe></li>-->
 					</ul><!-- carousel -->
 					<nav class="carousel-pagination"></nav>
