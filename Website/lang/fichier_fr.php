@@ -75,7 +75,7 @@ define('CONTACT_MSG_ERROR', 			    "Veuillez saisir un texte d\'au moins 10 cara
 define('CONTACT_SUBMIT', 			      	"Envoyer votre message");
 define('CONTACT_VALID', 			      	"Ok !");
 
-define('CONTACT_FOLLOW', 			      	"Vous pouvez aussi <span class=\"f-bl-a\">nous trouvez</span> ici :");
+define('CONTACT_FOLLOW', 			      	"Vous pouvez aussi <span class=\"f-bl-a\">nous trouver</span> ici :");
 
 define('CONTACT_ADDRESS', 			      	"171, av Charles de Gaulle - 2e étage - 92200 Neuilly-sur-Seine");
 
