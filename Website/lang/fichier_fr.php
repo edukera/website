@@ -37,21 +37,18 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', 			      	"Edukera propose aux élèves du lycée une application en ligne leur permettant de résoudre des exercices de mathématiques. L'élève élabore dans l’application un raisonnement mathématique validé de manière automatique. Il apprend les mathématiques par la résolution d’exercices et le suivi de son activité.");
+define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux élèves et aux professeurs souhaitant bénéficier de didacticiels détaillés et d'un environnement d'entraînement. L'élève élabore ses raisonnements mathématiques dans l'application et obtient de l'aide instantanément si besoin. Le professeur développe des didacticiels et des exercices pour sa classe.");
 
-define('PRESENTATION_BLOC_1_TITLE',   		"Une construction itérative de raisonnement");
-define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement mathématique étape par étape, par assemblage et paramétrage des raisonnements élémentaires disponibles dans le cours.
+define('PRESENTATION_BLOC_1_TITLE',   		"Élaboration itérative de raisonnement");
+define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement mathématique étape par étape, par sélection et paramétrage des éléments de démonstration.
 
 Si toutes les propositions mathématiques de la copie sont correctement justifiées, alors l’exercice est résolu et l’élève peut passer à l’exercice suivant.");
 
-define('PRESENTATION_BLOC_2_TITLE',   		"Apprentissage");
-define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">Deux types d’exercices sont proposés :</p>
-<ul style=\"margin-bottom:10px\"><li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices didactiques</span> : ils font partie d’un parcours pédagogique qui présente les méthodes de résolution d’exercices à l’aide de fiches méthodologiques et d’exercices élémentaires</li>
-<li style=\"margin-bottom:5px;margin-left:15px\"><span style=\"font-style:italic\">les exercices d’entraînement</span> : ils sont triés par difficulté et permettent à l’élève de mettre en pratique les méthodes présentées dans les parcours pédagogiques.</li>
-</ul><p style=\"margin-bottom:5px\">Enfin, l’élève peut <span style=\"font-style:italic\">créer et résoudre ses exercices</span>, comme par exemple ceux qu’il doit effectuer en classe.</p>");
+define('PRESENTATION_BLOC_2_TITLE',   		"Didacticiels");
+define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">L'élève apprend les méthodes de résolution d'exercice grâce à des exercices didactiques organisés en parcours pédagogique. Ces exercices sont corrigés et commentés étape par étape.</p>");
 
-define('PRESENTATION_BLOC_3_TITLE',   		"Validation");
-define('PRESENTATION_BLOC_3_TXT',   		"L'élève suit sa progression globale par le nombre de chapitres validés. Un chapitre est validé lorsque l'élève réussit un défi consistant à résoudre des exercices en temps limité.");
+define('PRESENTATION_BLOC_3_TITLE',   		"Entraînement");
+define('PRESENTATION_BLOC_3_TXT',   		"L'élève s'entraîne à appliquer les méthodes de résolution présentées dans les didacticiels. Les exercices d'entraînement sont triés par difficulté croissante. Enfin, l’élève peut <span style=\"font-style:italic\">créer des exercices et les résoudre</span>, comme par exemple ceux qu’il doit effectuer en devoir à la maison.</p>");
 
 
 //--------------------------------------------------------
