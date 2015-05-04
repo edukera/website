@@ -25,7 +25,7 @@ define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;"
 //--------------------------------------------------------
 
 define('TOP_TITLE_1', 			      		"Vivez les <span class=\"f-bl-a\">maths</span><br> différemment");
-define('TOP_TITLE_2', 			      		"Version <span class=\"f-bl-a\">beta</span> bientôt disponible.");
+define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Démo</span> disponible !");
 
 define('TOP_STORE_1', 			      		"L’application edukera est disponible qu’avec <span class=\"f-bl-a\">Chrome</span>.");
 define('TOP_STORE_2', 			      		"Nous travaillons encore sur les autres navigateurs pour vous offrir...");
@@ -37,7 +37,7 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux élèves et aux professeurs souhaitant bénéficier de didacticiels détaillés et d'un environnement d'entraînement. L'élève élabore ses raisonnements mathématiques dans l'application et obtient de l'aide instantanément si besoin. Le professeur développe des didacticiels et des exercices pour sa classe.");
+define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux élèves et aux professeurs souhaitant bénéficier de didacticiels détaillés et d'un environnement d'entraînement. L'élève élabore des raisonnements mathématiques dans l'application et obtient de l'aide instantanément si besoin. Le professeur développe des didacticiels et des exercices pour sa classe.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Élaboration itérative de raisonnement");
 define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement mathématique étape par étape, par sélection et paramétrage des éléments de démonstration.
@@ -45,10 +45,10 @@ define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement math
 Si toutes les propositions mathématiques de la copie sont correctement justifiées, alors l’exercice est résolu et l’élève peut passer à l’exercice suivant.");
 
 define('PRESENTATION_BLOC_2_TITLE',   		"Didacticiels");
-define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">L'élève apprend les méthodes de résolution d'exercice grâce à des exercices didactiques organisés en parcours pédagogique. Ces exercices sont corrigés et commentés étape par étape.</p>");
+define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">L'élève apprend les méthodes de résolution d'exercices grâce à des exercices didactiques organisés en parcours pédagogique. </p><p>Ces exercices sont corrigés et commentés étape par étape.</p>");
 
 define('PRESENTATION_BLOC_3_TITLE',   		"Entraînement");
-define('PRESENTATION_BLOC_3_TXT',   		"L'élève s'entraîne à appliquer les méthodes de résolution présentées dans les didacticiels. Les exercices d'entraînement sont triés par difficulté croissante. Enfin, l’élève peut <span style=\"font-style:italic\">créer des exercices et les résoudre</span>, comme par exemple ceux qu’il doit effectuer en devoir à la maison.</p>");
+define('PRESENTATION_BLOC_3_TXT',   		"L'élève s'entraîne à appliquer les méthodes de résolution présentées dans les didacticiels. Les exercices d'entraînement sont triés par difficulté croissante. Une étape de raisonnement est obtenue en cas de besoin.</p>");
 
 
 //--------------------------------------------------------
