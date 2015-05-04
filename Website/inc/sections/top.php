@@ -14,10 +14,10 @@
 				</div><!-- #top-carousel -->
 			</div><!-- .col-absolute.left -->
 			<div class="col-absolute right">
-				<div id="top-title">
+				<div id="top-title" style="top: -26px">
 					<h1 class="h-like-a"><?php echo TOP_TITLE_1; ?></h1>
-					<p class="f25 m5"><?php echo TOP_TITLE_2; ?></p>
-					<!--<a href="#" class="btn btn-lg mt30 hidden-print" role="link" target="_blank"><?php echo NAV_CONNECT_2; ?></a>-->
+					<!-- <p class="f25 m5"><?php echo TOP_TITLE_2; ?></p> -->
+					<a href="https://edukera.appspot.com" class="btn btn-lg mt30 hidden-print" role="link" target="_blank"><?php echo NAV_CONNECT_2; ?></a>
 					<div style="padding-top:35px">
 					  <a href="https://twitter.com/edukera" title="<?php echo TITLE_FOLLOW_1 ?> Twitter" class="sprite social-tw-a" role="link" target="_blank">
 					    <span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Twitter</span>

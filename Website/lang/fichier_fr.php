@@ -14,7 +14,7 @@ define('NAV_SIGN_1', 			      	 "S’inscrire");
 define('NAV_SIGN_2', 			      	 "S’inscrire/Se connecter");
 
 define('NAV_CONNECT_1', 			      "Se connecter");
-define('NAV_CONNECT_2', 			      "");
+define('NAV_CONNECT_2', 			      "Lancer la Démo");
 define('NAV_CONNECT_2_TXT', 			  "L’application est bientôt disponible!<br/> suivez-nous pour être prévenu !");
 
 define('NAV_FOLLOW', 			      	  "Suivez-nous");
