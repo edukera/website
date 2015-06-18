@@ -37,12 +37,12 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux élèves et aux professeurs souhaitant bénéficier de didacticiels détaillés et d'un environnement d'entraînement. L'élève élabore des raisonnements mathématiques dans l'application et obtient de l'aide instantanément si besoin. Le professeur développe des didacticiels et des exercices pour sa classe.");
+define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux étudiants et aux professeurs souhaitant bénéficier de didacticiels détaillés et d'un environnement d'entraînement à la démonstration mathématique. L'étudiant élabore des raisonnements mathématiques dans l'application et obtient de l'aide instantanément si besoin. Le professeur développe des didacticiels et des exercices pour sa classe.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Élaboration itérative de raisonnement");
-define('PRESENTATION_BLOC_1_TXT',   		"L’élève élabore un raisonnement mathématique étape par étape, par sélection et paramétrage des éléments de démonstration.
+define('PRESENTATION_BLOC_1_TXT',   		"L’étudiant élabore un raisonnement mathématique étape par étape, par sélection et paramétrage des éléments de démonstration.
 
-Si toutes les propositions mathématiques de la copie sont correctement justifiées, alors l’exercice est résolu et l’élève peut passer à l’exercice suivant.");
+Si toutes les propositions mathématiques de la copie sont correctement justifiées, alors l’exercice est résolu et l’étudiant peut passer à l’exercice suivant.");
 
 define('PRESENTATION_BLOC_2_TITLE',   		"Didacticiels");
 define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">L'élève apprend les méthodes de résolution d'exercices grâce à des exercices didactiques organisés en parcours pédagogique. </p><p>Ces exercices sont corrigés et commentés étape par étape.</p>");
