@@ -1,6 +1,22 @@
 <?php
 
 //--------------------------------------------------------
+//** SCREEN SHOTS
+//--------------------------------------------------------
+
+define('SC_CAROUSEL1',	 "fr_carousel3.png");
+define('SC_CAROUSEL2', "fr_carousel1.png");
+define('SC_CAROUSEL3', "fr_carousel2.png");
+
+define('SC_DIAG1', "fr_diag1.png");
+define('SC_DIAG2', "fr_diag2.png");
+define('SC_DIAG3', "fr_diag3.png");
+
+define('SC_TUTO1', "fr_tuto1.png");
+
+define('SC_HELP1', "fr_help1.png");
+
+//--------------------------------------------------------
 //** NAVIGATION
 //--------------------------------------------------------
 
@@ -27,8 +43,8 @@ define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;"
 define('TOP_TITLE_1', 			      		"Vivez les <span class=\"f-bl-a\">maths</span><br> différemment");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Démo</span> disponible !");
 
-define('TOP_STORE_1', 			      		"L’application edukera est disponible qu’avec <span class=\"f-bl-a\">Chrome</span>.");
-define('TOP_STORE_2', 			      		"Nous travaillons encore sur les autres navigateurs pour vous offrir...");
+define('TOP_STORE_1', 			      		"L’application est actuellement optimisée pour <span class=\"f-bl-a\">Chrome</span> et <span class=\"f-bl-a\">Firefox</span>.");
+define('TOP_STORE_2', 			      		"Elle est fonctionnelle sur les autres browsers, et sera disponible dans sa version optimisée prochainement.");
 define('TOP_STORE_3', 			      		"Télécharger Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
 
@@ -37,7 +53,7 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux étudiants et aux professeurs souhaitant bénéficier de didacticiels détaillés et d'un environnement d'entraînement à la démonstration mathématique. L'étudiant élabore des raisonnements mathématiques dans l'application et obtient de l'aide instantanément si besoin. Le professeur développe des didacticiels et des exercices pour sa classe.");
+define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux étudiants et aux professeurs souhaitant bénéficier d'un environnement de conception assistée de démonstration. L'étudiant élabore des raisonnements dans l'application et obtient de l'aide instantanément si besoin. Il découvre les méthodes de démonstrations au travers de didacticiels détaillés.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Élaboration itérative de raisonnement");
 define('PRESENTATION_BLOC_1_TXT',   		"L’étudiant élabore un raisonnement mathématique étape par étape, par sélection et paramétrage des éléments de démonstration.
@@ -45,10 +61,10 @@ define('PRESENTATION_BLOC_1_TXT',   		"L’étudiant élabore un raisonnement ma
 Si toutes les propositions mathématiques de la copie sont correctement justifiées, alors l’exercice est résolu et l’étudiant peut passer à l’exercice suivant.");
 
 define('PRESENTATION_BLOC_2_TITLE',   		"Didacticiels");
-define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">L'élève apprend les méthodes de résolution d'exercices grâce à des exercices didactiques organisés en parcours pédagogique. </p><p>Ces exercices sont corrigés et commentés étape par étape.</p>");
+define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">L'étudiant apprend les méthodes de démonstration grâce à des exercices didactiques organisés en parcours pédagogique. </p><p>Ces exercices sont corrigés et commentés étape par étape.</p>");
 
-define('PRESENTATION_BLOC_3_TITLE',   		"Entraînement");
-define('PRESENTATION_BLOC_3_TXT',   		"L'élève s'entraîne à appliquer les méthodes de résolution présentées dans les didacticiels. Les exercices d'entraînement sont triés par difficulté croissante. Une étape de raisonnement est obtenue en cas de besoin.</p>");
+define('PRESENTATION_BLOC_3_TITLE',   		"Aide");
+define('PRESENTATION_BLOC_3_TXT',   		"L'étudiant, s'il est bloqué dans un exercice, obtient une étape de raisonnement en cliquant sur une 'ampoule'. Le nombre d'ampoules dont il dispose par exercice dépend de la difficulté de l'exercice.</p>");
 
 
 //--------------------------------------------------------

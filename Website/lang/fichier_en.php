@@ -1,6 +1,22 @@
 <?php
 
 //--------------------------------------------------------
+//** SCREEN SHOTS
+//--------------------------------------------------------
+
+define('SC_CAROUSEL1', "en_carousel3.png");
+define('SC_CAROUSEL2', "en_carousel1.png");
+define('SC_CAROUSEL3', "en_carousel2.png");
+
+define('SC_DIAG1', "en_diag1.png");
+define('SC_DIAG2', "en_diag2.png");
+define('SC_DIAG3', "en_diag3.png");
+
+define('SC_TUTO1', "en_tuto1.png");
+
+define('SC_HELP1', "en_help1.png");
+
+//--------------------------------------------------------
 //** NAVIGATION
 //--------------------------------------------------------
 
@@ -27,7 +43,7 @@ define('NAV_COPYRIGHT', 			      "All rights reserved - 2014 - Edukera &copy;");
 define('TOP_TITLE_1', 			      		"Live <span class=\"f-bl-a\">maths</span><br> differently");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Demo</span> available !");
 
-define('TOP_STORE_1', 			      		"The edukera application is only available with <span class=\"f-bl-a\">Chrome</span>.");
+define('TOP_STORE_1', 			      		"edukera is currently optimized for <span class=\"f-bl-a\">Chrome</span> and <span class=\"f-bl-a\">Firefox</span>.");
 define('TOP_STORE_2', 			      		"We are still working on other browsers…");
 define('TOP_STORE_3', 			      		"Download Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
@@ -36,30 +52,30 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //** SECTION :: PRESENTATION
 //--------------------------------------------------------
 
-define('PRESENTATION_TITLE', 			    "What is’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> is a mathematics exercise application, aimed at students and teachers who wish to benefit from detailed tutorials and from a training environment. Students can develop mathematical reasoning, with instant access to help if they need it, and teachers can develop tutorials and exercises for their class.");
+define('PRESENTATION_TITLE', 			    "What is <span class=\"f-bl-a\">edukera</span> ?");
+define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> is a mathematics exercise application, aimed at students and teachers who wish to benefit from a mathematical proof design environment. Students develop mathematical reasoning, with instant access to help if they need it.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Iterative reasoning development");
-define('PRESENTATION_BLOC_1_TXT',   		"Students develop mathematical reasoning step by step, by selecting and programming the demonstration features.
+define('PRESENTATION_BLOC_1_TXT',   		"Students develop mathematical reasoning step by step, by selecting the demonstration features and by setting their parameters when necessary.
 
-If all propositions are justified correctly, the exercise is complete and the student can go on to the following one.");
+If all proof's statements are justified correctly, the exercise is complete and the student can go on to the following one.");
 
 define('PRESENTATION_BLOC_2_TITLE',   		"Tutorials");
 define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">Students learn how to solve the problems with the help of didactic exercises organised within various learning paths. </p><p>These exercises are corrected and step by step feedback is given.</p>");
 
-define('PRESENTATION_BLOC_3_TITLE',   		"Training");
-define('PRESENTATION_BLOC_3_TXT',   		"Students are trained to apply the problem solving methods presented in the tutorials. The training exercises are grouped by difficulty level. A reasoning stage can be obtained if necessary.</p>");
+define('PRESENTATION_BLOC_3_TITLE',   		"Instant help");
+define('PRESENTATION_BLOC_3_TXT',   		"Students, if they need to, can get a solving step by clicking on the 'bulb' button. The number of 'bulbs' available for an exercise depends on its level of difficulty.</p>");
 
 
 //--------------------------------------------------------
 //** SECTION :: ABOUT
 //--------------------------------------------------------
 
-define('ABOUT_TITLE', 			          	"About’ <span class=\"f-bl-a\">edukera</span> ?");
+define('ABOUT_TITLE', 			          	"About <span class=\"f-bl-a\">edukera</span> ?");
 
 /* ABOUT : CONTACT */
 
-define('CONTACT_TITLE', 			      	"We are here to answer all your questions, do not hesitate to send us a message.");
+define('CONTACT_TITLE', 			      	"We are here to answer your questions, do not hesitate to contact us.");
 
 define('CONTACT_OK', 	   	            	"<strong>Well done</strong> Your message has been sent.");
 define('CONTACT_KO', 	   	            	"<strong>Oops</strong> Your message has not been sent. Try submitting again. ");

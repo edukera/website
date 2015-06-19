@@ -5,9 +5,9 @@
 			<div class="col-absolute left hidden-print">
 				<div id="top-carousel">
 					<ul class="carousel">
-						<li style="background-image:url(uploads/carousel-1.png);"><a href="uploads/carousel-3.png" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
-						<li style="background-image:url(uploads/carousel-3.png);"><a href="uploads/carousel-2.png" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
-						<li style="background-image:url(uploads/carousel-2.png);"><a href="uploads/carousel-1.png" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
+						<li style="background-image:url(uploads/<?php echo SC_CAROUSEL1 ?>);"><a href="uploads/<?php echo SC_CAROUSEL3 ?>" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
+						<li style="background-image:url(uploads/<?php echo SC_CAROUSEL3 ?>);"><a href="uploads/<?php echo SC_CAROUSEL2 ?>" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
+						<li style="background-image:url(uploads/<?php echo SC_CAROUSEL2 ?>);"><a href="uploads/<?php echo SC_CAROUSEL1 ?>" class="colorbox" data-colorbox="group1"><span class="sprite icon-fullscreen"></span></a></li>
 						<!--<li><iframe width="404" height="264" src="//www.youtube.com/embed/v9QfQEzJzh0" allowfullscreen class="embed"></iframe></li>-->
 					</ul><!-- carousel -->
 					<nav class="carousel-pagination"></nav>
@@ -33,26 +33,27 @@
 				</div><!-- #top-title -->
 			</div><!-- .col-absolute.right -->
 		</div><!-- .container -->
-		<div class="stripped-bg pv20" id="top-store">
+		<div class="stripped-bg pv20" id="top-store" style="padding:0px !important">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 mt25">
+					<div class="col-md-8 mt25" style="margin-left: 21%">
 						<h2 class="f18 f-gy-d mb5"><?php echo TOP_STORE_1; ?></h2>
-						<em class="f14 f-wh"><?php echo TOP_STORE_2; ?></em>
+						<em class="f14 f-wh" style="visibility:hidden"><?php echo TOP_STORE_2; ?></em>
 					</div><!-- .col-md-8 -->
-					<div class="col-md-4">
+			<!--		<div class="col-md-4">
 						<a href="#" class="hidden-print" target="_blank">
 							<div class="media">
 								<div class="pull-left">
 									<div class="sprite icon-gg-store"></div>
-								</div><!-- .pull-left-->
+									<div class="sprite icon-ff-store"></div>
+								</div>
 								<div class="media-body fC mt35">
 									<h3 class="f14 f-bl-a fUpp"><?php echo TOP_STORE_3; ?></h3>
 									<small class="f-wh f12"><?php echo TOP_STORE_4; ?></small>
-								</div><!-- .media-body -->
-							</div><!-- .media -->
+								</div>
+							</div>
 						</a>
-					</div><!-- .col-md-4 -->
+					</div> -->
 				</div><!-- .row -->
 			</div><!-- .container-->
 		</div><!-- #top-store -->

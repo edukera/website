@@ -400,7 +400,12 @@ a 						  { cursor: pointer;}
 .icon-logo 					{ height: 70px; width: 70px; background-position: -430px 0;}
 .icon-gg-store  			{ height: 100px; width: 120px; background-position: -500px 0;}
 .icon-fullscreen  			{ height: 50px; width: 50px; background-position: -630px 0;}
-
+.icon-ff-store {
+	display: inline-block;
+	background-image: url('../img/sprite/ff-logo.png');
+	background-repeat: no-repeat;
+	vertical-align: text-top;
+}
 
 /* ----------------------------- */
 /* ==  SPRITE RETINA    	     */
@@ -925,7 +930,7 @@ a.social-gg-b:focus{
 
 /* Top Store */
 .store-off #top-store{
-	display: none;
+/*	display: none;*/
 }
 
 
