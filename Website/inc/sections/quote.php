@@ -7,7 +7,7 @@
 				<h3 class="h-like-b f-wh"><span class="mr5">&ldquo;</span><?php echo QUOTE_TITLE; ?><span class="ml5">&rdquo;</span></h3>
 			</blockquote>
 				<figcaption class="author">
-					<a href="http://fr.wikipedia.org/wiki/David_Hilbert" class="d-inbl v-m" target="_blank">
+					<a href="<?php echo LK_HILBERT ?>" class="d-inbl v-m" target="_blank">
 						<img src="uploads/quote-hilbert.jpg" alt="Portrait de David Hilbert" class="mr15">
 						<strong class="f18 f-wh">David Hilbert</strong>
 					</a>

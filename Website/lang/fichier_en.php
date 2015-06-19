@@ -17,6 +17,12 @@ define('SC_TUTO1', "en_tuto1.png");
 define('SC_HELP1', "en_help1.png");
 
 //--------------------------------------------------------
+//** LINK
+//--------------------------------------------------------
+
+define('LK_HILBERT',"http://en.wikipedia.org/wiki/David_Hilbert");
+
+//--------------------------------------------------------
 //** NAVIGATION
 //--------------------------------------------------------
 
@@ -43,7 +49,7 @@ define('NAV_COPYRIGHT', 			      "All rights reserved - 2014 - Edukera &copy;");
 define('TOP_TITLE_1', 			      		"Live <span class=\"f-bl-a\">maths</span><br> differently");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Demo</span> available !");
 
-define('TOP_STORE_1', 			      		"edukera is currently optimized for <span class=\"f-bl-a\">Chrome</span> and <span class=\"f-bl-a\">Firefox</span>.");
+define('TOP_STORE_1', 			      		"currently optimized for <span class=\"f-bl-a\">Chrome</span> and <span class=\"f-bl-a\">Firefox</span>.");
 define('TOP_STORE_2', 			      		"We are still working on other browsers…");
 define('TOP_STORE_3', 			      		"Download Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
@@ -120,7 +126,7 @@ define('MENTION_TXT_4', 			      	"The site is hosted by google, whose French he
 //** SECTION :: QUOTE
 //--------------------------------------------------------
 
-define('QUOTE_TITLE', 			     		  "Maths is a game that works based on <span class=\"f-yl-a\">simple rules</span> with symbols, which by themselves have no particular importance.");
+define('QUOTE_TITLE', 			     		  "Mathematics is a <span class=\"f-yl-a\">game</span> played according to certain <span class=\"f-yl-a\">simple rules</span> with meaningless marks on paper.");
 
 //--------------------------------------------------------
 //** SECTION :: TESTIMONIALS

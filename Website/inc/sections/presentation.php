@@ -1,7 +1,9 @@
-<section class="section-wp" role="region">
+<section class="section-wp" role="region" style="background-color:whitesmoke">
 	<div class="anchor" id="section-presentation"></div>
 	<a href="#section-presentation" class="sprite icon-arrow-section"></a>
-	<div class="container">
+	<div class="container" style="box-shadow: 0 1px 5px 0 #cfcfcf;
+				      background-color: white;
+				      padding: 50px !important;">
 		<header class="col-md-12">
 			<h2 class="h-like-c f-gy-b"><?php echo PRESENTATION_TITLE; ?></h2>
 			<p class="f-gy-e mt20"><?php echo PRESENTATION_TXT; ?></p>

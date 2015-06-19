@@ -17,6 +17,12 @@ define('SC_TUTO1', "fr_tuto1.png");
 define('SC_HELP1', "fr_help1.png");
 
 //--------------------------------------------------------
+//** LINK
+//--------------------------------------------------------
+
+define('LK_HILBERT',"http://fr.wikipedia.org/wiki/David_Hilbert");
+
+//--------------------------------------------------------
 //** NAVIGATION
 //--------------------------------------------------------
 
@@ -43,7 +49,7 @@ define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;"
 define('TOP_TITLE_1', 			      		"Vivez les <span class=\"f-bl-a\">maths</span><br> différemment");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Démo</span> disponible !");
 
-define('TOP_STORE_1', 			      		"L’application est actuellement optimisée pour <span class=\"f-bl-a\">Chrome</span> et <span class=\"f-bl-a\">Firefox</span>.");
+define('TOP_STORE_1', 			      		"actuellement optimisé pour <span class=\"f-bl-a\">Chrome</span> et <span class=\"f-bl-a\">Firefox</span>.");
 define('TOP_STORE_2', 			      		"Elle est fonctionnelle sur les autres browsers, et sera disponible dans sa version optimisée prochainement.");
 define('TOP_STORE_3', 			      		"Télécharger Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
