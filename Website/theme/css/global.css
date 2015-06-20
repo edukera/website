@@ -1254,3 +1254,14 @@ a.capture-rounded:focus img{
 		margin-top: 50px;
    }
 }
+
+.logo-header-wrapper {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-header-content {
+    float: none;
+    margin: 0 auto;
+}
