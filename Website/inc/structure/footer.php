@@ -24,19 +24,19 @@
 							</ul>
 						</li>
 						<li class="mt15" role="menuitem">
-							<a href="#" class="f17 fB f-wh footer-link" target="_blank"><?php echo NAV_SIGN_2; ?></a>
+							<a href="edukera.appspot.com" class="f17 fB f-wh footer-link" target="_blank"><?php echo NAV_SIGN_2; ?></a>
 						</li>
 					</ul>
 				</div><!-- .col-md-3 -->
 				<div class="col-md-4 col-md-offset-5 ph0">
 					<a href="#" class="media" target="_blank">
-						<div class="pull-left">
+						<!--<div class="pull-left">
 							<div class="sprite icon-logo"></div>
-						</div><!-- .pull-left-->
+						</div>
 						<div class="media-body mt5">
 							<h2 class="h-like-d f-wh"><?php echo NAV_CONNECT_2; ?> <span class="f-bl-a">edukera</span></h2>
 							<p class="f12 f-wh mt5"><?php echo NAV_CONNECT_2_TXT; ?></p>
-						</div><!-- .media-body -->
+						</div>-->
 					</a><!-- .media -->
 					<div class="mt40">
 						<h3 class="f17 fB f-wh"><?php echo NAV_FOLLOW; ?></h3>

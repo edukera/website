@@ -49,7 +49,7 @@ define('NAV_COPYRIGHT', 			      "All rights reserved - 2014 - Edukera &copy;");
 define('TOP_TITLE_1', 			      		"Live <span class=\"f-bl-a\">maths</span><br> differently");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Demo</span> available !");
 
-define('TOP_STORE_1', 			      		"currently optimized for <span class=\"f-bl-a\">Chrome</span> and <span class=\"f-bl-a\">Firefox</span>.");
+define('TOP_STORE_1', 			      		"currently optimized for <span class=\"f-bl-a\">Chrome</span>.");
 define('TOP_STORE_2', 			      		"We are still working on other browsers…");
 define('TOP_STORE_3', 			      		"Download Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
@@ -94,7 +94,7 @@ define('CONTACT_MSG_ERROR', 			    "Please enter at least 10 characters.");
 define('CONTACT_SUBMIT', 			      	"Send your message");
 define('CONTACT_VALID', 			      	"Ok !");
 
-define('CONTACT_FOLLOW', 			      	"You can also<span class=\"f-bl-a\">find us at</span> ici :");
+define('CONTACT_FOLLOW', 			      	"You can also <span class=\"f-bl-a\">find us at</span> ici :");
 
 define('CONTACT_ADDRESS', 			      	"171, av Charles de Gaulle - 2e étage - 92200 Neuilly-sur-Seine");
 
