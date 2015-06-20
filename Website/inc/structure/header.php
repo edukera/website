@@ -53,7 +53,7 @@
 	      </div><!-- .col-md-2-->
 	    </div><!-- .logo-header-wrapper-2-->
 
-	    <div class="col-md-6 col-md-offset-1">
+	    <div class="col-md-6 col-md-offset-1 tab-header">
 	      <ul class="list-inline f-wh f17 fB mt5" role="menu">
 		<li class="mr50" role="menuitem">
 		  <a href="#section-presentation" class="header-link skip-link" role="link"><?php echo NAV_PRESENTATION; ?></a>

@@ -1265,3 +1265,7 @@ a.capture-rounded:focus img{
     float: none;
     margin: 0 auto;
 }
+
+.tab-header {
+    left: -26px;
+}
