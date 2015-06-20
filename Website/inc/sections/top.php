@@ -16,8 +16,8 @@
 			<div class="col-absolute right">
 				<div id="top-title" style="top: -26px">
 					<h1 class="h-like-a"><?php echo TOP_TITLE_1; ?></h1>
-					<p class="f25 m5"><?php echo TOP_TITLE_2; ?></p>
-					<a href="https://edukera.appspot.com" class="btn btn-lg mt30 hidden-print" role="link" target="_blank"><?php echo NAV_CONNECT_2; ?></a>
+					<!--<p class="f25 m5"><?php echo TOP_TITLE_2; ?></p>-->
+					<a href="https://edukera.appspot.com" class="btn btn-lg mt30 hidden-print" role="link" target="_blank" style="padding-left: 50px; padding-right: 50px;"><?php echo NAV_CONNECT_2; ?></a>
 					<div style="padding-top:35px">
 					  <a href="https://twitter.com/edukera" title="<?php echo TITLE_FOLLOW_1 ?> Twitter" class="sprite social-tw-a" role="link" target="_blank">
 					    <span class="sr-only"><?php echo TITLE_FOLLOW_1 ?> Twitter</span>
@@ -36,7 +36,7 @@
 		<div class="stripped-bg pv20" id="top-store" style="padding:0px !important">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 mt25" style="margin-left: 30%">
+					<div class="col-md-8 mt25" style="margin-left: 35%">
 						<h2 class="f18 f-gy-d mb5"><?php echo TOP_STORE_1; ?></h2>
 						<em class="f14 f-wh" style="visibility:hidden"><?php echo TOP_STORE_2; ?></em>
 					</div><!-- .col-md-8 -->

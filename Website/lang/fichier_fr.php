@@ -49,7 +49,7 @@ define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;"
 define('TOP_TITLE_1', 			      		"Vivez les <span class=\"f-bl-a\">maths</span><br> différemment");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Démo</span> disponible !");
 
-define('TOP_STORE_1', 			      		"actuellement optimisé pour <span class=\"f-bl-a\">Chrome</span> et <span class=\"f-bl-a\">Firefox</span>.");
+define('TOP_STORE_1', 			      		"actuellement optimisé pour <span class=\"f-bl-a\">Chrome</span>.");
 define('TOP_STORE_2', 			      		"Elle est fonctionnelle sur les autres browsers, et sera disponible dans sa version optimisée prochainement.");
 define('TOP_STORE_3', 			      		"Télécharger Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
@@ -59,7 +59,7 @@ define('TOP_STORE_4', 			      		"Google app Store");
 //--------------------------------------------------------
 
 define('PRESENTATION_TITLE', 			    "Qu’est-ce qu’<span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux étudiants et aux professeurs souhaitant bénéficier d'un environnement de conception assistée de démonstration. L'étudiant élabore des raisonnements dans l'application et obtient de l'aide instantanément si besoin. Il découvre les méthodes de démonstrations au travers de didacticiels détaillés.");
+define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> est une application de résolution d'exercices de mathématiques. Elle est destinée aux étudiants et aux professeurs souhaitant bénéficier d'un environnement de conception assistée de démonstration. L'étudiant élabore des raisonnements dans l'application et obtient de l'aide instantanément si besoin. Il découvre les méthodes de démonstration à l'aide de didacticiels détaillés.");
 
 define('PRESENTATION_BLOC_1_TITLE',   		"Élaboration itérative de raisonnement");
 define('PRESENTATION_BLOC_1_TXT',   		"L’étudiant élabore un raisonnement mathématique étape par étape, par sélection et paramétrage des éléments de démonstration.
