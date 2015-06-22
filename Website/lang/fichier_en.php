@@ -49,7 +49,7 @@ define('NAV_COPYRIGHT', 			      "All rights reserved - 2014 - Edukera &copy;");
 define('TOP_TITLE_1', 			      		"Live <span class=\"f-bl-a\">maths</span><br> differently");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Demo</span> available !");
 
-define('TOP_STORE_1', 			      		"currently optimized for <span class=\"f-bl-a\">Chrome</span>.");
+define('TOP_STORE_1', 			      		"Currently optimized for <span class=\"f-bl-a\">Chrome (43+)</span>, compatible with <span class=\"f-bl-a\">FireFox (38+)</span> <span class=\"f-bl-a\">Opera (30+)</span> <span class=\"f-bl-a\">Safari (8+)</span> and <span class=\"f-bl-a\">IE (11+)</span>.");
 define('TOP_STORE_2', 			      		"We are still working on other browsers…");
 define('TOP_STORE_3', 			      		"Download Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");

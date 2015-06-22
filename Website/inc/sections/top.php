@@ -36,7 +36,7 @@
 		<div class="stripped-bg pv20" id="top-store" style="padding:0px !important">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 mt25" style="margin-left: 35%">
+					<div class="col-md-8 mt25" style="margin-left: 7%;width:100%">
 						<h2 class="f18 f-gy-d mb5"><?php echo TOP_STORE_1; ?></h2>
 						<em class="f14 f-wh" style="visibility:hidden"><?php echo TOP_STORE_2; ?></em>
 					</div><!-- .col-md-8 -->

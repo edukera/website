@@ -49,7 +49,7 @@ define('NAV_COPYRIGHT', 			      "Tous droits reservés - 2014 - Edukera &copy;"
 define('TOP_TITLE_1', 			      		"Vivez les <span class=\"f-bl-a\">maths</span><br> différemment");
 define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Démo</span> disponible !");
 
-define('TOP_STORE_1', 			      		"actuellement optimisé pour <span class=\"f-bl-a\">Chrome</span>.");
+define('TOP_STORE_1', 			      		"Actuellement optimisé pour <span class=\"f-bl-a\">Chrome</span>, compatible avec <span class=\"f-bl-a\">FireFox (38+)</span> <span class=\"f-bl-a\">Opera (30+)</span> <span class=\"f-bl-a\">Safari (8+)</span> et <span class=\"f-bl-a\">IE (11+)</span>.");
 define('TOP_STORE_2', 			      		"Elle est fonctionnelle sur les autres browsers, et sera disponible dans sa version optimisée prochainement.");
 define('TOP_STORE_3', 			      		"Télécharger Chrome");
 define('TOP_STORE_4', 			      		"Google app Store");
