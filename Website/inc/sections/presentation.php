@@ -24,7 +24,7 @@
 							</div><!-- .media -->
 						</div><!-- .col-md-5 -->
 						<div class="col-md-5 col-md-offset-1">
-						  <a href="uploads/<?php echo SC_DIAG1 ?>" class="capture-rounded left colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
+						  <a href="uploads/<?php echo SC_DIAG1 ?>" class="capture-rounded right colorbox" role="link" title="<?php echo TITLE_CAPTURE; ?>" data-colorbox="group2">
 						    <figure class="rounded">
 						      <img src="uploads/<?php echo SC_DIAG1 ?>" alt="">
 						    </figure>

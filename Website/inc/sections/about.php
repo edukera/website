@@ -202,10 +202,10 @@
 					</div><!-- .row -->
 				</div><!-- #team.tab-pane -->
 				<div class="tab-pane pv20 fade" id="legal">
-					<p class="f19 f-gy-b">La solution edukera et le présent site sont édités par la société edukera. Société par actions simplifiée au capital social de 37.623 euros, immatriculée au Registre du Commerce et des Sociétés de Nanterre sous le numéro 793 014 333, et dont le siège social est établi au 84 rue Perronet, 92200 Neuilly-sur-Seine.</p>
-					<p class="f19 f-gy-b mt20">Le Directeur de la publication / Responsable de la rédaction est Benoît Rognier, qui peut être contacté aux coordonnées suivantes : contact@edukera.com.</p>
-					<p class="f19 f-gy-b mt20">La SAS edukera est propriétaire des noms de domaine http://www.edukera.com et http://www.qedumath.com.</p>
-					<p class="f19 f-gy-b mt20">Le Site est hébergé par la société Google, dont le siège social France est établi au 8 Rue de Londres, 75009 Paris.</p>
+					<p class="f19 f-gy-b"><?php echo MENTION_TXT_1 ?></p>
+					<p class="f19 f-gy-b mt20"><?php echo MENTION_TXT_2 ?></p>
+					<p class="f19 f-gy-b mt20"><?php echo MENTION_TXT_3 ?></p>
+					<p class="f19 f-gy-b mt20"><?php echo MENTION_TXT_4 ?></p>
 				</div><!-- #legal.tab-pane -->
 			</div><!-- .tab-content-->
 		</div><!-- .col-md-12 -->

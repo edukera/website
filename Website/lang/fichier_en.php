@@ -119,7 +119,7 @@ define('TEAM_BLOC_4_TXT', 			      	"Passionate about web-based and mobile inter
 
 define('MENTION_TXT_1', 			      	"The edukera solution and the current site are edited by the edukera society; a simplified joint-stock company with a capital of 37,623 euros, registered in the Nanterre Trade and Companies Register under number 793 014 333, whose head office is based at 84 rue Perronet, 92200 Neuilly-sur-Seine.");
 define('MENTION_TXT_2', 			      	"The Publication Director / Report Manager is Benoît Rognier, who can be contacted using the following email address: contact@edukera.com.");
-define('MENTION_TXT_3', 			      	"The edukera SAS is the owner of the domain names http://www.edukera.com and http://www.qedumath.com.");
+define('MENTION_TXT_3', 			      	"The edukera SAS is the owner of the domain names http://www.edukera.com.");
 define('MENTION_TXT_4', 			      	"The site is hosted by google, whose French headquarters are based at 8 Rue de Londres, 75009 Paris.");
 
 //--------------------------------------------------------

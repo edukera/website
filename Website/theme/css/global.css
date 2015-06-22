@@ -471,7 +471,7 @@ body{
     #cboxContent{margin-top:20px;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{border:0px solid #000; background:#fff; border-radius: 10px;}
+        #cboxLoadedContent{border:0px solid #000; background:#fff;}
         #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
         #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc; display: none !important;}
         #cboxLoadingGraphic{background:url(../img/colorbox/loading.gif) no-repeat center center;}
