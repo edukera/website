@@ -152,8 +152,8 @@ define('TESTIMONIALS_BLOC_3_JOB', 			  "teacher at Sainte-Marguerite College");
 //** VARIOUS (PAGE TITLE / META DESC / HREF TITLE)
 //--------------------------------------------------------
 
-define('PAGE_TITLE', 	            		  "Edukera - Lorem ipsum dolor sit amet.");
-define('PAGE_DESC', 	            		  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, expedita?");
+define('PAGE_TITLE', 	            		  "Edukera");
+define('PAGE_DESC', 	            		  "");
 
 define('TITLE_FOLLOW_1', 	            	  "Follow us on");
 define('TITLE_FOLLOW_2', 	            	  "Follow it on");
