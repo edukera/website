@@ -51,9 +51,13 @@ define('GD_URL',				"https://www.linkedin.com/in/guillaumeduhamel");
 define('RG_URL',				"https://www.linkedin.com/profile/view?id=51135997&locale=fr_FR");
 define('JM_URL',				"https://www.linkedin.com/profile/view?id=167651918");
 define('URL_UPMC',				"http://www.upmc.fr/");
-define('URL_UNISTRA',				"http://www.unistra.fr/index.php?id=accueil");
+define('URL_UNISTRA',			"http://www.unistra.fr/index.php?id=accueil");
 define('URL_UP7',				"http://www.univ-paris-diderot.fr/");
 define('URL_UPEM',				"http://www.u-pem.fr/");
+define('URL_UPSUD',				"http://www.u-psud.fr/");
+define('URL_UMONTPELLIER',		"http://www.umontpellier.fr/");
+define('URL_EPITA',				"http://www.epita.fr/");
+define('URL_CNAM',				"http://www.cnam.fr/");
 define('EMAIL_SUBJECT',				"Certification Edukera");
 define('COQ_TEXT',	        "<span style=\"color: #00ace7;\">edukera</span> embarque <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">l'assistant de preuve coq</a> développé par");
 ?>
