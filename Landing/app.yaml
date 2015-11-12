@@ -1,0 +1,27 @@
+runtime: php55
+api_version: 2
+
+handlers:
+- url: /bower_components
+  static_dir: bower_components
+
+- url: /css
+  static_dir: css
+
+- url: /font
+  static_dir: font
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /min
+  static_dir: min
+
+- url: /.*
+  script: index.html

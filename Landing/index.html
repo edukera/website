@@ -1,0 +1,633 @@
+<?php include_once('contact.php'); ?>
+<?php include_once('lang/trad.php'); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#00ACE7">
+    <title>Edukera</title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,200' rel='stylesheet' type='text/css'>
+    <!-- Polymer -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39196841-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</head>
+<body id="top" class="scrollspy" onload="handleScroll()">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<!--Navigation-->
+<div class="navbar-fixed" style="position:absolute;">
+  <a href="#index-banner">
+    <img src="img/logo.png" width="170px" class="background-img"></img>
+  </a>
+  <nav id="nav_f" class="default_color nav-wrapper" role="navigation">
+        <div class="button-nav">
+            <div class="nav-wrapper">
+		<a href="http://edukera.appspot.com" target="_blank">
+		  <paper-button id="nav_button" style="font-size:1rem;height:64px;border-radius:0">
+		    <div class="access-button-content">
+		      <?php echo LAUNCH_APP; ?>
+		    </div>
+		  </paper-button>
+		</a>
+<!--
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#intro">Service</a></li>
+                    <li><a href="#work">Théories</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#intro">Service</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+-->
+            </div>
+	</div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot scrollspy" id="index-banner" style="background:linear-gradient( rgba(45, 45, 45, 0.8), transparent), url(img/amphi-small.jpg);
+								   background-position: center center;
+								   background-repeat: no-repeat;
+								   -webkit-background-size: cover;
+								   -moz-background-size: cover;
+								   -o-background-size: cover;
+								   background-size: cover;
+">
+    <div class="container" style="height:90vh">
+      <div class="banner-card" style="background-color:transparent">
+	<div class="row">
+	  <div  class="col s12 m6">
+            <h1 class="text_h center header cd-headline letters type scrollspy"  href="#introtext" style="color:white;margin-top:15%;">
+              <span class="headline" style="font-family: 'Roboto' sans-serif;">
+		<?php echo HEADLINE; ?>
+	      </span>
+	      <br>
+	      <a href="http://edukera.appspot.com" target="_blank">
+		<paper-button raised style="font-size:1.5rem;margin-top:30px;font-weight:300">
+	      <?php echo LAUNCH_APP; ?>
+		</paper-button><br>
+	      </a>
+	      <a class="anchor-intro" href="#intro">
+		<paper-button id="knowmore" style="color:white;font-size:1.3rem;margin-top:8px;font-weight:300">
+		  <?php echo LEARN_MORE; ?>
+		</paper-button>
+	      </a>
+            </h1>
+	  </div>
+	  <div class="youtube-wrapper col s12 m6" style="padding-top: 15%;">
+	    <iframe width="530px" height="298px" src="https://www.youtube.com/embed/ek3WMCJThwI?autoplay=1&loop=1&list=PLFuW3DlAYXgc8YTqo1JD9W8vKKW6zXOWx" frameborder="0" allowfullscreen style="margin-left:30px"></iframe>
+	  </div>
+	</div>
+	<!--div class="coq-container">
+	  <div class="coq-wrapper">
+	    <div class="coq-content">
+	      <span class="coq-text"><a class="coq-link" href="https://coq.inria.fr/" target="_blank"><?php echo COQ_PROOF_ASSITANT; ?></a><?php echo COQ_INSIDE; ?></span>
+	      <a href="http://www.inria.fr/" target="_blank"><img class="coq-img" src="img/logo-inria-institutionnel-couleur.jpg"/></a>
+	    </div>
+	  </div>
+	</div-->
+      </div>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+              <h2 id="introtext" class="center header text_h2">
+		<?php echo HEADLINE_2_1; ?>
+		<br/>
+		<?php echo HEADLINE_2_2; ?>
+	      </h2>
+            </div>
+
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <div class="pictframe smoke">
+		      <img src="img/exercise.svg" class="picture">
+		    </div>
+                    <h5 class="promo-caption">
+		      <?php echo EXPLAIN_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium maxheight">
+		      <?php echo EXPLAIN_TXT; ?>
+		    </p>
+		    <p>
+		      <a href="#work">
+			<paper-button id="knowmore-little">
+			  <?php echo LEARN_MORE; ?>
+			</paper-button>
+		      </a>
+		    </p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <div class="pictframe smoke">
+		      <img src="img/lightning.svg" class="picture">
+		    </div>
+                    <h5 class="promo-caption">
+		      <?php echo TRAIN_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium maxheight">
+		      <?php echo TRAIN_TXT; ?>
+		    </p>
+		    <p>
+		      <a href="#train">
+			<paper-button id="knowmore-little">
+			  <?php echo LEARN_MORE; ?>
+			</paper-button>
+		      </a>
+		    </p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <div class="pictframe smoke">
+		      <img src="img/certif.svg" class="picture">
+		    </div>
+                    <h5 class="promo-caption">
+		      <?php echo CERTIFY_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium maxheight">
+		      <?php echo CERTIFY_TXT; ?>
+		    </p>
+		    <p>
+		      <a href="mailto:contact@edukera.com?subject=<?php echo EMAIL_SUBJECT; ?>" target="_blank">
+			<paper-button raised id="contact-button">
+			  <?php echo CONTACT_US; ?>
+			</paper-button>
+		      </a>
+		    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header center text_b">
+	  <?php echo EXPLAIN_TITLE; ?>
+	</h2>
+	<p class="center" style=" font-family: 'Roboto', sans-serif; font-size:1.5em; font-weight:300">
+	  <?php echo EXPLAIN_TXT_2; ?>
+	</p>
+        <div class="col">
+	  <div class="row">
+
+            <div  class="col s12 m6">
+                <div class="center promo promo-example">
+                    <div class="pictframe small" style="background-color:#00ace7">
+		      <img src="img/bulb.svg" class="picture small">
+		    </div>
+                    <h5 class="promo-caption">
+		      1. <?php echo METHOD_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium">
+		      <?php echo METHOD_TXT; ?>
+		    </p>
+                </div>
+            </div>
+
+            <div  class="col s12 m6">
+                <div class="center promo promo-example">
+                    <div class="pictframe small" style="background-color:#00ace7">
+		      <img src="img/equiv.svg" class="picture small">
+		    </div>
+                    <h5 class="promo-caption">
+		      2. <?php echo DEF_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium">
+		      <?php echo DEF_TXT; ?>
+		      </p>
+                </div>
+            </div>
+	  </div>
+
+	  <div class="row">
+
+            <div  class="col s12 m6">
+                <div class="center promo promo-example">
+                    <div class="pictframe small" style="background-color:#00ace7">
+		      <img src="img/scope.svg" class="arrow picture small">
+		    </div>
+                    <h5 class="promo-caption">
+		      3. <?php echo SCOPE_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium">
+		      <?php echo SCOPE_TXT; ?>
+		    </p>
+                </div>
+            </div>
+
+            <div  class="col s12 m6">
+                <div class="center promo promo-example">
+                    <div class="pictframe small" style="background-color:#00ace7">
+		      <div style="font-size: 59px;
+				  color: white;
+				  font-family: 'Roboto' sans serif;
+				  /*font-weight: bold;*/">?</div>
+		    </div>
+                    <h5 class="promo-caption">
+		      4. <?php echo WITNESS_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium">
+		      <?php echo WITNESS_TXT; ?>
+		    </p>
+                </div>
+            </div>
+	  </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="section scrollspy quote-bg" id="quote" style="height:50%">
+  <div class="container">
+    <div class="col" style="margin-top:55px">
+      <div class="row">
+	<div class="col s12 m6" style="padding:0">
+	  <div class="quote">
+	    “<?php echo QUOTE_1; ?><span style="color:yellow"><?php echo QUOTE_2; ?></span><?php echo QUOTE_3; ?>”
+	  </div>
+	</div>
+	<div class="col s12 m6">
+	  <a href="https://fr.wikipedia.org/wiki/David_Hilbert" target="_"><div class="m5 hilbert">David Hilbert</div></a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Train-->
+<div class="section scrollspy" id="train" style="background-color:whitesmoke; padding-top:4rem">
+    <div class="container">
+        <h2 class="header center text_b">
+	  <?php echo TRAIN_TITLE; ?>
+	</h2>
+	<p class="center" style="font-family: 'Roboto' sans-serif; font-size:1.5em; font-weight:300">
+	  <?php echo TRAIN_TXT_2; ?>
+	</p>
+	  <div class="row">
+
+            <div  class="theory-wrapper col s4">
+                <div class="center promo promo-example">
+		  <div class="theory">
+                    <span class="theory-icon">
+		      <img src="img/puzzle.svg" class="picture"></img>
+		    </span>
+                    <h5 class="promo-caption">
+		      <?php echo CHAPTER_1_TITLE; ?>
+		    </h5>
+                    <p class="light center titillium" style="min-height:110px;">
+		      <?php echo CHAPTER_1_TXT; ?>
+		    </p>
+		    <p style="padding-bottom:30px">
+		      <a href="http://edukera.appspot.com/?id=bG9naWM%3D" target="_blank">
+			<paper-button raised id="contact-button">
+			  <?php echo START; ?>
+			</paper-button>
+		      </a>
+		    </p>
+                  </div>
+		</div>
+            </div>
+
+            <div  class="theory-wrapper col s4">
+              <div class="center promo promo-example">
+		<div class="theory">
+                  <span class="theory-icon">
+		    <img src="img/sets.svg" class="picture"></img>
+		  </span>
+                  <h5 class="promo-caption">
+		    <?php echo CHAPTER_2_TITLE; ?>
+		  </h5>
+                  <p class="light center titillium" style="min-height:110px;">
+		    <?php echo CHAPTER_2_TXT; ?>
+		  </p>
+		  <p style="padding-bottom:30px">
+		    <a href="http://edukera.appspot.com/?id=c2V0dGhlb3J5" target="_blank">
+		      <paper-button raised id="contact-button">
+			<?php echo START; ?>
+		      </paper-button>
+		    </a>
+		  </p>
+		</div>
+              </div>
+            </div>
+
+            <div  class="theory-wrapper col s4">
+              <div class="center promo promo-example">
+		<div class="theory">
+                  <span class="theory-icon">
+		    <img src="img/operators.svg" class="picture"></img>
+		  </span>
+                  <h5 class="promo-caption">
+		    <?php echo CHAPTER_3_TITLE; ?>
+		  </h5>
+                  <p class="light center titillium" style="min-height:110px;">
+		    <?php echo CHAPTER_3_TXT; ?>
+		  </p>
+		  <p style="padding-bottom:30px">
+		    <a href="http://edukera.appspot.com/?id=ZGVtb19zZWc%3D" target="_blank">
+		      <paper-button raised id="contact-button">
+			<?php echo START; ?>
+		      </paper-button>
+		    </a>
+		  </p>
+		</div>
+              </div>
+            </div>
+	  </div>
+    </div>
+</div>
+
+<!--References -->
+<div class="section scrollspy" id="train" style="background-color: #f8f8f8;
+						 border-top: 1px solid #e8ecef;
+						 border-bottom: 1px solid #e8ecef;
+						 padding-top:2rem;
+						 text-align:center;
+						 display:inline-block;
+						 width:100%">
+  <p class="used_by"><?php echo USED_BY; ?></p>
+  <a href="<?php echo URL_UPMC; ?>" target="_blank" class="aref">
+    <img src="img/logo-school-upmc.svg" class="grayscale">
+  </a>
+  <a href="<?php echo URL_UNISTRA; ?>" target="_blank" class="aref">
+    <img src="img/logo-school-universite-strasbourg.svg" class="grayscale">
+  </a>
+  <a href="<?php echo URL_UP7; ?>" target="_blank" class="aref">
+    <img src="img/logo-school-up7.svg" class="grayscale ref-up7";>
+  </a>
+  <a href="<?php echo URL_UPEM; ?>" target="_blank">
+    <img src="img/logo-school-upem.svg" class="grayscale">
+  </a>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team" style="background-color:white">
+    <div class="container">
+        <h2 class="header text_b" style="text-align:center">
+	  <?php echo TEAM; ?>
+	</h2>
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+		  <a href="<?php echo BR_URL; ?>" target="_">
+                    <div class="waves-effect waves-block waves-light">
+                      <img class="activator" src="img/avatar1.png">
+                    </div>
+		  </a>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Benoît Rognier<br/>
+			<small><em><a class="red-text text-darken-1" href="#"><?php echo CO_FOUNDER; ?></a></em></small>
+		      </span>
+                        <p>
+<!--                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+              <div class="card card-avatar">
+		<a href="<?php echo GD_URL; ?>" target="_">
+                  <div class="waves-effect waves-block waves-light">
+                    <img class="activator" src="img/avatar2.png">
+                  </div>
+		</a>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Guillaume Duhamel<br/>
+                    <small><em><a class="red-text text-darken-1" href="#"><?php echo CO_FOUNDER; ?></a></em></small>
+                  </span>
+                        <p> <!--
+                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+		  <a href="<?php echo RG_URL; ?>" target="_">
+                    <div class="waves-effect waves-block waves-light">
+                      <img class="activator" src="img/avatar3.png">
+                    </div>
+		  </a>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">
+                      Romain Guillot<br/>
+                      <small><em><a class="red-text text-darken-1" href="#"><?php echo DESIGNER; ?></a></em></small>
+		    </span>
+                    <p> <!--
+                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+		  <a href="<?php echo JM_URL; ?>" target="_">
+                    <div class="waves-effect waves-block waves-light">
+                      <img class="activator" src="img/avatar4.png">
+                    </div>
+		  </a>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Jérémie Maquet<br/>
+                      <small><em><a class="red-text text-darken-1" href="#"><?php echo INTEGRATOR; ?></a></em></small>
+		    </span>
+                    <p> <!--
+                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team" style="background-color:white; border-top: 1px solid #e8ecef;">
+    <div class="container">
+      	<div class="coq-container-section">
+	  <div class="coq-wrapper-section">
+	    <div class="coq-content-section">
+	      <span class="coq-text-section"><?php echo COQ_TEXT; ?></span>
+	      <a href="http://www.inria.fr/" target="_blank"><img class="coq-img-section" src="img/logo-inria-institutionnel-couleur.jpg"/></a>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="" method="post">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text"><?php echo FIRT_NAME; ?></label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text"><?php echo EMAIL; ?></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text"><?php echo MESSAGE; ?></label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light darken-1" type="submit">
+			      <?php echo SEND; ?>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text" style="opacity:0">EMPTY</h5>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">
+		  <?php echo SOCIAL; ?>
+		</h5>
+                <ul>
+                    <li>
+                      <a class="white-text" href="<?php echo TWITTER_URL; ?>" target="_blank">
+                        Twitter
+                      </a>
+                    </li>
+                    <li>
+                      <a class="white-text" href="<?php echo GOOGLEPLUS_URL; ?>" target="_blank">
+                        Google+
+                      </a>
+                    </li>
+                    <li>
+                      <a class="white-text" href="<?php echo LINKEDIN_URL; ?>" target="_blank">
+                        Linkedin
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+      <div class="container">
+      </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+    <script>
+      function setOpacity() {
+      var gBanner = document.getElementById("index-banner");
+      var gNav = document.getElementById("nav_f");
+      var gButton = document.getElementById("nav_button");
+      var lHeight = gBanner.clientHeight;
+      var lOpacity = (( window.scrollY + (lHeight / 2)) / lHeight);
+      /*
+      console.log("window scroll Y = " + window.scrollY);
+      console.log("banner height = " + gBanner.clientHeight);
+      console.log("opacity : " + lOpacity);
+      */
+      if (lOpacity >= 1) {
+      gNav.className = "default_color";
+      gButton.className = "animated fadeInRight";
+      } else {
+      gNav.className = "color_transparent";
+      gButton.className = "no-opacity";
+      }
+      }
+      function handleScroll () {
+      document.addEventListener('scroll', function(e) {
+      setOpacity();
+      });
+      }
+      setOpacity();
+    </script>
+
+    </body>
+</html>
