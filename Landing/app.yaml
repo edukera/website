@@ -8,9 +8,6 @@ handlers:
 - url: /css
   static_dir: css
 
-- url: /font
-  static_dir: font
-
 - url: /fonts
   static_dir: fonts
 
