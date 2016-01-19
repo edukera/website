@@ -708,3 +708,7 @@ footer.page-footer {
 .ref-universite-montpellier .grayscale {
     height: 250px;
 }
+
+.ref-universite-aix-marseille {
+    vertical-align: 50px;
+}
