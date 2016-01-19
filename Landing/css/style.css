@@ -686,3 +686,25 @@ footer.page-footer {
 .aref {
     vertical-align: middle;
 }
+
+.ref-epita {
+    height: 300px;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ref-universite-montpellier {
+    height: 300px;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ref-epita .grayscale {
+    height: 220px;
+}
+
+.ref-universite-montpellier .grayscale {
+    height: 250px;
+}
