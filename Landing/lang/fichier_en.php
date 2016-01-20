@@ -58,6 +58,7 @@ define('URL_UPSUD',				"http://www.u-psud.fr/en/index.html");
 define('URL_UMONTPELLIER',		"http://www.umontpellier.fr/");
 define('URL_EPITA',				"http://www.epita.fr/international/");
 define('URL_CNAM',				"http://the.cnam.eu/");
+define('URL_UAMU',				"http://edu.univ-amu.fr/en");
 define('EMAIL_SUBJECT',			"Edukera Certification");
 define('COQ_TEXT', "<span style=\"color: #00ace7;\">edukera</span> embeds <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">coq proof assistant</a>, developped by");
 ?>
