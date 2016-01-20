@@ -575,8 +575,8 @@ footer.page-footer {
 
 .background-img {
     position: fixed;
-    top: 12px;
-    left: 20px;
+    top: 15px;
+    left: 35px;
     z-index: 1;
     width: 170px;
 }
