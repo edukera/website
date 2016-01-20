@@ -258,7 +258,7 @@ red-text {
 .span_h2 {font-weight: 300;color: #2196F3;}
 
 .text_b{
-    color: #00ACE7;
+    color: rgba(17, 17, 17, 0.85);
     font-weight:300;
 }
 
