@@ -259,7 +259,7 @@ red-text {
 
 .text_b{
     color: rgba(17, 17, 17, 0.85);
-    font-weight:300;
+    font-weight:100;
 }
 
 .in{font-weight: 400 !important; font-style: normal !important;}
@@ -287,7 +287,7 @@ titillium {
 
 .card-content a:hover {color: #2196F3;}
 
-#work, #team{background:#eee;}
+#work, #team{background: rgba(238, 238, 238, 0.29);}
 
 .text_pink{color:#EF9A9A;}
 
