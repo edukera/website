@@ -48,28 +48,24 @@
   <nav id="nav_f" class="default_color nav-wrapper" role="navigation">
         <div class="button-nav">
             <div class="nav-wrapper">
-		<a href="http://edukera.appspot.com" target="_blank">
-		  <paper-button id="nav_button" style="font-size:1rem;height:64px;border-radius:0">
-		    <div class="access-button-content">
-		      <?php echo LAUNCH_APP; ?>
-		    </div>
-		  </paper-button>
-		</a>
-<!--
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#intro">Service</a></li>
-                    <li><a href="#work">Théories</a></li>
-                    <li><a href="#team">Equipe</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#intro">Service</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
--->
+	      <!--a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a-->
+	      <paper-button id="nav_button" style="font-size:1rem;height:64px;border-radius:0; margin-right: 30px; float: right;">
+		<div class="access-button-content">
+		  <?php echo LAUNCH_APP; ?>
+		</div>
+	      </paper-button>
+		<ul class="right hide-on-med-and-down" style="margin-right: 50px;">
+                  <li><a href="#work"><?php echo EXPLAIN_TITLE; ?></a></li>
+                  <li><a href="#train"><?php echo TRAIN_TITLE; ?></a></li>
+                  <li><a href="#used_by"><?php echo USED_BY; ?></a></li>
+                  <li><a href="#team"><?php echo TEAM; ?></a></li>
+		</ul>
+		<!--ul id="nav-mobile" class="side-nav">
+                  <li><a href="#intro">Service</a></li>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
+		</ul-->
             </div>
 	</div>
     </nav>
@@ -376,14 +372,14 @@
 </div>
 
 <!--References -->
-<div class="section scrollspy" id="train" style="background-color: #f8f8f8;
+<div class="section scrollspy" id="used_by" style="background-color: #f8f8f8;
 						 border-top: 1px solid #e8ecef;
 						 border-bottom: 1px solid #e8ecef;
 						 padding-top:2rem;
 						 text-align:center;
 						 display:inline-block;
 						 width:100%">
-  <p class="used_by"><?php echo USED_BY; ?></p>
+  <h2 class="header center text_b"><?php echo USED_BY; ?></h2>
   <a href="<?php echo URL_UPMC; ?>" target="_blank" class="aref">
       <img src="img/logo-school-upmc.svg" class="grayscale">
   </a>

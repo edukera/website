@@ -1,6 +1,6 @@
 <?php
 
-define('USED_BY',				    "Used by");
+define('USED_BY',				    "Used at");
 define('LAUNCH_APP',                "Launch application");
 define('HEADLINE',                  "Develop</br><span class=\"logic-en\">Logical</span> reasoning");
 define('LEARN_MORE',				"Learn more");
