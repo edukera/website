@@ -17,9 +17,9 @@ define('EXPLAIN_TXT_2',				"Students get a physical sense of the four skills req
 define('METHOD_TITLE',				"Method selection");
 define('METHOD_TXT',				"The student has to pick a method among the ones available, ususally at the beginning of resolution");
 define('DEF_TITLE',				"Definition translation");
-define('DEF_TXT',				"The property to demonstrate usually needs to be translated intro to several properties, individually easier to demonstrate.");
+define('DEF_TXT',				"The property to demonstrate usually needs to be translated into to several properties, individually easier to demonstrate.");
 define('SCOPE_TITLE',				"Logical scopes management");
-define('SCOPE_TXT',				"A universal quantification is demonstrated in a new logical scope, whith new variables available only in this scope and sub-scopes.");
+define('SCOPE_TXT',				"A universal quantification is demonstrated in a new logical scope, with new variables available only in this scope and sub-scopes.");
 define('WITNESS_TITLE',				"Witness values instantiation");
 define('WITNESS_TXT',				"An important skill is to figure out witness values, when proving existantial quantification for example. The student figures these values out by analysing the propositions in which they occur.");
 define('QUOTE_1',				"Mathematics is a game played according to certain ");
@@ -29,7 +29,7 @@ define('TRAIN_TXT_2',				"A chapter is made of tutorial exercises (commented ste
 define('CHAPTER_1_TITLE',			"Logic");
 define('CHAPTER_1_TXT',				"Students master natural deduction elements : connectors, quantifiers, classical logic vs. constructive logic ...");
 define('CHAPTER_2_TITLE',			"Sets");
-define('CHAPTER_2_TXT',				"Students masters fundamental mathematcial objects : set operations, relations, functions, ...");
+define('CHAPTER_2_TXT',				"Students master fundamental mathematcial objects : set operations, relations, functions, ...");
 define('CHAPTER_3_TITLE',			"Calculus");
 define('CHAPTER_3_TXT',				"Students develop the skill to transform algebraic relations (expansion, factorisation, ...).");
 define('START',					"Start");
