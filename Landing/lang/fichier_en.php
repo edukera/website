@@ -64,3 +64,5 @@ define('URL_POLYTECH_MARS',         "http://polytech.univ-amu.fr/en/faculty");
 define('EMAIL_SUBJECT',             "Edukera Certification");
 define('COQ_TEXT',                  "<span style=\"color: #00ace7;\">edukera</span> embeds <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">coq proof assistant</a>, developped by");
 ?>
+define('LEGAL_TEXT',                 "Legal");
+define('LEGAL_LINK',                 "legal");

@@ -63,4 +63,6 @@ define('URL_UFC',               "http://www.univ-fcomte.fr/");
 define('URL_POLYTECH_MARS',     "http://polytech.univ-amu.fr/");
 define('EMAIL_SUBJECT',         "Certification Edukera");
 define('COQ_TEXT',              "<span style=\"color: #00ace7;\">edukera</span> embarque <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">l'assistant de preuve coq</a> développé par");
+define('LEGAL_TEXT',                 "Mentions légales");
+define('LEGAL_LINK',                 "legal");
 ?>

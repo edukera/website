@@ -20,5 +20,8 @@ handlers:
 - url: /min
   static_dir: min
 
+- url: /legal
+  script: legal.html
+
 - url: /.*
   script: index.html
