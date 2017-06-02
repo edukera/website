@@ -1,0 +1,29 @@
+diff --git a/Landing/lang/fichier_fr.php b/Landing/lang/fichier_fr.php
+index 4df4b81..2256cd8 100755
+--- a/Landing/lang/fichier_fr.php
++++ b/Landing/lang/fichier_fr.php
+@@ -2,12 +2,12 @@
+ 
+ define('USED_BY',               "Utilisée à");
+ define('LAUNCH_APP',            "Accéder à l'application");
+-define('HEADLINE',              "Le numérique <br></br><div>au service des</div> <span class=\"logic-fr\">Mathématiques</span>");
++define('HEADLINE',              "Le numérique <br></br><div>au service des</div> <span class=\"logic-fr\">mathématiques</span>");
+ define('LEARN_MORE',            "En savoir plus");
+ define('HEADLINE_2_1',          "Application éducative dédiée");
+-define('HEADLINE_2_2',          "à la démonstration mathématique");
++define('HEADLINE_2_2',          "à l'apprentissage des mathématiques");
+ define('EXPLAIN_TITLE',         "Former");
+-define('EXPLAIN_TXT',           "L'interface permet à l'étudiant de concevoir des démonstrations étape par étape, par sélection et paramétrage des éléments de raisonnement.");
++define('EXPLAIN_TXT',           "L'interface permet à l'étudiant de concevoir des démonstrations étape par étape, par sélection et paramétrage des règles de deduction et justification.");
+ define('TRAIN_TITLE',           "Entraîner");
+ define('TRAIN_TXT',             "L'étudiant acquiert la compréhension des notions étudiées par la résolution des exerices d'entraînement, et le suivi des exercices commentés et corrigés pas à pas.");
+ define('CERTIFY_TITLE',         "Certifier");
+@@ -25,7 +25,7 @@ define('WITNESS_TXT',           "Une part importante des raisonnements consiste
+ define('QUOTE_1',               "Les mathématiques sont un jeu qui s'exerce selon des ");
+ define('QUOTE_2',               "règles simples ");
+ define('QUOTE_3',               "avec des symboles qui n'ont en soi aucune importance particulière.");
+-define('TRAIN_TXT_2',           "Chaque chapitre propose des exercices corrigés et commentés pas à pas, et des exercices d'entraînement. Actuellement trois chapitres sont disponibles et d'autres sont en préparation.");
++define('TRAIN_TXT_2',           "Chaque chapitre propose des exercices corrigés et commentés pas à pas, et des exercices d'entraînement. Actuellement trois thématiques sont disponibles et d'autres sont en préparation.");
+ define('CHAPTER_1_TITLE',       "Logique");
+ define('CHAPTER_1_TXT',         "L'étudiant maîtrise les éléments fondamentaux de la déduction naturelle : connecteurs, quantificateurs, logique classique vs. constructiviste, ...");
+ define('CHAPTER_2_TITLE',       "Ensembles");
