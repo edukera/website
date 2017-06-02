@@ -68,7 +68,7 @@
 </div>
 
 <!--Hero-->
-<div class="section no-pad-bot scrollspy" id="index-banner" style="background:linear-gradient( rgba(45, 45, 45, 0.8), transparent), url(img/amphi-small.jpg);
+<div class="section no-pad-bot scrollspy" id="index-banner" style="background:linear-gradient( rgba(45, 45, 45, 0.8), transparent), url(img/chemical.svg);
 								   background-position: center center;
 								   background-repeat: no-repeat;
 								   -webkit-background-size: cover;
@@ -77,28 +77,33 @@
 								   background-size: cover;
 ">
     <div class="container" style="height:90vh">
-      <div class="banner-card" style="background-color:transparent">
+      <div class="banner-card" style="background-color:transparent;">
 	<div class="row">
 	  <div  class="col s12 m6">
             <h1 class="text_h center header cd-headline letters type scrollspy"  href="#introtext" style="color:white;margin-top:15%;">
-              <span class="headline" style="font-family: 'Roboto' sans-serif;">
+              <span class="headline" style="font-family: 'Roboto' sans-serif; line-height:70px;">
 		<?php echo HEADLINE; ?>
 	      </span>
 	      <br>
-	      <a href="http://edukera.appspot.com" target="_blank">
-		<paper-button raised style="font-size:1.5rem;margin-top:30px;font-weight:300">
+	      <a href="http://edukera.appspot.com" target="_blank" style="display:none;">
+		<paper-button raised style="font-size:1.5rem;margin-top:30px;font-weight:300;">
 	      <?php echo LAUNCH_APP; ?>
 		</paper-button><br>
 	      </a>
 	      <a class="anchor-intro" href="#intro">
-		<paper-button id="knowmore" style="color:white;font-size:1.3rem;margin-top:8px;font-weight:300">
+		<paper-button id="knowmore" style="color:white;font-size:1.3rem;margin-top:8px;font-weight:300;">
 		  <?php echo LEARN_MORE; ?>
 		</paper-button>
 	      </a>
             </h1>
 	  </div>
 	  <div class="youtube-wrapper col s12 m6" style="padding-top: 15%;">
-	    <iframe width="530px" height="298px" src="https://www.youtube.com/embed/C0UqGvnNL7c?theme=light" frameborder="0" allowfullscreen style="margin-left:30px"></iframe>
+            <div style="position:relative;">
+	    <img width="530px" height="298px" src="img/bg-carousel.png" style="margin-left:30px"></img>
+            <a href="https://edukera.appspot.com" target="_blank" style="position:absolute;top:62px;left:214px;cursor:pointer;">
+              <img src="img/play.svg" style="width:160px;filter:blur(1px);"></img>
+            </a>
+            </div>
 	  </div>
 	</div>
 	<!--div class="coq-container">

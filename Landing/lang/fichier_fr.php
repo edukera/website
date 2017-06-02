@@ -2,7 +2,7 @@
 
 define('USED_BY',               "Utilisée à");
 define('LAUNCH_APP',            "Accéder à l'application");
-define('HEADLINE',              "Le numérique <br></br><div>au service des</div> <span class=\"logic-fr\">mathématiques</span>");
+define('HEADLINE',              "Un assistant de démonstration <div>dédié à l'enseignement</div> <span class=\"logic-fr\">des mathématiques</span>");
 define('LEARN_MORE',            "En savoir plus");
 define('HEADLINE_2_1',          "Application éducative dédiée");
 define('HEADLINE_2_2',          "à l'apprentissage des mathématiques");

@@ -2,7 +2,7 @@
 
 define('USED_BY',                   "Used at");
 define('LAUNCH_APP',                "Launch application");
-define('HEADLINE',                  "Develop</br><span class=\"logic-en\">Logical</span> reasoning");
+define('HEADLINE',                  "Teaching</br><span class=\"logic-en\">Mathematics</span><br> with a proof assistant");
 define('LEARN_MORE',                "Learn more");
 define('HEADLINE_2_1',              "Educational application dedicated to");
 define('HEADLINE_2_2',              "mathematical proof");
@@ -63,6 +63,6 @@ define('URL_UFC',                   "http://www.univ-fcomte.fr/");
 define('URL_POLYTECH_MARS',         "http://polytech.univ-amu.fr/en/faculty");
 define('EMAIL_SUBJECT',             "Edukera Certification");
 define('COQ_TEXT',                  "<span style=\"color: #00ace7;\">edukera</span> embeds <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">coq proof assistant</a>, developped by");
-?>
 define('LEGAL_TEXT',                 "Legal");
 define('LEGAL_LINK',                 "legal");
+?>
