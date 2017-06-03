@@ -6,7 +6,8 @@ define('HEADLINE',              "Un assistant de démonstration <div>dédié à 
 define('LEARN_MORE',            "En savoir plus");
 define('HEADLINE_2_1',          "Avantages pédagogiques");
 define('HEADLINE_2_2',          "à l'apprentissage des mathématiques");
-define('EXPLAIN_TITLE',         "Former");
+define('DISCOVER',             "Cliquer pour découvrir l'interface de démonstration");
+define('EXPLAIN_TITLE',         "Avantages");
 define('EXPLAIN_TXT',           "L'interface permet à l'étudiant de concevoir des démonstrations étape par étape, par sélection et paramétrage des règles de deduction et justification.");
 define('TRAIN_TITLE',           "Entraîner");
 define('TRAIN_TXT',             "L'étudiant acquiert la compréhension des notions étudiées par la résolution des exerices d'entraînement, et le suivi des exercices commentés et corrigés pas à pas.");

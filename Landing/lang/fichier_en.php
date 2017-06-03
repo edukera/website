@@ -2,11 +2,12 @@
 
 define('USED_BY',                   "Used at");
 define('LAUNCH_APP',                "Launch application");
-define('HEADLINE',                  "Teaching</br><span class=\"logic-en\">Mathematics</span><br> with a proof assistant");
+define('HEADLINE',                  "<span style='position:relative;top:50px'>Teach <span class=\"logic-en\">Mathematics</span><br> with a proof assistant<span>");
 define('LEARN_MORE',                "Learn more");
-define('HEADLINE_2_1',              "Pdagogical benefits");
+define('HEADLINE_2_1',              "Pedagogical benefits");
 define('HEADLINE_2_2',              "mathematical proof");
-define('EXPLAIN_TITLE',             "Develop");
+define('DISCOVER',                 "Click to discover proof assistant user interface");
+define('EXPLAIN_TITLE',             "Benefits");
 define('EXPLAIN_TXT',               "Students develop mathematical proofs, step by step, by selecting the appropriate reasoning items");
 define('TRAIN_TITLE',               "Practice");
 define('TRAIN_TXT',                 "Students increase reasoning skills by completing tutorials and by solving exercices of increasing difficulty");
