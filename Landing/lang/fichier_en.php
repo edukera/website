@@ -8,6 +8,7 @@ define('HEADLINE_2_1',              "Pedagogical benefits");
 define('HEADLINE_2_2',              "mathematical proof");
 define('DISCOVER',                 "Click to discover proof assistant user interface");
 define('EXPLAIN_TITLE',             "Benefits");
+define('EXPLAIN_TITLE_2',         "Develop");
 define('EXPLAIN_TXT',               "Students develop mathematical proofs, step by step, by selecting the appropriate reasoning items");
 define('TRAIN_TITLE',               "Practice");
 define('TRAIN_TXT',                 "Students increase reasoning skills by completing tutorials and by solving exercices of increasing difficulty");
