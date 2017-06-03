@@ -4,7 +4,7 @@ define('USED_BY',                   "Used at");
 define('LAUNCH_APP',                "Launch application");
 define('HEADLINE',                  "Teaching</br><span class=\"logic-en\">Mathematics</span><br> with a proof assistant");
 define('LEARN_MORE',                "Learn more");
-define('HEADLINE_2_1',              "Educational application dedicated to");
+define('HEADLINE_2_1',              "Pdagogical benefits");
 define('HEADLINE_2_2',              "mathematical proof");
 define('EXPLAIN_TITLE',             "Develop");
 define('EXPLAIN_TXT',               "Students develop mathematical proofs, step by step, by selecting the appropriate reasoning items");

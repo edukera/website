@@ -4,7 +4,7 @@ define('USED_BY',               "Utilisée à");
 define('LAUNCH_APP',            "Accéder à l'application");
 define('HEADLINE',              "Un assistant de démonstration <div>dédié à l'enseignement</div> <span class=\"logic-fr\">des mathématiques</span>");
 define('LEARN_MORE',            "En savoir plus");
-define('HEADLINE_2_1',          "Application éducative dédiée");
+define('HEADLINE_2_1',          "Avantages pédagogiques");
 define('HEADLINE_2_2',          "à l'apprentissage des mathématiques");
 define('EXPLAIN_TITLE',         "Former");
 define('EXPLAIN_TXT',           "L'interface permet à l'étudiant de concevoir des démonstrations étape par étape, par sélection et paramétrage des règles de deduction et justification.");
