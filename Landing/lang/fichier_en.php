@@ -2,7 +2,7 @@
 
 define('USED_BY',                   "Used at");
 define('LAUNCH_APP',                "Launch application");
-define('HEADLINE',                  "<span style='position:relative;top:50px'>Teach <span class=\"logic-en\">Mathematics</span><br> with a proof assistant<span>");
+define('HEADLINE',                  "<span style='position:relative;top:50px'>Teach <span class=\"logic-en\">Mathematics</span><br> with a proof <span class=\"logic-en\">assistant<span>");
 define('LEARN_MORE',                "Learn more");
 define('HEADLINE_2_1',              "Pedagogical benefits");
 define('HEADLINE_2_2',              "mathematical proof");
@@ -11,7 +11,7 @@ define('EXPLAIN_TITLE',             "Benefits");
 define('EXPLAIN_TITLE_2',         "Develop");
 define('EXPLAIN_TXT',               "The student learns how a mathematical proof works thanks to the numerical paper interface.");
 define('TRAIN_TITLE',               "Practice");
-define('TRAIN_TXT',                 "The student masters studied notions by increasing the number of exercise resolution thanks to the assistance provided by the numerical paper.");
+define('TRAIN_TXT',                 "The student masters studied notions by increasing the number of exercises' resolutions thanks to the assistance provided by the numerical paper.");
 define('CLARIFY_TITLE',           "Clarify");
 define('CLARIFY_TXT',           "All calculus and reasoning rules necessary for the student to solve the exercises, are provided in the 'theorem box'.");
 define('CERTIFY_TITLE',             "Certify");

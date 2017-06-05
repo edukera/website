@@ -2,7 +2,7 @@
 
 define('USED_BY',               "Utilisée à");
 define('LAUNCH_APP',            "Accéder à l'application");
-define('HEADLINE',              "Un assistant de démonstration <div>dédié à l'enseignement</div> <span class=\"logic-fr\">des mathématiques</span>");
+define('HEADLINE',              "Un <span class=\"logic-fr\">assistant</span> de démonstration <div>dédié à l'<span class=\"logic-fr\">enseignement</span></div> des <span class=\"logic-fr\">mathématiques</span>");
 define('LEARN_MORE',            "En savoir plus");
 define('HEADLINE_2_1',          "Avantages pédagogiques");
 define('HEADLINE_2_2',          "à l'apprentissage des mathématiques");
@@ -11,7 +11,7 @@ define('EXPLAIN_TITLE',         "Avantages");
 define('EXPLAIN_TITLE_2',         "Former");
 define('CLARIFY_TITLE',           "Clarifier");
 define('CLARIFY_TXT',           "Toutes les règles de calcul et de raisonnement dont l'étudiant a besoin pour résoudre les exercices, sont mises à sa disposition dans la 'boîte à théorèmes'.");
-define('EXPLAIN_TXT',           "L'étudiant comprend comment fonctionne une démonstration mathémtique grâce à l'ergonomie de la copie numérique.");
+define('EXPLAIN_TXT',           "L'étudiant comprend comment fonctionne une démonstration mathématique grâce à l'ergonomie de la copie numérique.");
 define('TRAIN_TITLE',           "Entraîner");
 define('TRAIN_TXT',             "L'étudiant approfondit sa maîtrise des notions étudiées en augmentant le nombre d'exercices résolus grâce à l'assistance fournie par la copie numérique.");
 define('CERTIFY_TITLE',         "Certifier");
