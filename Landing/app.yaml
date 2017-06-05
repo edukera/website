@@ -20,6 +20,12 @@ handlers:
 - url: /min
   static_dir: min
 
+- url: /min
+  static_dir: min
+
+- url: /favicon
+  static_dir: favicon
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
