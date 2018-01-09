@@ -1,164 +1,74 @@
 <?php
 
-//--------------------------------------------------------
-//** SCREEN SHOTS
-//--------------------------------------------------------
-
-define('SC_CAROUSEL1', "en_carousel3.png");
-define('SC_CAROUSEL2', "en_carousel1.png");
-define('SC_CAROUSEL3', "en_carousel2.png");
-
-define('SC_DIAG1', "en_diag1.png");
-define('SC_DIAG2', "en_diag2.png");
-define('SC_DIAG3', "en_diag3.png");
-
-define('SC_TUTO1', "en_tuto1.png");
-
-define('SC_HELP1', "en_help1.png");
-
-//--------------------------------------------------------
-//** LINK
-//--------------------------------------------------------
-
-define('LK_HILBERT',"http://en.wikipedia.org/wiki/David_Hilbert");
-
-//--------------------------------------------------------
-//** NAVIGATION
-//--------------------------------------------------------
-
-define('NAV_PRESENTATION', 			     "Presentation");
-define('NAV_ABOUT', 			      	 "About");
-define('NAV_CONTACT', 			      	 "Contact Us");
-define('NAV_TEAM', 			      		 "The Team");
-define('NAV_LEGAL', 			      	 "Legal Notices");
-
-define('NAV_SIGN_1', 			      	 "Subscribe");
-define('NAV_SIGN_2', 			      	 "Subscribe/Connect");
-
-define('NAV_CONNECT_1', 			      "Connect");
-define('NAV_CONNECT_2', 			      "Launch the demo");
-define('NAV_CONNECT_2_TXT', 			  "The application will soon be available!<br/> follow us to be notified !");
-
-define('NAV_FOLLOW', 			      	  "Follow us");
-define('NAV_COPYRIGHT', 			      "All rights reserved - 2014 - Edukera &copy;");
-
-//--------------------------------------------------------
-//** SECTION :: TOP
-//--------------------------------------------------------
-
-define('TOP_TITLE_1', 			      		"Live <span class=\"f-bl-a\">maths</span><br> differently");
-define('TOP_TITLE_2', 			      		"<span class=\"f-bl-a\">Demo</span> available !");
-
-define('TOP_STORE_1', 			      		"Currently optimized for <span class=\"f-bl-a\">Chrome (43+)</span>, compatible with <span class=\"f-bl-a\">FireFox (38+)</span> <span class=\"f-bl-a\">Opera (30+)</span> <span class=\"f-bl-a\">Safari (8+)</span> and <span class=\"f-bl-a\">IE (11+)</span>.");
-define('TOP_STORE_2', 			      		"We are still working on other browsers…");
-define('TOP_STORE_3', 			      		"Download Chrome");
-define('TOP_STORE_4', 			      		"Google app Store");
-
-//--------------------------------------------------------
-//** SECTION :: PRESENTATION
-//--------------------------------------------------------
-
-define('PRESENTATION_TITLE', 			    "What is <span class=\"f-bl-a\">edukera</span> ?");
-define('PRESENTATION_TXT', "<span style=\"color:#00ace7;font-family:Variable-Black, sans-serif;\">edukera</span> is a mathematics exercise application, aimed at students and teachers who wish to benefit from a mathematical proof design environment. Students develop mathematical reasoning, with instant access to help if they need it.");
-
-define('PRESENTATION_BLOC_1_TITLE',   		"Iterative reasoning development");
-define('PRESENTATION_BLOC_1_TXT',   		"Students develop mathematical reasoning step by step, by selecting the demonstration features and by setting their parameters when necessary.
-
-If all proof's statements are justified correctly, the exercise is complete and the student can go on to the following one.");
-
-define('PRESENTATION_BLOC_2_TITLE',   		"Tutorials");
-define('PRESENTATION_BLOC_2_TXT',   		"<p style=\"margin-bottom:5px\">Students learn how to solve the problems with the help of didactic exercises organised within various learning paths. </p><p>These exercises are corrected and step by step feedback is given.</p>");
-
-define('PRESENTATION_BLOC_3_TITLE',   		"Instant help");
-define('PRESENTATION_BLOC_3_TXT',   		"Students, if they need to, can get a solving step by clicking on the 'bulb' button. The number of 'bulbs' available for an exercise depends on its level of difficulty.</p>");
-
-
-//--------------------------------------------------------
-//** SECTION :: ABOUT
-//--------------------------------------------------------
-
-define('ABOUT_TITLE', 			          	"About <span class=\"f-bl-a\">edukera</span> ?");
-
-/* ABOUT : CONTACT */
-
-define('CONTACT_TITLE', 			      	"We are here to answer your questions, do not hesitate to contact us.");
-
-define('CONTACT_OK', 	   	            	"<strong>Well done</strong> Your message has been sent.");
-define('CONTACT_KO', 	   	            	"<strong>Oops</strong> Your message has not been sent. Try submitting again. ");
-define('CONTACT_INVALID', 	   	        	"<strong>Warning</strong> Please fill out all the message field.");
-
-define('CONTACT_MAIL', 			      		"Your email address");
-define('CONTACT_MAIL_ERROR', 			    "Please enter a valid email address.");
-define('CONTACT_MSG', 			      		"Your message");
-define('CONTACT_MSG_ERROR', 			    "Please enter at least 10 characters.");
-define('CONTACT_SUBMIT', 			      	"Send your message");
-define('CONTACT_VALID', 			      	"Ok !");
-
-define('CONTACT_FOLLOW', 			      	"You can also <span class=\"f-bl-a\">find us at</span> ici :");
-
-define('CONTACT_ADDRESS', 			      	"171, av Charles de Gaulle - 2e étage - 92200 Neuilly-sur-Seine");
-
-
-/* ABOUT : TEAM */
-
-define('TEAM_TITLE', 			      		"As a team, we all share the same belief that the teaching of mathematics should not escape the digital revolution.");
-
-define('TEAM_BLOC_1_JOB', 			      	"Co-founder");
-define('TEAM_BLOC_1_TXT', 			      	"Before edukera, Benoît spent more than ten years developing predictive analytics solutions, notably within the KXEN society.");
-
-define('TEAM_BLOC_2_JOB', 			      	"Co-founder");
-define('TEAM_BLOC_2_TXT', 			      	"Promo EPITA 2009, Guillaume developed solutions for data analysis for the direct marketing of businesses.");
-
-define('TEAM_BLOC_3_JOB', 			      	"Graphic designer");
-define('TEAM_BLOC_3_TXT', 			      	"A lover of simple and pure design, Romain likes to combine ergonomics and aesthetics.");
-
-define('TEAM_BLOC_4_JOB', 			      	"Integrator");
-define('TEAM_BLOC_4_TXT', 			      	"Passionate about web-based and mobile interfaces, Jérémie likes to bring concepts and prototypes to life.");
-
-/* ABOUT : LEGAL */
-
-define('MENTION_TXT_1', 			      	"The edukera solution and the current site are edited by the edukera society; a simplified joint-stock company with a capital of 37,623 euros, registered in the Nanterre Trade and Companies Register under number 793 014 333, whose head office is based at 84 rue Perronet, 92200 Neuilly-sur-Seine.");
-define('MENTION_TXT_2', 			      	"The Publication Director / Report Manager is Benoît Rognier, who can be contacted using the following email address: contact@edukera.com.");
-define('MENTION_TXT_3', 			      	"The edukera SAS is the owner of the domain names http://www.edukera.com.");
-define('MENTION_TXT_4', 			      	"The site is hosted by google, whose French headquarters are based at 8 Rue de Londres, 75009 Paris.");
-
-//--------------------------------------------------------
-//** SECTION :: QUOTE
-//--------------------------------------------------------
-
-define('QUOTE_TITLE', 			     		  "Mathematics is a <span class=\"f-yl-a\">game</span> played according to certain <span class=\"f-yl-a\">simple rules</span> with meaningless marks on paper.");
-
-//--------------------------------------------------------
-//** SECTION :: TESTIMONIALS
-//--------------------------------------------------------
-
-define('TESTIMONIALS_TITLE', 			      "They have <span class=\"f-bl-a\">tested</span> !");
-
-
-define('TESTIMONIALS_BLOC_1_TXT', 			  "Lorem ipsum dolor sit amet, consectetur <span class=\"f-bl-a\">adipisicing elit.</span> Molestiae cupiditate officiis qui nemo eum amet dolorem, fugit fugiat nulla dolorum,  <span class=\"f-bl-a\">ipsa ut explicabo</span> incidunt provident accusantium in. Commodi.");
-define('TESTIMONIALS_BLOC_1_AUTHOR', 		  "Maurice Bernedeau");
-define('TESTIMONIALS_BLOC_1_JOB', 			  "teacher at Sainte-Marguerite College");
-
-define('TESTIMONIALS_BLOC_2_TXT', 			  "Lorem ipsum dolor sit amet, consectetur <span class=\"f-bl-a\">adipisicing elit.</span> Molestiae cupiditate officiis qui nemo eum amet dolorem.");
-define('TESTIMONIALS_BLOC_2_AUTHOR', 		  "Julie Ferrier");
-define('TESTIMONIALS_BLOC_2_JOB', 			  "Student in class 1S");
-
-
-define('TESTIMONIALS_BLOC_3_TXT', 			  "Lorem ipsum dolor sit amet, consectetur <span class=\"f-bl-a\">adipisicing elit.</span> Molestiae cupiditate officiis qui nemo eum amet dolorem, fugit fugiat nulla dolorum,  <span class=\"f-bl-a\">ipsa ut explicabo</span> incidunt provident accusantium in. Commodi.");
-define('TESTIMONIALS_BLOC_3_AUTHOR', 		  "Maurice Bernedeau");
-define('TESTIMONIALS_BLOC_3_JOB', 			  "teacher at Sainte-Marguerite College");
-
-//--------------------------------------------------------
-//** VARIOUS (PAGE TITLE / META DESC / HREF TITLE)
-//--------------------------------------------------------
-
-define('PAGE_TITLE', 	            		  "Edukera");
-define('PAGE_DESC', 	            		  "");
-
-define('TITLE_FOLLOW_1', 	            	  "Follow us on");
-define('TITLE_FOLLOW_2', 	            	  "Follow it on");
-
-define('TITLE_BACK_TOP', 	            	  "Return to top");
-define('TITLE_CAPTURE', 	            	  "See screenshots");
-
+define('USED_BY',                   "Used at");
+   define('LAUNCH_APP',                "Launch application");
+   define('LAUNCH_DOC',            "See axiomatics");
+   define('HEADLINE',                  "<span style='position:relative;top:50px'>Teach <span class=\"logic-en\">Logic</span><br> with a proof <span class=\"logic-en\">assistant<span>");
+   define('EXERCISE',                  "exercise_en.png");
+define('LEARN_MORE',                "Learn more");
+define('HEADLINE_2_1',              "Pedagogical benefits");
+define('HEADLINE_2_2',              "mathematical proof");
+define('DISCOVER',                 "Click to discover proof assistant user interface");
+define('EXPLAIN_TITLE',             "Benefits");
+define('EXPLAIN_TITLE_2',         "Develop");
+define('EXPLAIN_TXT',               "The student learns how a mathematical proof works thanks to the numerical paper interface.");
+define('TRAIN_TITLE',               "Practice");
+define('TRAIN_TXT',                 "The student masters studied notions by increasing the number of exercises' resolutions thanks to the assistance provided by the numerical paper.");
+define('CLARIFY_TITLE',           "Clarify");
+define('CLARIFY_TXT',           "All calculus and reasoning rules necessary for the student to solve the exercises, are provided in the 'theorem box'.");
+define('CERTIFY_TITLE',             "Certify");
+define('CERTIFY_TXT',               "Skills et performance of students are measured automatically and analyzed with detailed reports");
+define('CONTACT_US',                "Contact us");
+define('EXPLAIN_TXT_2',             "Students get a physical sense of the four skills required to develop proofs");
+define('METHOD_TITLE',              "Method selection");
+define('METHOD_TXT',                "The student has to pick a method among the ones available, ususally at the beginning of resolution");
+define('DEF_TITLE',                 "Definition translation");
+define('DEF_TXT',                   "The property to demonstrate usually needs to be translated into to several properties, individually easier to demonstrate.");
+define('SCOPE_TITLE',               "Logical scopes management");
+define('SCOPE_TXT',                 "A universal quantification is demonstrated in a new logical scope, with new variables available only in this scope and sub-scopes.");
+define('WITNESS_TITLE',             "Witness values instantiation");
+define('WITNESS_TXT',               "An important skill is to figure out witness values, when proving existantial quantification for example. The student figures these values out by analysing the propositions in which they occur.");
+define('QUOTE_1',                   "Mathematics is a game played according to certain ");
+define('QUOTE_2',                   "simple rules");
+define('QUOTE_3',                   " with meaningless marks on paper.");
+define('TRAIN_TXT_2',               "Currently 500+ exercises in three thematics are available.");
+define('CHAPTER_1_TITLE',           "Logic");
+define('CHAPTER_1_TXT',             "Students master natural deduction elements : connectors, quantifiers, classical logic vs. constructive logic ...");
+define('CHAPTER_2_TITLE',           "Sets");
+define('CHAPTER_2_TXT',             "Students master fundamental mathematcial objects : relations, functions, ...");
+define('CHAPTER_3_TITLE',           "Calculus");
+define('CHAPTER_3_TXT',             "Students develop the skill of algabraic calculus with fundamental operations (expansion, factorisation, ...).");
+define('START',                     "Start");
+define('TEAM',                      "Team");
+define('CO_FOUNDER',                "Co-founder");
+define('DESIGNER',                  "Designer");
+define('INTEGRATOR',                "Integrator");
+define('FIRT_NAME',                 "Firstname");
+define('EMAIL',                     "Email");
+define('MESSAGE',                   "Message");
+define('SEND',                      "Send");
+define('SOCIAL',                    "Social");
+define('TWITTER_URL',               "https://twitter.com/edukera");
+define('GOOGLEPLUS_URL',            "https://plus.google.com/+Edukera/posts");
+define('LINKEDIN_URL',              "https://www.linkedin.com/company/edukera?trk=prof-0-ovw-curr_pos");
+define('COPYRGHT',                  "All rights reserved - 2015 - Edukera ©");
+define('BR_URL',                    "https://www.linkedin.com/in/benoitrognier");
+define('GD_URL',                    "https://www.linkedin.com/in/guillaumeduhamel");
+define('RG_URL',                    "https://www.linkedin.com/profile/view?id=51135997&locale=fr_FR");
+define('JM_URL',                    "https://www.linkedin.com/profile/view?id=167651918");
+define('URL_UPMC',                  "http://www.upmc.fr/en/index.html");
+define('URL_UNISTRA',               "http://www.en.unistra.fr/index.php?id=21304");
+define('URL_UP7',                   "http://www.univ-paris-diderot.fr/english");
+define('URL_UPEM',                  "http://www.u-pem.fr/");
+define('URL_UPSUD',                 "http://www.u-psud.fr/en/index.html");
+define('URL_UMONTPELLIER',          "http://www.umontpellier.fr/");
+define('URL_EPITA',                 "http://www.epita.fr/international/");
+define('URL_CNAM',                  "http://the.cnam.eu/");
+define('URL_UAMU',                  "http://edu.univ-amu.fr/en");
+define('URL_UFC',                   "http://www.univ-fcomte.fr/");
+define('URL_POLYTECH_MARS',         "http://polytech.univ-amu.fr/en/faculty");
+define('EMAIL_SUBJECT',             "Edukera Certification");
+define('COQ_TEXT',                  "<span style=\"color: #00ace7;\">edukera</span> embeds <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">coq proof assistant</a>, developped by");
+define('LEGAL_TEXT',                 "Legal");
+define('LEGAL_LINK',                 "legal");
 ?>
