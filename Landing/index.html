@@ -117,7 +117,8 @@
             <div style="position:relative;">
 	    <img width="530px" height="298px" src="img/bg-carousel.png" style="margin-left:30px"></img>
             <a href="https://app.edukera.com/?qt=1" target="_blank" style="position:absolute;top:32px;left:105px;cursor:pointer;width:374px;height:210px;background-color:#00ace7">
-              <img src="img/play.svg" style="position:relative;width:124px;left:124px;top:46px"></img>
+              <img src="img/<?php echo EXERCISE ?>" style="width:374px;height:210px"></img>
+              <img src="img/play.svg" style="position:relative;width:124px;left:124px;top:-174px"></img>
             </a>
             </div>
             <h3 class="headline" style="color:white;font-size:1.4em;font-weight:100;text-align:center;margin-top:0;width:95%;">
@@ -133,6 +134,19 @@
 	    </div>
 	  </div>
 	</div-->
+      </div>
+      <div style="text-align:center">
+        <a href="https://app.edukera.com" target="_blank">
+        <paper-button raised style="font-size:1.5rem;padding-left:26px;padding-right:26px">
+	  <?php echo LAUNCH_APP; ?>
+        </paper-button>
+        </a>
+        <br>
+        <a href="https://app.edukera.com/?doc=1" target="_blank">
+        <paper-button id="doc" style="font-size:1rem;padding-left:26px;padding-right:26px;margin-top:20px">
+	  <?php echo LAUNCH_DOC; ?><span style="margin-left:8px;font-size:20px">↗</span>
+        </paper-button>
+        </a>
       </div>
     </div>
 </div>

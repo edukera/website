@@ -257,6 +257,12 @@ red-text {
     color: #00ACE7;
 }
 
+#doc {
+    background-color: transparent;
+    font-size:1.0em;
+    color: white;
+}
+
 #nav_f{
     box-shadow: none !important;
     -webkit-box-shadow:none !important;
