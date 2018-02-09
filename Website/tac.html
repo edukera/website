@@ -1,0 +1,97 @@
+<?php include_once('contact.php'); ?>
+<?php include_once('lang/trad.php'); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#00ACE7">
+    <title>Edukera</title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,200' rel='stylesheet' type='text/css'>
+    <!-- Polymer -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39196841-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</head>
+<body class="body-extern">
+  <?php include('header.php') ?>
+
+  <div class="tac-page">
+    <h1 class="tac-h1"><?php echo TAC_TITLE;    ?></h1>
+    <p  class="tac-p"> <?php echo TAC_TITLE_1;  ?></p>
+    <p  class="tac-p"> <?php echo TAC_TITLE_2;  ?></p>
+    <p  class="tac-p"> <?php echo TAC_TITLE_3;  ?></p>
+    <p  class="tac-p"> <?php echo TAC_TITLE_4;  ?></p>
+    <p  class="tac-p"> <?php echo TAC_TITLE_5;  ?></p>
+    <h2 class="tac-h2"><?php echo TAC_PURCHASE; ?></h2>
+    <p  class="tac-p"> <?php echo TAC_PURCHASE_1?></p>
+    <p  class="tac-p"> <?php echo TAC_PURCHASE_2?></p>
+    <p  class="tac-p"> <?php echo TAC_PURCHASE_3?></p>
+    <p  class="tac-p"> <?php echo TAC_PURCHASE_4?></p>
+    <p  class="tac-p"> <?php echo TAC_PURCHASE_5?></p>
+    <h2 class="tac-h2"><?php echo TAC_AVAILABILITY?></h2>
+    <p  class="tac-p"> <?php echo TAC_AVAILABILITY_1?></p>
+    <p  class="tac-p"> <?php echo TAC_AVAILABILITY_2?></p>
+    <h2 class="tac-h2"><?php echo TAC_CONTEST?></h2>
+    <p  class="tac-p"> <?php echo TAC_CONTEST_1?></p>
+    <h2 class="tac-h2"><?php echo TAC_SUBSCRIPTION?></h2>
+    <p  class="tac-p"> <?php echo TAC_SUBSCRIPTION_1?></p>
+    <p  class="tac-p"> <?php echo TAC_SUBSCRIPTION_2?></p>
+    <p  class="tac-p"> <?php echo TAC_SUBSCRIPTION_3?></p>
+    <p  class="tac-p"> <?php echo TAC_SUBSCRIPTION_4?></p>
+    <h2 class="tac-h2"><?php echo TAC_TRIAL?></h2>
+    <p  class="tac-p"> <?php echo TAC_TRIAL_1?></p>
+    <p  class="tac-p"> <?php echo TAC_TRIAL_2?></p>
+    <p  class="tac-p"> <?php echo TAC_TRIAL_3?></p>
+    <p  class="tac-p"> <?php echo TAC_TRIAL_4?></p>
+    <h2 class="tac-h2"><?php echo TAC_FEE?></h2>
+    <p  class="tac-p"> <?php echo TAC_FEE_1?></p>
+    <p  class="tac-p"> <?php echo TAC_FEE_2?></p>
+    <p  class="tac-p"> <?php echo TAC_FEE_3?></p>
+    <h2 class="tac-h2"><?php echo TAC_REFUND?></h2>
+    <p  class="tac-p"> <?php echo TAC_REFUND_1?></p>
+    <h2 class="tac-h2"><?php echo TAC_ACCOUNT?></h2>
+    <p  class="tac-p"> <?php echo TAC_ACCOUNT_1?></p>
+    <p  class="tac-p"> <?php echo TAC_ACCOUNT_2?></p>
+    <p  class="tac-p"> <?php echo TAC_ACCOUNT_3?></p>
+    <p  class="tac-p"> <?php echo TAC_ACCOUNT_4?></p>
+    <h2 class="tac-h2"><?php echo TAC_COPYRIGHT?></h2>
+    <p  class="tac-p"> <?php echo TAC_COPYRIGHT_1?></p>
+    <p  class="tac-p"> <?php echo TAC_COPYRIGHT_2?></p>
+    <p  class="tac-p"> <?php echo TAC_COPYRIGHT_3?></p>
+    <h2 class="tac-h2"><?php echo TAC_IP?></h2>
+    <p  class="tac-p"> <?php echo TAC_IP_1?></p>
+    <h2 class="tac-h2"><?php echo TAC_LINKS?></h2>
+    <p  class="tac-p"> <?php echo TAC_LINKS_1?></p>
+    <p  class="tac-p"> <?php echo TAC_LINKS_2?></p>
+    <p  class="tac-p"> <?php echo TAC_LINKS_3?></p>
+    <h2 class="tac-h2"><?php echo TAC_TERMINATION?></h2>
+    <p  class="tac-p"> <?php echo TAC_TERMINATION_1?></p>
+    <p  class="tac-p"> <?php echo TAC_TERMINATION_2?></p>
+    <h2 class="tac-h2"><?php echo TAC_GOV_LAW?></h2>
+    <p  class="tac-p"> <?php echo TAC_GOV_LAW_1?></p>
+    <p  class="tac-p"> <?php echo TAC_GOV_LAW_2?></p>
+    <h2 class="tac-h2"><?php echo TAC_CHANGES?></h2>
+    <p  class="tac-p"> <?php echo TAC_CHANGES_1?></p>
+    <p  class="tac-p"> <?php echo TAC_CHANGES_2?></p>
+    <h2 class="tac-h2"><?php echo TAC_CONTACTUS?></h2>
+    <p  class="tac-p"> <?php echo TAC_CONTACTUS_1?></p>
+  </div>
+</body>
+</html>

@@ -825,3 +825,30 @@ footer.page-footer {
     display: block;
     height: 100px;
 }
+
+
+
+.tac-page {
+    padding-bottom: 100px;
+    margin-left: 250px;
+    width: 70%;
+}
+
+.tac-container {
+
+}
+
+.tac-h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.tac-h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.tac-p {
+
+}

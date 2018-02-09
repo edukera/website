@@ -53,6 +53,6 @@
         </div>
     </div>
     <div class="legal-container">
-      <span class="legal-copyright" >© edukera 2017 - <a class="legal-link" href="<?php echo LEGAL_LINK; ?>" target="_blank"><?php echo LEGAL_TEXT; ?></a></span>
+      <span class="legal-copyright" >© edukera 2013-2018 - <a class="legal-link" href="<?php echo LEGAL_LINK; ?>" target="_blank"><?php echo LEGAL_TEXT; ?></a> - <a class="legal-link" href="<?php echo TAC_LINK; ?>" target="_blank"><?php echo TAC_TEXT; ?></a></span>
     </div>
 </footer>

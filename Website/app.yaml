@@ -33,6 +33,9 @@ handlers:
 - url: /legal
   script: legal.html
 
+- url: /tac
+  script: tac.html
+
 - url: /.*
   script: index.html
   secure: always
