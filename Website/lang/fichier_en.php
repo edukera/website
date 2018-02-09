@@ -137,5 +137,5 @@ define('TAC_CHANGES',        "Changes");
 define('TAC_CHANGES_1',      "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 15 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.");
 define('TAC_CHANGES_2',      "By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.");
 define('TAC_CONTACTUS',      "Contact Us");
-define('TAC_CONTACTUS_1',    "If you have any questions about these Terms, please contact us.");
+define('TAC_CONTACTUS_1',    "If you have any questions about these Terms, please <a href=\"mailto:contact@edukera.com\" target=\"_blank\">contact us</a>.");
 ?>

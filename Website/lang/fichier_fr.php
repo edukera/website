@@ -131,5 +131,5 @@ define('TAC_CHANGES',        "Modifications");
 define('TAC_CHANGES_1',      "Nous réservons le droit de modifier ou remplacer ces Conditions à tout moment. Si un révision est notable nous vous aviserons au moins 15 jours à l'avance des changements qui seront effectués. Ce qui constitue une révision notable sera déterminé à notre seule appréciation.");
 define('TAC_CHANGES_2',      "En continuant d'accéder ou utiliser notre Service après toutes révisions entrent en vigueur, vous acceptez d'être lié aux conditions révisés. Si vous n'acceptez pas ces nouvelles conditions, vous n'êtes plus autorisés à utiliser le site Web et le Service.");
 define('TAC_CONTACTUS',      "Coordonnées");
-define('TAC_CONTACTUS_1',    "Si vous avez des questions au sujet de ces Conditions, veuillez nous contacter.");
+define('TAC_CONTACTUS_1',    "Si vous avez des questions au sujet de ces Conditions, veuillez <a href=\"mailto:contact@edukera.com\" target=\"_blank\">nous contacter</a>.");
 ?>
