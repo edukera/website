@@ -66,6 +66,7 @@ define('URL_EPITA',             "http://www.epita.fr/");
 define('URL_CNAM',              "http://www.cnam.fr/");
 define('URL_UAMU',              "http://www.univ-amu.fr/");
 define('URL_UFC',               "http://www.univ-fcomte.fr/");
+define('URL_UTLSE3',            "http://www.univ-tlse3.fr/");
 define('URL_POLYTECH_MARS',     "http://polytech.univ-amu.fr/");
 define('EMAIL_SUBJECT',         "Certification Edukera");
 define('COQ_TEXT',              "<span style=\"color: #00ace7;\">edukera</span> embarque <a class=\"coq-link-section\" href=\"https://coq.inria.fr/\" target=\"_blank\">l'assistant de preuve coq</a> développé par");

@@ -97,6 +97,7 @@ h1 {
 }
 
 .grayscale {
+    position: relative;
     width:auto;
     height:150px;
     -webkit-filter: grayscale(100%);
