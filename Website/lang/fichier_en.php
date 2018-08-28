@@ -3,7 +3,7 @@
 define('USED_BY',                   "Used at");
 define('LAUNCH_APP',                "Launch application");
 define('LAUNCH_DOC',            "See axiomatics");
-define('HEADLINE',                  "<span style='position:relative;top:50px'>Teach <span class=\"logic-en\">Logic</span><br> with a proof <span class=\"logic-en\">assistant<span>");
+define('HEADLINE',                  "<span style='position:relative;top:50px'>Teach <span class=\"logic-en\">Logic</span> and <span class=\"logic-en\">Math</span> <br> with a proof <span class=\"logic-en\">assistant<span>");
 define('EXERCISE',                  "exercise_en.png");
 define('LEARN_MORE',                "Learn more");
 define('HEADLINE_2_1',              "Pedagogical benefits");

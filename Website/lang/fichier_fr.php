@@ -3,7 +3,7 @@
 define('USED_BY',               "Utilisée à");
 define('LAUNCH_APP',            "Accéder à l'application");
 define('LAUNCH_DOC',            "Voir l'axiomatique");
-   define('HEADLINE',              "Un <span class=\"logic-fr\">assistant</span> de démonstration <div>dédié à l'<span class=\"logic-fr\">enseignement</span></div> de la <span class=\"logic-fr\">Logique</span>");
+   define('HEADLINE',              "Un <span class=\"logic-fr\">assistant</span> de démonstration <div>dédié à l'<span class=\"logic-fr\">enseignement</span></div> de la <span class=\"logic-fr\">Logique</span> et des <span class=\"logic-fr\">Maths</span>");
    define('EXERCISE',                  "exercise_fr.png");
 define('LEARN_MORE',            "En savoir plus");
 define('HEADLINE_2_1',          "Avantages pédagogiques");
