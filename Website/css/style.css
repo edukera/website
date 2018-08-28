@@ -856,26 +856,11 @@ footer.page-footer {
 }
 
 
-.price-header-section {
-    display: block;
-    position: relative;
-    text-align: left;
-    padding-left: 6%;
-}
-
-.price-header-text {
-    display: block;
-    position: relative;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    margin-top: 0;
-    font-size: 1.8rem;
-    font-weight: 100;
-}
-
 .price-title-section {
     display: block;
     position: relative;
+    text-align: left;
+    margin-left: 15%;
 }
 
 .price-title-text {
@@ -890,6 +875,8 @@ footer.page-footer {
 .price-subtitle-section {
     display: block;
     position: relative;
+    text-align: left;
+    margin-left: 15%;
 }
 
 .price-subtitle-text {
@@ -897,12 +884,17 @@ footer.page-footer {
     position: relative;
     color: white;
     font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .price-button-section {
     display: block;
     position: relative;
     text-align: center;
+    margin-top: 20px;
 }
 
 .price-detail-section {
