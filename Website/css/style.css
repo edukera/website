@@ -877,6 +877,7 @@ footer.page-footer {
     position: relative;
     text-align: left;
     margin-left: 15%;
+    margin-bottom: 80px;
 }
 
 .price-subtitle-text {
@@ -905,11 +906,16 @@ footer.page-footer {
 .price-detail-title {
     display: block;
     position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
 .price-detail-text {
     display: block;
     position: relative;
+    margin-top: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -922,4 +928,3 @@ footer.page-footer {
     display: block;
     position: relative;
 }
-
