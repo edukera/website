@@ -1,13 +1,23 @@
 {
-  "name": "Edukera Langing",
+  "name": "Edukera Landing",
   "description": "",
-  "homepage": "",
-  "keywords": [
-  ],
+  "homepage": "https://github.com/edukera/website",
   "author": "",
   "private": true,
   "dependencies": {
     "iron-elements": "PolymerElements/iron-elements#^1.0.0",
     "paper-elements": "PolymerElements/paper-elements#^1.0.1"
-  }
+  },
+  "authors": [
+    "Guillaume Duhamel <guillaume.duhamel@edukera.com>"
+  ],
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

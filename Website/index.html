@@ -74,9 +74,9 @@
 	      </a>
 	      <ul class="right hide-on-med-and-down" style="margin-right: 50px;">
                 <li><a href="#intro"><?php echo EXPLAIN_TITLE; ?></a></li>
-                <li><a href="#train"><?php echo TRAIN_TITLE; ?></a></li>
+                <li><a href="#price"><?php echo PRICE_TITLE; ?></a></li>
                 <li><a href="#used_by"><?php echo USED_BY; ?></a></li>
-                <li><a href="#team"><?php echo TEAM; ?></a></li>
+                <!--li><a href="#team"><?php echo TEAM; ?></a></li-->
 	      </ul>
             </div>
 	</div>
@@ -326,6 +326,51 @@
     </div>
 </div>
 
+<!-- Price -->
+<div class="section scrollspy" id="price" style="background-color: #f8f8f8;
+						 border-top: 1px solid #e8ecef;
+						 border-bottom: 1px solid #e8ecef;
+						 padding-top:2rem;
+                                                 padding-bottom: 3rem;
+						 text-align:center;
+						 display:inline-block;
+						 width:100%;
+                                                 background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.5)),url(img/desk-small.jpg);
+                                                 background-size:cover;">
+  <div class="price-header-section">
+    <p class="price-header-text">Pour les enseignants</p>
+  </div>
+
+  <h1 class="price-title">Créez une classe et suivez l’activité de vos étudiants</h1>
+
+  <div class="price-subtitle-section">
+    <p class="price-subtitle-text">Choisissez les exercices</p>
+    <p class="price-subtitle-text">Intégrez nativement la classe au LMS (Moodle, Canvas, ...)</p>
+    <p class="price-subtitle-text">Créez des devoirs à la maison ou sur table</p>
+  </div>
+
+  <div class="price-button-section">
+    <a href="https://app.edukera.com" target="_blank">
+      <paper-button raised style="font-size:1.5rem;padding-left:26px;padding-right:26px">
+        Créer une classe
+      </paper-button>
+    </a>
+  </div>
+
+  <div class="price-detail-section">
+    <p class="price-detail-title">10€HT / an / étudiant</p>
+    <p class="price-detail-text">Jusqu’à 90 étudiants.</p>
+  </div>
+
+  <div class="price-footer-section">
+    <p class="price-footer-text">Au delà de 90 étudiants, nous contacter</p>
+  </div>
+
+</div>
+
+
+
+
 <!--Parallax-->
 <div class="section scrollspy quote-bg" id="quote" style="height:50%">
   <div class="container">
@@ -428,6 +473,15 @@
     </div>
 </div>
 
+
+
+
+
+
+
+
+
+
 <!--References -->
 <div class="section scrollspy" id="used_by" style="background-color: #f8f8f8;
 						 border-top: 1px solid #e8ecef;
@@ -454,9 +508,6 @@
     <img src="img/logo-school-upem.svg" class="grayscale" style="">
   </a>
   <br></br>
-  <a href="<?php echo URL_EPITA; ?>" target="_blank" class="aref">
-    <img src="img/logo-school-epita.svg" class="grayscale" style="">
-  </a>
   <a href="<?php echo URL_UMONTPELLIER; ?>" target="_blank" class="aref">
     <img src="img/logo-school-universite-montpellier.svg" class="grayscale" style="height: 200px; top: 20px;">
   </a>
@@ -469,13 +520,13 @@
   <a href="<?php echo URL_UPSUD; ?>" target="_blank" class="aref">
     <img src="img/logo-school-upsud.svg" class="grayscale" style="height: 128px; top: -10px;">
   </a>
-
-
 </div>
+
+
 <!--Team-->
-<div class="section scrollspy" id="team" style="background-color:white">
+<div class="section scrollspy" id="team" style="display:none; background-color:white;">
     <div class="container">
-        <h2 class="header text_b" style="text-align:center">
+        <h2 class="header text_b" style="text-align:center;">
 	  <?php echo TEAM; ?>
 	</h2>
         <div class="row">
@@ -572,8 +623,7 @@
     </div>
 </div>
 
-<!--Team-->
-<div class="section scrollspy" id="team" style="background-color:white; border-top: 1px solid #e8ecef;">
+<div class="section scrollspy" style="background-color:white; border-top: 1px solid #e8ecef;">
     <div class="container">
       	<div class="coq-container-section">
 	  <div class="coq-wrapper-section">

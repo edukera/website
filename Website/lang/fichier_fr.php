@@ -14,6 +14,7 @@ define('EXPLAIN_TITLE_2',         "Former");
 define('CLARIFY_TITLE',           "Clarifier");
 define('CLARIFY_TXT',           "Toutes les règles de calcul et de raisonnement dont l'étudiant a besoin pour résoudre les exercices, sont mises à sa disposition dans la 'boîte à théorèmes'.");
 define('EXPLAIN_TXT',           "L'étudiant comprend comment fonctionne une démonstration mathématique grâce à l'ergonomie de la copie numérique.");
+define('PRICE_TITLE',           "Enseignement");
 define('TRAIN_TITLE',           "Entraîner");
 define('TRAIN_TXT',             "L'étudiant approfondit sa maîtrise des notions étudiées en augmentant le nombre d'exercices résolus grâce à l'assistance fournie par la copie numérique.");
 define('CERTIFY_TITLE',         "Certifier");

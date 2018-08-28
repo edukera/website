@@ -855,3 +855,68 @@ footer.page-footer {
 .tac-p {
     text-align: justify;
 }
+
+
+.price-header-section {
+    display: block;
+    position: relative;
+}
+
+.price-header-text {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.price-title {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.price-subtitle-section {
+    display: block;
+    position: relative;
+}
+
+.price-subtitle-text {
+    display: block;
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.price-button-section {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.price-detail-section {
+    display: block;
+    position: relative;
+}
+
+.price-detail-title {
+    display: block;
+    position: relative;
+}
+
+.price-detail-text {
+    display: block;
+    position: relative;
+}
+
+
+.price-footer-section {
+    display: block;
+    position: relative;
+}
+
+.price-footer-text {
+    display: block;
+    position: relative;
+}
+
