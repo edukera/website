@@ -144,10 +144,11 @@ define('PRICE_TITLE_TEXT',  "Create a class and follow students activity");
 define('PRICE_SUBTITLE1',   "Select exercises");
 define('PRICE_SUBTITLE2',   "Add the class to your LMS (Moodle, Canvas, …)");
 define('PRICE_SUBTITLE3',   "Create homeworks assignments and exams");
-define('PRICE_SUBTITLE4',   "Follow your students activity with detailed activity reports");
+define('PRICE_SUBTITLE4',   "Monitor your students activity with detailed activity reports");
 define('PRICE_BUTTON',      "Create a class");
-define('PRICE_DETAIL1',     "10€excl. tax.");
-define('PRICE_DETAIL2',     "/ year / student");
+define('PRICE_DETAIL1',     "10€");
+define('PRICE_DETAIL2',     "excl. tax. / year / student");
 define('PRICE_DETAIL3',     "Up to 90 students.");
-define('PRICE_FOOTER',      "Beyond 90 students, please contact us");
+define('PRICE_FOOTER1',      "Beyond 90 students, please ");
+define('PRICE_FOOTER2',      "contact us");
 ?>
