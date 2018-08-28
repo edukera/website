@@ -860,7 +860,7 @@ footer.page-footer {
     display: block;
     position: relative;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 6%;
 }
 
 .price-header-text {
@@ -868,6 +868,9 @@ footer.page-footer {
     position: relative;
     color: white;
     font-family: "Roboto", sans-serif;
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 100;
 }
 
 .price-title-section {
@@ -881,6 +884,7 @@ footer.page-footer {
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 3.2rem;
+    font-weight: 100;
 }
 
 .price-subtitle-section {
