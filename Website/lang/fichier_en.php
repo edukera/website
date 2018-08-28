@@ -12,7 +12,7 @@ define('DISCOVER',                 "Click to discover proof assistant user inter
 define('EXPLAIN_TITLE',             "Benefits");
 define('EXPLAIN_TITLE_2',         "Develop");
 define('EXPLAIN_TXT',               "The student learns how a mathematical proof works thanks to the numerical paper interface.");
-define('PRICE_TITLE',               "Teaching");
+define('PRICE_TITLE',               "For teachers");
 define('TRAIN_TITLE',               "Practice");
 define('TRAIN_TXT',                 "The student masters studied notions by increasing the number of exercises' resolutions thanks to the assistance provided by the numerical paper.");
 define('CLARIFY_TITLE',           "Clarify");
