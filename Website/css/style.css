@@ -675,7 +675,6 @@ footer.page-footer {
     position: relative;
     width: 100%;
     text-align: center;
-    bottom: 20px;
 }
 
 .coq-wrapper-section {
@@ -860,6 +859,8 @@ footer.page-footer {
 .price-header-section {
     display: block;
     position: relative;
+    text-align: left;
+    padding-left: 30px;
 }
 
 .price-header-text {
@@ -869,11 +870,17 @@ footer.page-footer {
     font-family: "Roboto", sans-serif;
 }
 
-.price-title {
+.price-title-section {
+    display: block;
+    position: relative;
+}
+
+.price-title-text {
     display: block;
     position: relative;
     color: white;
     font-family: "Roboto", sans-serif;
+    font-size: 3.2rem;
 }
 
 .price-subtitle-section {
