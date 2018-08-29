@@ -134,7 +134,7 @@ define('TAC_CHANGES_1',      "Nous réservons le droit de modifier ou remplacer 
 define('TAC_CHANGES_2',      "En continuant d'accéder ou utiliser notre Service après toutes révisions entrent en vigueur, vous acceptez d'être lié aux conditions révisés. Si vous n'acceptez pas ces nouvelles conditions, vous n'êtes plus autorisés à utiliser le site Web et le Service.");
 define('TAC_CONTACTUS',      "Coordonnées");
 define('TAC_CONTACTUS_1',    "Si vous avez des questions au sujet de ces Conditions, veuillez <a href=\"mailto:contact@edukera.com\" target=\"_blank\">nous contacter</a>.");
-define('PRICE_TITLE_TEXT',  "Créez une classe et suivez l’activité de vos étudiants");
+define('PRICE_TITLE_TEXT',  "Créez une classe et suivez l’activité des étudiants");
 define('PRICE_SUBTITLE1',   "Choisissez les exercices");
 define('PRICE_SUBTITLE2',   "Intégrez nativement la classe au LMS (Moodle, Canvas, ...)");
 define('PRICE_SUBTITLE3',   "Créez des devoirs à la maison ou sur table");

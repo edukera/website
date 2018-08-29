@@ -140,15 +140,15 @@ define('TAC_CHANGES_1',      "We reserve the right, at our sole discretion, to m
 define('TAC_CHANGES_2',      "By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.");
 define('TAC_CONTACTUS',      "Contact Us");
 define('TAC_CONTACTUS_1',    "If you have any questions about these Terms, please <a href=\"mailto:contact@edukera.com\" target=\"_blank\">contact us</a>.");
-define('PRICE_TITLE_TEXT',  "Create a class and follow students activity");
+define('PRICE_TITLE_TEXT',  "Create a class and monitor students activity");
 define('PRICE_SUBTITLE1',   "Select exercises");
 define('PRICE_SUBTITLE2',   "Add the class to your LMS (Moodle, Canvas, …)");
 define('PRICE_SUBTITLE3',   "Create homeworks assignments and exams");
-define('PRICE_SUBTITLE4',   "Monitor your students activity with detailed activity reports");
+define('PRICE_SUBTITLE4',   "Monitor your students activity with detailed reports");
 define('PRICE_BUTTON',      "Create a class");
 define('PRICE_DETAIL1',     "10€");
 define('PRICE_DETAIL2',     "excl. tax. / year / student");
 define('PRICE_DETAIL3',     "Up to 90 students.");
-define('PRICE_FOOTER1',      "Beyond 90 students, please ");
-define('PRICE_FOOTER2',      "contact us");
+define('PRICE_FOOTER1',     "Beyond 90 students, please ");
+define('PRICE_FOOTER2',     "contact us");
 ?>
