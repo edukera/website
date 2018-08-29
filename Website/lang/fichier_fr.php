@@ -140,8 +140,8 @@ define('PRICE_SUBTITLE2',   "Intégrez nativement la classe au LMS (Moodle, Canv
 define('PRICE_SUBTITLE3',   "Créez des devoirs à la maison ou sur table");
 define('PRICE_SUBTITLE4',   "Accédez aux rapports d’activité des étudiants");
 define('PRICE_BUTTON',      "Créer une classe");
-define('PRICE_DETAIL1',     "10€HT");
-define('PRICE_DETAIL2',     "/ an / étudiant");
+define('PRICE_DETAIL1',     "10€");
+define('PRICE_DETAIL2',     "HT / an / étudiant");
 define('PRICE_DETAIL3',     "Jusqu’à 90 étudiants.");
 define('PRICE_FOOTER1',     "Au delà de 90 étudiants, ");
 define('PRICE_FOOTER2',     "nous contacter");
